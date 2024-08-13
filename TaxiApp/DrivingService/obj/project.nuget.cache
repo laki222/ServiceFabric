@@ -1,0 +1,19 @@
+{
+  "version": 2,
+  "dgSpecHash": "I6vrWAW8yjw=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Lazar\\Desktop\\New folder\\ServiceFabric\\TaxiApp\\DrivingService\\DrivingService.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Lazar\\.nuget\\packages\\microsoft.servicefabric\\10.1.2175\\microsoft.servicefabric.10.1.2175.nupkg.sha512",
+    "C:\\Users\\Lazar\\.nuget\\packages\\microsoft.servicefabric.data\\7.1.2175\\microsoft.servicefabric.data.7.1.2175.nupkg.sha512",
+    "C:\\Users\\Lazar\\.nuget\\packages\\microsoft.servicefabric.data.extensions\\7.1.2175\\microsoft.servicefabric.data.extensions.7.1.2175.nupkg.sha512",
+    "C:\\Users\\Lazar\\.nuget\\packages\\microsoft.servicefabric.data.interfaces\\7.1.2175\\microsoft.servicefabric.data.interfaces.7.1.2175.nupkg.sha512",
+    "C:\\Users\\Lazar\\.nuget\\packages\\microsoft.servicefabric.diagnostics.internal\\7.1.2175\\microsoft.servicefabric.diagnostics.internal.7.1.2175.nupkg.sha512",
+    "C:\\Users\\Lazar\\.nuget\\packages\\microsoft.servicefabric.services\\7.1.2175\\microsoft.servicefabric.services.7.1.2175.nupkg.sha512",
+    "C:\\Users\\Lazar\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512",
+    "C:\\Users\\Lazar\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x64\\8.0.7\\microsoft.aspnetcore.app.runtime.win-x64.8.0.7.nupkg.sha512",
+    "C:\\Users\\Lazar\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x64\\8.0.7\\microsoft.windowsdesktop.app.runtime.win-x64.8.0.7.nupkg.sha512",
+    "C:\\Users\\Lazar\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x64\\8.0.7\\microsoft.netcore.app.runtime.win-x64.8.0.7.nupkg.sha512"
+  ],
+  "logs": []
+}
