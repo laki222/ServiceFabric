@@ -4,20 +4,98 @@ using System.Fabric;
 using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
+using Common.Entities;
+using Common.Interfaces;
+using Common.Models;
 using Microsoft.ServiceFabric.Data.Collections;
 using Microsoft.ServiceFabric.Services.Communication.Runtime;
+using Microsoft.ServiceFabric.Services.Remoting.Runtime;
 using Microsoft.ServiceFabric.Services.Runtime;
+using Microsoft.WindowsAzure.Storage.Blob;
+using Microsoft.WindowsAzure.Storage.Table;
+using UserService.Repository;
 
 namespace UserService
 {
     /// <summary>
     /// An instance of this class is created for each service replica by the Service Fabric runtime.
     /// </summary>
-    internal sealed class UserService : StatefulService
+    public sealed class UserService : StatefulService,IUser
     {
+        public UserDataRepo dataRepo;
         public UserService(StatefulServiceContext context)
             : base(context)
-        { }
+        {
+            dataRepo = new UserDataRepo("UsersTaxiAppDusan");
+        }
+
+        public async Task<bool> addUser(User user)
+        {
+            var userDictionary = await StateManager.GetOrAddAsync<IReliableDictionary<Guid, User>>("UserEntities");
+
+            try
+            {
+                using (var transaction = StateManager.CreateTransaction())
+                {
+                    if (!await CheckIfUserAlreadyExists(user))
+                    {
+
+                        await userDictionary.AddAsync(transaction, user.Id, user); // dodaj ga prvo u reliable 
+
+                        //insert image of user in blob
+                        CloudBlockBlob blob = await dataRepo.GetBlockBlobReference("users", $"image_{user.Id}");
+                        blob.Properties.ContentType = user.ImageFile.ContentType;
+                        await blob.UploadFromByteArrayAsync(user.ImageFile.FileContent, 0, user.ImageFile.FileContent.Length);
+                        string imageUrl = blob.Uri.AbsoluteUri;
+
+                        //insert user in database
+                        UserEntity newUser = new UserEntity(user, imageUrl);
+                        TableOperation operation = TableOperation.Insert(newUser);
+                        await dataRepo.Users.ExecuteAsync(operation);
+
+
+
+
+                        await transaction.CommitAsync();
+                        return true;
+                    }
+                    return false;
+                }
+
+            }
+            catch (Exception ex)
+            {
+                return false;
+            }
+        }
+
+        private async Task<bool> CheckIfUserAlreadyExists(User user)
+        {
+            var users = await StateManager.GetOrAddAsync<IReliableDictionary<Guid, User>>("UserEntities");
+            try
+            {
+                using (var tx = StateManager.CreateTransaction())
+                {
+                    var enumerable = await users.CreateEnumerableAsync(tx);
+
+                    using (var enumerator = enumerable.GetAsyncEnumerator())
+                    {
+                        while (await enumerator.MoveNextAsync(default(CancellationToken)))
+                        {
+                            if (enumerator.Current.Value.Email == user.Email || enumerator.Current.Value.Id == user.Id || enumerator.Current.Value.Username == user.Username)
+                            {
+                                return true;
+                            }
+                        }
+                    }
+                }
+                return false;
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+        }
 
         /// <summary>
         /// Optional override to create listeners (e.g., HTTP, Service Remoting, WCF, etc.) for this service replica to handle client or user requests.
@@ -27,9 +105,7 @@ namespace UserService
         /// </remarks>
         /// <returns>A collection of listeners.</returns>
         protected override IEnumerable<ServiceReplicaListener> CreateServiceReplicaListeners()
-        {
-            return new ServiceReplicaListener[0];
-        }
+           => this.CreateServiceRemotingReplicaListeners();
 
         /// <summary>
         /// This is the main entry point for your service replica.

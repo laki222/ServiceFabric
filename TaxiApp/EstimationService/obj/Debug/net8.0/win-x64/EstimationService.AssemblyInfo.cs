@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("EstimationService")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+aca880877dbe01bf8b7532b3f7357b332402088b")]
 [assembly: System.Reflection.AssemblyProductAttribute("EstimationService")]
 [assembly: System.Reflection.AssemblyTitleAttribute("EstimationService")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

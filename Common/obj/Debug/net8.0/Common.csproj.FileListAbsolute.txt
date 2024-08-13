@@ -1,0 +1,13 @@
+C:\Users\Lazar\Desktop\New folder\ServiceFabric\Common\bin\Debug\net8.0\Common.deps.json
+C:\Users\Lazar\Desktop\New folder\ServiceFabric\Common\bin\Debug\net8.0\Common.dll
+C:\Users\Lazar\Desktop\New folder\ServiceFabric\Common\bin\Debug\net8.0\Common.pdb
+C:\Users\Lazar\Desktop\New folder\ServiceFabric\Common\obj\Debug\net8.0\Common.csproj.AssemblyReference.cache
+C:\Users\Lazar\Desktop\New folder\ServiceFabric\Common\obj\Debug\net8.0\Common.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Lazar\Desktop\New folder\ServiceFabric\Common\obj\Debug\net8.0\Common.AssemblyInfoInputs.cache
+C:\Users\Lazar\Desktop\New folder\ServiceFabric\Common\obj\Debug\net8.0\Common.AssemblyInfo.cs
+C:\Users\Lazar\Desktop\New folder\ServiceFabric\Common\obj\Debug\net8.0\Common.csproj.CoreCompileInputs.cache
+C:\Users\Lazar\Desktop\New folder\ServiceFabric\Common\obj\Debug\net8.0\Common.sourcelink.json
+C:\Users\Lazar\Desktop\New folder\ServiceFabric\Common\obj\Debug\net8.0\Common.dll
+C:\Users\Lazar\Desktop\New folder\ServiceFabric\Common\obj\Debug\net8.0\refint\Common.dll
+C:\Users\Lazar\Desktop\New folder\ServiceFabric\Common\obj\Debug\net8.0\Common.pdb
+C:\Users\Lazar\Desktop\New folder\ServiceFabric\Common\obj\Debug\net8.0\ref\Common.dll
