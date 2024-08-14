@@ -10,18 +10,7 @@
       "AbsoluteMoniker": "D:0:0:{41AD9640-42CB-499A-91A2-996D29B62AD7}|..\\WebApi\\WebApi.csproj|c:\\users\\lazar\\desktop\\new folder\\servicefabric\\webapi\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{32FFA6AA-2094-4F3A-881B-80F9C80EE71A}|UserService\\UserService.csproj|c:\\users\\lazar\\desktop\\new folder\\servicefabric\\taxiapp\\userservice\\repository\\userdatarepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{32FFA6AA-2094-4F3A-881B-80F9C80EE71A}|UserService\\UserService.csproj|solutionrelative:userservice\\repository\\userdatarepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{32FFA6AA-2094-4F3A-881B-80F9C80EE71A}|UserService\\UserService.csproj|C:\\Users\\Lazar\\Desktop\\New folder\\ServiceFabric\\TaxiApp\\userservice\\properties\\resources.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}",
-      "RelativeMoniker": "D:0:0:{32FFA6AA-2094-4F3A-881B-80F9C80EE71A}|UserService\\UserService.csproj|solutionrelative:userservice\\properties\\resources.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CE790082-3901-4E74-9908-3352927D32DB}|..\\Common\\Common.csproj|c:\\users\\lazar\\desktop\\new folder\\servicefabric\\common\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Lazar\\AppData\\Local\\Temp\\.vsdbgsrc\\320b9188fbacc562195e00aaab55455af7a50c1ca6aa597ccefc9f71996c7cf6\\ServiceHelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -31,69 +20,19 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "User.cs",
-              "DocumentMoniker": "C:\\Users\\Lazar\\Desktop\\New folder\\ServiceFabric\\Common\\Models\\User.cs",
-              "RelativeDocumentMoniker": "..\\Common\\Models\\User.cs",
-              "ToolTip": "C:\\Users\\Lazar\\Desktop\\New folder\\ServiceFabric\\Common\\Models\\User.cs",
-              "RelativeToolTip": "..\\Common\\Models\\User.cs",
-              "ViewState": "AQIAADcAAAAAAAAAAAAUwAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-13T20:40:04.368Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Microsoft.Common.CurrentVersion.targets",
-              "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
-              "ToolTip": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
-              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
-              "ViewState": "AQIAAH8UAAAAAAAAAAAnwJUUAAAEAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
-              "WhenOpened": "2024-08-13T20:21:13.65Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "UserDataRepo.cs",
-              "DocumentMoniker": "C:\\Users\\Lazar\\Desktop\\New folder\\ServiceFabric\\TaxiApp\\UserService\\Repository\\UserDataRepo.cs",
-              "RelativeDocumentMoniker": "UserService\\Repository\\UserDataRepo.cs",
-              "ToolTip": "C:\\Users\\Lazar\\Desktop\\New folder\\ServiceFabric\\TaxiApp\\UserService\\Repository\\UserDataRepo.cs",
-              "RelativeToolTip": "UserService\\Repository\\UserDataRepo.cs",
-              "ViewState": "AQIAAA0AAAAAAAAAAAAMwCgAAAAjAAAA",
+              "Title": "ServiceHelper.cs",
+              "DocumentMoniker": "C:\\Users\\Lazar\\AppData\\Local\\Temp\\.vsdbgsrc\\320b9188fbacc562195e00aaab55455af7a50c1ca6aa597ccefc9f71996c7cf6\\ServiceHelper.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\320b9188fbacc562195e00aaab55455af7a50c1ca6aa597ccefc9f71996c7cf6\\ServiceHelper.cs",
+              "ToolTip": "C:\\Users\\Lazar\\AppData\\Local\\Temp\\.vsdbgsrc\\320b9188fbacc562195e00aaab55455af7a50c1ca6aa597ccefc9f71996c7cf6\\ServiceHelper.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\320b9188fbacc562195e00aaab55455af7a50c1ca6aa597ccefc9f71996c7cf6\\ServiceHelper.cs",
+              "ViewState": "AQIAADcAAAAAAAAAAAAnwFcAAAACAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-13T20:10:29.62Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Resources.resx",
-              "DocumentMoniker": "C:\\Users\\Lazar\\Desktop\\New folder\\ServiceFabric\\TaxiApp\\UserService\\Properties\\Resources.resx",
-              "RelativeDocumentMoniker": "UserService\\Properties\\Resources.resx",
-              "ToolTip": "C:\\Users\\Lazar\\Desktop\\New folder\\ServiceFabric\\TaxiApp\\UserService\\Properties\\Resources.resx",
-              "RelativeToolTip": "UserService\\Properties\\Resources.resx",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
-              "WhenOpened": "2024-08-13T20:10:59.39Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "UserService.cs",
-              "DocumentMoniker": "C:\\Users\\Lazar\\Desktop\\New folder\\ServiceFabric\\TaxiApp\\UserService\\UserService.cs",
-              "RelativeDocumentMoniker": "UserService\\UserService.cs",
-              "ToolTip": "C:\\Users\\Lazar\\Desktop\\New folder\\ServiceFabric\\TaxiApp\\UserService\\UserService.cs",
-              "RelativeToolTip": "UserService\\UserService.cs",
-              "ViewState": "AQIAAB8AAAAAAAAAAAA5wHMAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-13T20:08:54.483Z",
+              "WhenOpened": "2024-08-14T16:01:38.231Z",
               "EditorCaption": ""
             },
             {
@@ -104,9 +43,22 @@
               "RelativeDocumentMoniker": "..\\WebApi\\Controllers\\UserController.cs",
               "ToolTip": "C:\\Users\\Lazar\\Desktop\\New folder\\ServiceFabric\\WebApi\\Controllers\\UserController.cs",
               "RelativeToolTip": "..\\WebApi\\Controllers\\UserController.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAiwCkAAAAUAAAA",
+              "ViewState": "AQIAABcAAAAAAAAAAIAwwEwAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-13T20:07:58.115Z",
+              "WhenOpened": "2024-08-14T15:38:17.216Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "C:\\Users\\Lazar\\Desktop\\New folder\\ServiceFabric\\TaxiApp\\UserService\\UserService.cs",
+              "RelativeDocumentMoniker": "UserService\\UserService.cs",
+              "ToolTip": "C:\\Users\\Lazar\\Desktop\\New folder\\ServiceFabric\\TaxiApp\\UserService\\UserService.cs",
+              "RelativeToolTip": "UserService\\UserService.cs",
+              "ViewState": "AQIAAHsAAAAAAAAAAAAewI4AAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-14T15:36:39.287Z",
               "EditorCaption": ""
             }
           ]

@@ -11,6 +11,9 @@ using Microsoft.ServiceFabric.Services.Communication.AspNetCore;
 using Microsoft.ServiceFabric.Services.Communication.Runtime;
 using Microsoft.ServiceFabric.Services.Runtime;
 using Microsoft.ServiceFabric.Data;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.IdentityModel.Tokens;
+using System.Text;
 
 namespace WebApi
 {
@@ -38,6 +41,26 @@ namespace WebApi
 
                         var builder = WebApplication.CreateBuilder();
 
+                        var jwtIssuer = builder.Configuration.GetSection("Jwt:Issuer").Get<string>();
+                        var jwtKey = builder.Configuration.GetSection("Jwt:Key").Get<string>();
+                        
+                        builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+                         .AddJwtBearer(options =>
+                         {
+                             options.TokenValidationParameters = new TokenValidationParameters
+                             {
+                                 ValidateIssuer = true,
+                                 ValidateAudience = true,
+                                 ValidateLifetime = true,
+                                 ValidateIssuerSigningKey = true,
+                                 ValidIssuer = jwtIssuer,
+                                 ValidAudience = jwtIssuer,
+                                 IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(jwtKey))
+                             };
+                         });
+
+
+
                         builder.Services.AddSingleton<StatelessServiceContext>(serviceContext);
                         builder.WebHost
                                     .UseKestrel()
@@ -47,6 +70,14 @@ namespace WebApi
                         builder.Services.AddControllers();
                         builder.Services.AddEndpointsApiExplorer();
                         builder.Services.AddSwaggerGen();
+
+                            builder.Services.AddAuthorization(options =>
+                        {
+                               options.AddPolicy("Admin", policy => policy.RequireClaim("MyCustomClaim", "Admin"));
+                               options.AddPolicy("Rider", policy => policy.RequireClaim("MyCustomClaim", "Rider"));
+                               options.AddPolicy("Driver", policy => policy.RequireClaim("MyCustomClaim", "Driver"));
+                        });
+
                         var app = builder.Build();
                         if (app.Environment.IsDevelopment())
                         {

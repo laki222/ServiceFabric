@@ -7,13 +7,26 @@ using Common.DTO;
 using Common.Models;
 using Microsoft.ServiceFabric.Services.Remoting.Client;
 using Common.Interfaces;
+using Microsoft.IdentityModel.Tokens;
+using System.IdentityModel.Tokens.Jwt;
+using System.Security.Claims;
+using System.Text;
 
 namespace WebApi.Controllers
 {
     [ApiController]
     [Route("api/[controller]/[action]")]
-    public class UserController : Controller
+    public class UserController : ControllerBase
     {
+        private IConfiguration _config;
+        public UserController(IConfiguration config)
+        {
+            _config = config;
+           
+        }
+
+
+
         [HttpPost]
         public async Task<IActionResult> RegularRegister([FromForm] UserRegisterDTO userData)
         {
@@ -59,6 +72,68 @@ namespace WebApi.Controllers
                 return Regex.IsMatch(email, pattern);
             }
 
+        [HttpPost]
+        public async Task<IActionResult> Login([FromBody] LoginUserDTO user)
+        {
+            if (string.IsNullOrEmpty(user.Email) || !IsValidEmail(user.Email)) return BadRequest("Invalid email format");
+            if (string.IsNullOrEmpty(user.Password)) return BadRequest("Password cannot be null or empty");
+
+            try
+            {
+                var fabricClient = new FabricClient();
+                LoggedUserDTO result = null; // Initialize result to null
+
+                var partitionList = await fabricClient.QueryManager.GetPartitionListAsync(new Uri("fabric:/TaxiApp/UserService"));
+                foreach (var partition in partitionList)
+                {
+                    var partitionKey = new ServicePartitionKey(((Int64RangePartitionInformation)partition.PartitionInformation).LowKey);
+                    var proxy = ServiceProxy.Create<IUser>(new Uri("fabric:/TaxiApp/UserService"), partitionKey);
+                    var partitionResult = await proxy.loginUser(user);
+
+                    if (partitionResult != null)
+                    {
+                        result = partitionResult;
+                        break;
+                    }
+                }
+
+                if (result != null)
+                {
+                    var securityKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_config["Jwt:Key"]));
+                    var credentials = new SigningCredentials(securityKey, SecurityAlgorithms.HmacSha256);
+
+                    List<Claim> claims = new List<Claim>();
+                    claims.Add(new Claim("MyCustomClaim", result.Role.ToString()));
+
+                    var Sectoken = new JwtSecurityToken(_config["Jwt:Issuer"],
+                        _config["Jwt:Issuer"],
+                        claims,
+                        expires: DateTime.Now.AddMinutes(360),
+                        signingCredentials: credentials);
+
+                    var token = new JwtSecurityTokenHandler().WriteToken(Sectoken);
+
+                    var response = new
+                    {
+                        token = token,
+                        user = result,
+                        message = "Login successful"
+                    };
+
+                    return Ok(response);
+                }
+                else
+                {
+                    return BadRequest("Incorrect email or password");
+                }
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, "An error occurred while login User");
+            }
         }
+
+
+    }
     }
 

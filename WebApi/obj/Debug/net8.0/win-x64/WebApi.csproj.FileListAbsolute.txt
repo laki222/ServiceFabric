@@ -5,6 +5,13 @@ C:\Users\Lazar\Desktop\New folder\ServiceFabric\WebApi\bin\Debug\net8.0\win-x64\
 C:\Users\Lazar\Desktop\New folder\ServiceFabric\WebApi\bin\Debug\net8.0\win-x64\WebApi.runtimeconfig.json
 C:\Users\Lazar\Desktop\New folder\ServiceFabric\WebApi\bin\Debug\net8.0\win-x64\WebApi.dll
 C:\Users\Lazar\Desktop\New folder\ServiceFabric\WebApi\bin\Debug\net8.0\win-x64\WebApi.pdb
+C:\Users\Lazar\Desktop\New folder\ServiceFabric\WebApi\bin\Debug\net8.0\win-x64\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\Lazar\Desktop\New folder\ServiceFabric\WebApi\bin\Debug\net8.0\win-x64\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\Lazar\Desktop\New folder\ServiceFabric\WebApi\bin\Debug\net8.0\win-x64\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Lazar\Desktop\New folder\ServiceFabric\WebApi\bin\Debug\net8.0\win-x64\Microsoft.IdentityModel.Logging.dll
+C:\Users\Lazar\Desktop\New folder\ServiceFabric\WebApi\bin\Debug\net8.0\win-x64\Microsoft.IdentityModel.Protocols.dll
+C:\Users\Lazar\Desktop\New folder\ServiceFabric\WebApi\bin\Debug\net8.0\win-x64\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\Lazar\Desktop\New folder\ServiceFabric\WebApi\bin\Debug\net8.0\win-x64\Microsoft.IdentityModel.Tokens.dll
 C:\Users\Lazar\Desktop\New folder\ServiceFabric\WebApi\bin\Debug\net8.0\win-x64\Microsoft.OpenApi.dll
 C:\Users\Lazar\Desktop\New folder\ServiceFabric\WebApi\bin\Debug\net8.0\win-x64\Microsoft.ServiceFabric.Internal.Strings.dll
 C:\Users\Lazar\Desktop\New folder\ServiceFabric\WebApi\bin\Debug\net8.0\win-x64\Microsoft.ServiceFabric.Internal.dll
@@ -28,6 +35,7 @@ C:\Users\Lazar\Desktop\New folder\ServiceFabric\WebApi\bin\Debug\net8.0\win-x64\
 C:\Users\Lazar\Desktop\New folder\ServiceFabric\WebApi\bin\Debug\net8.0\win-x64\Swashbuckle.AspNetCore.Swagger.dll
 C:\Users\Lazar\Desktop\New folder\ServiceFabric\WebApi\bin\Debug\net8.0\win-x64\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\Lazar\Desktop\New folder\ServiceFabric\WebApi\bin\Debug\net8.0\win-x64\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\Lazar\Desktop\New folder\ServiceFabric\WebApi\bin\Debug\net8.0\win-x64\System.IdentityModel.Tokens.Jwt.dll
 C:\Users\Lazar\Desktop\New folder\ServiceFabric\WebApi\bin\Debug\net8.0\win-x64\Microsoft.WindowsAzure.Storage.dll
 C:\Users\Lazar\Desktop\New folder\ServiceFabric\WebApi\bin\Debug\net8.0\win-x64\Microsoft.CSharp.dll
 C:\Users\Lazar\Desktop\New folder\ServiceFabric\WebApi\bin\Debug\net8.0\win-x64\Microsoft.VisualBasic.Core.dll

@@ -137,6 +137,10 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[8.0.8, )"
+            },
             "Microsoft.ServiceFabric.AspNetCore.Kestrel": {
               "target": "Package",
               "version": "[7.1.2338, )"

@@ -1,4 +1,5 @@
-﻿using Common.Interfaces;
+﻿using Common.Entities;
+using Common.Interfaces;
 using Common.Models;
 using Microsoft.Azure;
 using Microsoft.WindowsAzure.Storage;
@@ -31,14 +32,20 @@ namespace UserService.Repository
             try
             {
 
-                //string dataConnectionString = Environment.GetEnvironmentVariable("DefaultEndpointsProtocol=https;AccountName=cloudprojekat;AccountKey=vwtXRnG7VWT0L3Dl6wBIwSWbOv91HzphoDDTRn27xmJl+JB0asd/54IqXn43gDEWFyok+3cjlNaz+AStMTUDsg==;EndpointSuffix=core.windows.net");
-                CloudAcc = CloudStorageAccount.Parse(CloudConfigurationManager.GetSetting("Microsoft.WindowsAzure.Plugins.Diagnostics.DataConnectionString"));  // create cloud client for making blob,table or queue 
-                CloudTableClient tableClient = new CloudTableClient(new Uri(CloudAcc.TableEndpoint.AbsoluteUri), CloudAcc.Credentials);
+                string dataConnectionString = Environment.GetEnvironmentVariable("DataConnectionString");
+
+                if (string.IsNullOrEmpty(dataConnectionString))
+                {
+                    throw new InvalidOperationException("The database connection string is not set in the environment variables.");
+                }
+
+                CloudAcc = CloudStorageAccount.Parse(dataConnectionString);
+
                 BlobClient = CloudAcc.CreateCloudBlobClient();  // blob client 
 
-                //TableClient = CloudAcc.CreateCloudTableClient(); // table client
+                TableClient = CloudAcc.CreateCloudTableClient(); // table client
 
-                Users = tableClient.GetTableReference(tableName); // create if not exists Users table 
+                Users = TableClient.GetTableReference(tableName); // create if not exists Users table 
                 Users.CreateIfNotExistsAsync().Wait();
 
             }
@@ -58,7 +65,30 @@ namespace UserService.Repository
 
             return blob;
         }
+        public IEnumerable<UserEntity> GetAllUsers()
+        {
+            var q = new TableQuery<UserEntity>();
+            var qRes = Users.ExecuteQuerySegmentedAsync(q, null).GetAwaiter().GetResult();
+            return qRes.Results;
+        }
 
-       
+        public async Task<byte[]> DownloadImage(UserDataRepo dataRepo, UserEntity user, string nameOfContainer)
+        {
+
+            CloudBlockBlob blob = await dataRepo.GetBlockBlobReference(nameOfContainer, $"image_{user.Id}");
+
+
+            await blob.FetchAttributesAsync();
+
+            long blobLength = blob.Properties.Length;
+
+            byte[] byteArray = new byte[blobLength];
+            await blob.DownloadToByteArrayAsync(byteArray, 0);
+
+            return byteArray;
+
+        }
+
+
     }
 }

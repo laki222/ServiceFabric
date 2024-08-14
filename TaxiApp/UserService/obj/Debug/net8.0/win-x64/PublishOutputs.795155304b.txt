@@ -203,6 +203,7 @@ C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\pkg\Debug\UserServicePkg
 C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\pkg\Debug\UserServicePkg\Code\Microsoft.ServiceFabric.FabricTransport.dll
 C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\pkg\Debug\UserServicePkg\Code\Microsoft.ServiceFabric.Services.dll
 C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\pkg\Debug\UserServicePkg\Code\Microsoft.ServiceFabric.Services.Remoting.dll
+C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\pkg\Debug\UserServicePkg\Code\Microsoft.WindowsAzure.Configuration.dll
 C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\pkg\Debug\UserServicePkg\Code\Newtonsoft.Json.dll
 C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\pkg\Debug\UserServicePkg\Code\System.IO.Pipelines.dll
 C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\pkg\Debug\UserServicePkg\Code\Microsoft.WindowsAzure.Storage.dll

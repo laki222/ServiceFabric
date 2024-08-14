@@ -16,7 +16,8 @@
       "launchUrl": "swagger",
       "applicationUrl": "http://localhost:5259",
       "environmentVariables": {
-        "ASPNETCORE_ENVIRONMENT": "Development"
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "DATABASE_CONNECTION_STRING": "DefaultEndpointsProtocol=https;AccountName=cloudprojekat;AccountKey=vwtXRnG7VWT0L3Dl6wBIwSWbOv91HzphoDDTRn27xmJl+JB0asd/54IqXn43gDEWFyok+3cjlNaz+AStMTUDsg==;EndpointSuffix=core.windows.net"
       }
     },
     "IIS Express": {
@@ -24,7 +25,9 @@
       "launchBrowser": true,
       "launchUrl": "swagger",
       "environmentVariables": {
-        "ASPNETCORE_ENVIRONMENT": "Development"
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "DATABASE_CONNECTION_STRING": "DefaultEndpointsProtocol=https;AccountName=cloudprojekat;AccountKey=vwtXRnG7VWT0L3Dl6wBIwSWbOv91HzphoDDTRn27xmJl+JB0asd/54IqXn43gDEWFyok+3cjlNaz+AStMTUDsg==;EndpointSuffix=core.windows.net"
+
       }
     }
   }

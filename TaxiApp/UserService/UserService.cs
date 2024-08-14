@@ -4,8 +4,10 @@ using System.Fabric;
 using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
+using Common.DTO;
 using Common.Entities;
 using Common.Interfaces;
+using Common.Mappers;
 using Common.Models;
 using Microsoft.ServiceFabric.Data.Collections;
 using Microsoft.ServiceFabric.Services.Communication.Runtime;
@@ -26,8 +28,14 @@ namespace UserService
         public UserService(StatefulServiceContext context)
             : base(context)
         {
-            dataRepo = new UserDataRepo("UsersTaxiAppDusan");
+            dataRepo = new UserDataRepo("UsersTaxi");
         }
+
+
+
+
+
+
 
         public async Task<bool> addUser(User user)
         {
@@ -43,7 +51,7 @@ namespace UserService
                         await userDictionary.AddAsync(transaction, user.Id, user); // dodaj ga prvo u reliable 
 
                         //insert image of user in blob
-                        CloudBlockBlob blob = await dataRepo.GetBlockBlobReference("users", $"image_{user.Id}");
+                        CloudBlockBlob blob = await dataRepo.GetBlockBlobReference("usersimages", $"image_{user.Id}");
                         blob.Properties.ContentType = user.ImageFile.ContentType;
                         await blob.UploadFromByteArrayAsync(user.ImageFile.FileContent, 0, user.ImageFile.FileContent.Length);
                         string imageUrl = blob.Uri.AbsoluteUri;
@@ -97,6 +105,62 @@ namespace UserService
             }
         }
 
+        private async Task LoadUsers()
+        {
+            var userDictionary = await StateManager.GetOrAddAsync<IReliableDictionary<Guid, User>>("UserEntities");
+            try
+            {
+                using (var transaction = StateManager.CreateTransaction())
+                {
+                    var users = dataRepo.GetAllUsers();
+                    if (users.Count() == 0) return;
+
+                    foreach (var user in users)
+                    {
+                        byte[] image = await dataRepo.DownloadImage(dataRepo, user, "usersimages");
+                        var userEntity = UserMapper.MapUserEntityToUser(user, image);
+
+                 
+                        await userDictionary.AddAsync(transaction, user.Id, userEntity);
+                    }
+
+                    // Potvrdi transakciju
+                    await transaction.CommitAsync();
+                }
+            }
+            catch (Exception ex)
+            {
+               
+                Console.WriteLine($"Error LoadUsers: {ex}");
+                throw; 
+            }
+        }
+
+
+
+
+        public async Task<LoggedUserDTO> loginUser(LoginUserDTO loginUserDTO)
+        {
+            
+            var users = await this.StateManager.GetOrAddAsync<IReliableDictionary<Guid, User>>("UserEntities");
+
+            using (var tx = this.StateManager.CreateTransaction())
+            {
+                var enumerable = await users.CreateEnumerableAsync(tx);
+
+                using (var enumerator = enumerable.GetAsyncEnumerator())
+                {
+                    while (await enumerator.MoveNextAsync(default(CancellationToken)))
+                    {
+                        if (enumerator.Current.Value.Email == loginUserDTO.Email && enumerator.Current.Value.Password == loginUserDTO.Password)
+                        {
+                            return new LoggedUserDTO(enumerator.Current.Value.Id, enumerator.Current.Value.TypeOfUser);
+                        }
+                    }
+                }
+            }
+            return null;
+        }
         /// <summary>
         /// Optional override to create listeners (e.g., HTTP, Service Remoting, WCF, etc.) for this service replica to handle client or user requests.
         /// </summary>
@@ -118,6 +182,9 @@ namespace UserService
             //       or remove this RunAsync override if it's not needed in your service.
 
             var myDictionary = await this.StateManager.GetOrAddAsync<IReliableDictionary<string, long>>("myDictionary");
+            var users = await this.StateManager.GetOrAddAsync<IReliableDictionary<Guid, User>>("UserEntities");
+            // ovde ce biti load users 
+            await LoadUsers();
 
             while (true)
             {
@@ -140,5 +207,7 @@ namespace UserService
                 await Task.Delay(TimeSpan.FromSeconds(1), cancellationToken);
             }
         }
+
+       
     }
 }
