@@ -89,6 +89,27 @@ namespace UserService.Repository
 
         }
 
+        public async Task<bool> UpdateEntity(Guid id, bool status)
+        {
+            TableQuery<UserEntity> driverQuery = new TableQuery<UserEntity>()
+        .Where(TableQuery.GenerateFilterConditionForGuid("Id", QueryComparisons.Equal, id));
+            TableQuerySegment<UserEntity> queryResult = await Users.ExecuteQuerySegmentedAsync(driverQuery, null);
+
+            if (queryResult.Results.Count > 0)
+            {
+                UserEntity user = queryResult.Results[0];
+                user.IsBlocked = status;
+                var operation = TableOperation.Replace(user);
+                await Users.ExecuteAsync(operation);
+
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
 
     }
 }

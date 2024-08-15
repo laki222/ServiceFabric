@@ -1,21 +1,23 @@
 ﻿using Common.DTO;
 using Common.Entities;
+using Common.Enums;
 using Common.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using static Common.Entities.VerificationStatus;
+using static Common.Enums.VerificationStatus;
 
 namespace Common.Mappers
 {
     public class UserMapper
     {
+
         public static User MapUserEntityToUser(UserEntity u, byte[] imageOfUser)
         {
             var statusString = u.Status; // Assuming 'u.Status' contains the string representation of the enum
-            Status myStatus;
+            VerificationStatus.Status myStatus;
 
             if (Enum.TryParse(statusString, out myStatus))
             {
@@ -34,7 +36,7 @@ namespace Common.Mappers
                     u.LastName,
                     u.Password,
                     u.Username,
-                    (UserType.Role)Enum.Parse(typeof(UserType.Role), u.PartitionKey),
+                   (Common.Enums.UserType.Role)Enum.Parse(typeof(Common.Enums.UserType.Role), u.PartitionKey),
                     new FileUploadDTO(imageOfUser),
                     u.ImageUrl,
                     myStatus,
@@ -45,7 +47,5 @@ namespace Common.Mappers
         }
 
        
-
-
     }
 }

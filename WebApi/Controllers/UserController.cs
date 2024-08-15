@@ -11,6 +11,7 @@ using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
+using Microsoft.AspNetCore.Authorization;
 
 namespace WebApi.Controllers
 {
@@ -132,8 +133,141 @@ namespace WebApi.Controllers
                 return StatusCode(500, "An error occurred while login User");
             }
         }
+        
+        
+        [Authorize(Policy = "Admin")]
+        [HttpGet]
+
+        public async Task<IActionResult> GetAllUsers()
+        {
+            try
+            {
+                var fabricClient = new FabricClient();
+                var allUsers = new List<User>();
+
+                var partitionList = await fabricClient.QueryManager.GetPartitionListAsync(new Uri("fabric:/TaxiApp/UserService"));
+                foreach (var partition in partitionList)
+                {
+                    var partitionKey = new ServicePartitionKey(((Int64RangePartitionInformation)partition.PartitionInformation).LowKey);
+                    var proxy = ServiceProxy.Create<IUser>(new Uri("fabric:/TaxiApp/UserService"), partitionKey);
+
+                    // Pozivanje metode koja dobavlja sve korisnike
+                    var users = await proxy.GetAllUsers();
+                    allUsers.AddRange(users);
+                }
+
+                return Ok(allUsers);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, "An error occurred while retrieving users");
+            }
+        }
+
+        [Authorize(Policy = "Admin")]
+        [HttpGet]
+        public async Task<IActionResult> GetAllDrivers()
+        {
+            try
+            {
+                var fabricClient = new FabricClient();
+                var allDrivers = new List<DriverViewDTO>();
+
+                var partitionList = await fabricClient.QueryManager.GetPartitionListAsync(new Uri("fabric:/TaxiApp/UserService"));
+                foreach (var partition in partitionList)
+                {
+                    var partitionKey = new ServicePartitionKey(((Int64RangePartitionInformation)partition.PartitionInformation).LowKey);
+                    var proxy = ServiceProxy.Create<IUser>(new Uri("fabric:/TaxiApp/UserService"), partitionKey);
+
+                    // Pozivanje metode koja dobavlja sve korisnike
+                    var drivers = await proxy.GetAllDrivers();
+                    allDrivers.AddRange(drivers);
+                }
+
+                return Ok(allDrivers);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, "An error occurred while retrieving drivers");
+            }
+        }
+
+        [Authorize(Policy = "Admin")]
+        [HttpPut]
+        public async Task<IActionResult> ChangeDriverStatus([FromBody] DriverChangeStatusDTO driver)
+        {
+            try
+            {
+
+                var fabricClient = new FabricClient();
+                bool result = false;
+
+                var partitionList = await fabricClient.QueryManager.GetPartitionListAsync(new Uri("fabric:/TaxiApp/UserService"));
+                foreach (var partition in partitionList)
+                {
+                    var partitionKey = new ServicePartitionKey(((Int64RangePartitionInformation)partition.PartitionInformation).LowKey);
+                    var proxy = ServiceProxy.Create<IUser>(new Uri("fabric:/TaxiApp/UserService"), partitionKey);
+                    bool parititonResult = await proxy.changeDriverStatus(driver.Id, driver.Status);
+                    result = parititonResult;
+                }
+
+                if (result) return Ok("Succesfuly changed driver status");
+
+                else return BadRequest("Driver status is not changed");
+
+            }
+            catch (Exception)
+            {
+                return StatusCode(500, "An error occurred while changing  new User");
+            }
+        }
+
+        [AllowAnonymous]
+        [HttpGet]
+        public async Task<IActionResult> GetUserInfo([FromQuery] Guid id)
+        {
+            try
+            {
+                var fabricClient = new FabricClient();
+                User result = null;
+
+                var partitionList = await fabricClient.QueryManager.GetPartitionListAsync(new Uri("fabric:/TaxiApp/UserService"));
+                foreach (var partition in partitionList)
+                {
+                    var partitionKey = new ServicePartitionKey(((Int64RangePartitionInformation)partition.PartitionInformation).LowKey);
+                    var proxy = ServiceProxy.Create<IUser>(new Uri("fabric:/TaxiApp/UserService"), partitionKey);
+                    var partitionResult = await proxy.GetUserInfo(id);
+                    if (partitionResult != null)
+                    {
+                        result = partitionResult;
+                        break;
+                    }
+                }
+
+                if (result != null)
+                {
+                    var response = new
+                    {
+                        user = result,
+                        message = "Successfully retrieved user info"
+                    };
+                    return Ok(response);
+                }
+                else
+                {
+                    return BadRequest("This id does not exist");
+                }
+            }
+            catch (Exception)
+            {
+                return StatusCode(500, "An error occurred while retrieving user info");
+            }
+        }
+
+
+
 
 
     }
-    }
+}
 

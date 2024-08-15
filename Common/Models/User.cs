@@ -1,5 +1,5 @@
 ﻿using Common.DTO;
-using Common.Entities;
+using Common.Enums;
 using Microsoft.AspNetCore.Http;
 using System;
 using System.Collections.Generic;
@@ -52,13 +52,13 @@ namespace Common.Models
         public UserType.Role TypeOfUser { get; set; }
 
 
-        [DataMember]
+        
         public FileUploadDTO ImageFile { get; set; }
 
-        [DataMember]
+       
         public VerificationStatus.Status Status { get; set; }
 
-        [DataMember]
+        
         public Guid Id { get; set; }
 
         public string ImageUrl { get; set; }

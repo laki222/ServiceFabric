@@ -5,6 +5,7 @@ using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 using Common.DTO;
+using Common.Enums;
 using Common.Entities;
 using Common.Interfaces;
 using Common.Mappers;
@@ -16,6 +17,7 @@ using Microsoft.ServiceFabric.Services.Runtime;
 using Microsoft.WindowsAzure.Storage.Blob;
 using Microsoft.WindowsAzure.Storage.Table;
 using UserService.Repository;
+using Microsoft.ServiceFabric.Data;
 
 namespace UserService
 {
@@ -208,6 +210,92 @@ namespace UserService
             }
         }
 
-       
+        public async Task<List<User>> GetAllUsers()
+        {
+            using (var tx = this.StateManager.CreateTransaction())
+            {
+                var users = await this.StateManager.GetOrAddAsync<IReliableDictionary<Guid, User>>("UserEntities");
+                var allUsers = new List<User>();
+
+                var enumerable = await users.CreateEnumerableAsync(tx);
+                using (var enumerator = enumerable.GetAsyncEnumerator())
+                {
+                    while (await enumerator.MoveNextAsync(default))
+                    {
+                        allUsers.Add(enumerator.Current.Value);
+                    }
+                }
+
+                return allUsers;
+            }
+
+
+
+        }
+
+        public async Task<List<DriverViewDTO>> GetAllDrivers()
+        {
+            var users = await this.StateManager.GetOrAddAsync<IReliableDictionary<Guid, User>>("UserEntities");
+            List<DriverViewDTO> drivers = new List<DriverViewDTO>();
+            using (var tx = this.StateManager.CreateTransaction())
+            {
+                var enumerable = await users.CreateEnumerableAsync(tx);
+                using (var enumerator = enumerable.GetAsyncEnumerator())
+                {
+                    while (await enumerator.MoveNextAsync(default(CancellationToken)))
+                    {
+                        if (enumerator.Current.Value.TypeOfUser == UserType.Role.Driver)
+                        {
+                            drivers.Add(new DriverViewDTO(enumerator.Current.Value.Email, enumerator.Current.Value.FirstName, enumerator.Current.Value.LastName, enumerator.Current.Value.Username, enumerator.Current.Value.IsBlocked, enumerator.Current.Value.AverageRating, enumerator.Current.Value.Id, enumerator.Current.Value.Status));
+                        }
+                    }
+                }
+            }
+
+            return drivers;
+        }
+
+        public async Task<bool> changeDriverStatus(Guid id, bool status)
+        {
+            var users = await this.StateManager.GetOrAddAsync<IReliableDictionary<Guid, User>>("UserEntities");
+            using (var tx = this.StateManager.CreateTransaction())
+            {
+                ConditionalValue<User> result = await users.TryGetValueAsync(tx, id);
+                if (result.HasValue)
+                {
+                    User user = result.Value;
+                    user.IsBlocked = status;
+                    await users.SetAsync(tx, id, user);
+
+                    await dataRepo.UpdateEntity(id, status);
+
+                    await tx.CommitAsync();
+
+                    return true;
+                }
+                else return false;
+
+
+            }
+
+
+        }
+
+        public async Task<User> GetUserInfo(Guid id)
+        {
+            var users = await this.StateManager.GetOrAddAsync<IReliableDictionary<Guid, User>>("UserEntities");
+            using (var tx = this.StateManager.CreateTransaction())
+            {
+                ConditionalValue<User> result = await users.TryGetValueAsync(tx, id);
+                if (result.HasValue)
+                {
+                    User user = result.Value;
+                    return user;
+                }
+                else return null;
+
+
+            }
+        }
     }
 }
