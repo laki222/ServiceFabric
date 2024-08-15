@@ -18,6 +18,7 @@ using Microsoft.WindowsAzure.Storage.Blob;
 using Microsoft.WindowsAzure.Storage.Table;
 using UserService.Repository;
 using Microsoft.ServiceFabric.Data;
+using static Common.Enums.VerificationStatus;
 
 namespace UserService
 {
@@ -348,7 +349,35 @@ namespace UserService
 
         }
 
+        public async Task<bool> VerifyDriver(Guid id, string email, string action)
+        {
+            var users = await this.StateManager.GetOrAddAsync<IReliableDictionary<Guid, User>>("UserEntities");
+            using (var tx = this.StateManager.CreateTransaction())
+            {
+                ConditionalValue<User> result = await users.TryGetValueAsync(tx, id);
+                if (result.HasValue)
+                {
+                    User userForChange = result.Value;
+                    if (action == "Accepted")
+                    {
+                        userForChange.IsVerified = true;
+                        userForChange.Status = Status.Accepted;
+                    }
+                    else userForChange.Status = Status.Rejected;
+
+                    await users.SetAsync(tx, id, userForChange);
+
+                    await dataRepo.UpdateDriverStatus(id, action);
+
+                    await tx.CommitAsync();
+                    return true;
+
+                }
+                else return false;
+            }
 
 
+
+        }
     }
 }

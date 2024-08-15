@@ -12,6 +12,9 @@ using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
 using Microsoft.AspNetCore.Authorization;
+using System.Net.Mail;
+using System.Net;
+using PostmarkDotNet;
 
 namespace WebApi.Controllers
 {
@@ -306,6 +309,68 @@ namespace WebApi.Controllers
             }
         }
 
+        //[Authorize(Policy = "Admin")]
+        [HttpPut]
+        public async Task<IActionResult> VerifyDriver([FromBody] DriverVerificationDTO driver)
+        {
+            try
+            {
+                var fabricClient = new FabricClient();
+                bool result = false;
+
+                var partitionList = await fabricClient.QueryManager.GetPartitionListAsync(new Uri("fabric:/TaxiApp/UserService"));
+                foreach (var partition in partitionList)
+                {
+                    var partitionKey = new ServicePartitionKey(((Int64RangePartitionInformation)partition.PartitionInformation).LowKey);
+                    var proxy = ServiceProxy.Create<IUser>(new Uri("fabric:/TaxiApp/UserService"), partitionKey);
+                    var partitionResult = await proxy.VerifyDriver(driver.Id, driver.Email, driver.Action);
+                    if (partitionResult ==true)
+                    {
+                        result = partitionResult;
+                        break;
+                    }
+                }
+
+                if (result)
+                {
+                    var response = new
+                    {
+                        Verified = result,
+                        message = $"Driver with id:{driver.Id} is now changed status of verification to:{driver.Action}"
+                    };
+                    if (driver.Action == "Accepted") await SendEmailAsync(driver.Email, "Account verification", "Successfuly verified on taxi app now you can drive!");
+
+                    return Ok(response);
+                }
+                else
+                {
+                    return BadRequest("This id does not exist");
+                }
+
+            }
+            catch
+            {
+                return BadRequest("Something went wrong!");
+            }
+        }
+
+        private Task SendEmailAsync(string email, string subject, string message)
+        {
+            var client = new PostmarkClient("7cc441a8-8816-4664-93a5-9e10833ecc0b");
+
+
+            var Message = new PostmarkMessage
+            {
+                From = "brankovic.pr121.2020@uns.ac.rs",
+                To = email,
+                Subject = subject,
+                TextBody = message,
+            };
+
+            return client.SendMessageAsync(Message);
+
+           
+        }
 
 
 

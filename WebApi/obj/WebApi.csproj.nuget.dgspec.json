@@ -145,6 +145,10 @@
               "target": "Package",
               "version": "[7.1.2338, )"
             },
+            "Postmark": {
+              "target": "Package",
+              "version": "[5.2.0, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.4.0, )"

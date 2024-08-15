@@ -19,6 +19,7 @@ namespace Common.Interfaces
 
         Task<User> GetUserInfo(Guid id);
         Task<User> changeUserFields(UserForUpdateOverNetwork user);
+        Task<bool> VerifyDriver(Guid id, string email, string action);
 
 
     }

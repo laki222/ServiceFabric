@@ -355,6 +355,7 @@ C:\Users\Lazar\Desktop\New folder\ServiceFabric\WebApi\obj\Debug\net8.0\win-x64\
 C:\Users\Lazar\Desktop\New folder\ServiceFabric\WebApi\obj\Debug\net8.0\win-x64\PubTmp\Out\Microsoft.ServiceFabric.Services.dll
 C:\Users\Lazar\Desktop\New folder\ServiceFabric\WebApi\obj\Debug\net8.0\win-x64\PubTmp\Out\Microsoft.ServiceFabric.Services.Remoting.dll
 C:\Users\Lazar\Desktop\New folder\ServiceFabric\WebApi\obj\Debug\net8.0\win-x64\PubTmp\Out\Newtonsoft.Json.dll
+C:\Users\Lazar\Desktop\New folder\ServiceFabric\WebApi\obj\Debug\net8.0\win-x64\PubTmp\Out\Postmark.dll
 C:\Users\Lazar\Desktop\New folder\ServiceFabric\WebApi\obj\Debug\net8.0\win-x64\PubTmp\Out\Swashbuckle.AspNetCore.Swagger.dll
 C:\Users\Lazar\Desktop\New folder\ServiceFabric\WebApi\obj\Debug\net8.0\win-x64\PubTmp\Out\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\Lazar\Desktop\New folder\ServiceFabric\WebApi\obj\Debug\net8.0\win-x64\PubTmp\Out\Swashbuckle.AspNetCore.SwaggerUI.dll
