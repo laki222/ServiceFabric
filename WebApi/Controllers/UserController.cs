@@ -264,6 +264,47 @@ namespace WebApi.Controllers
             }
         }
 
+        [AllowAnonymous]
+        [HttpPut]
+        public async Task<IActionResult> ChangeUserFields([FromForm] UserForUpdate user)
+        {
+            UserForUpdateOverNetwork userForUpdate = new UserForUpdateOverNetwork(user);
+
+            try
+            {
+                var fabricClient = new FabricClient();
+                User result = null;
+
+                var partitionList = await fabricClient.QueryManager.GetPartitionListAsync(new Uri("fabric:/TaxiApp/UserService"));
+                foreach (var partition in partitionList)
+                {
+                    var partitionKey = new ServicePartitionKey(((Int64RangePartitionInformation)partition.PartitionInformation).LowKey);
+                    var proxy = ServiceProxy.Create<IUser>(new Uri("fabric:/TaxiApp/UserService"), partitionKey);
+                    var proxyResult = await proxy.changeUserFields(userForUpdate);
+                    if (proxyResult != null)
+                    {
+                        result = proxyResult;
+                        break;
+                    }
+                }
+
+                if (result != null)
+                {
+                    var response = new
+                    {
+                        changedUser = result,
+                        message = "Succesfuly changed user fields!"
+                    };
+                    return Ok(response);
+                }
+                else return StatusCode(409, "User for change is not in db!");
+
+            }
+            catch (Exception)
+            {
+                return StatusCode(500, "An error occurred while updating user");
+            }
+        }
 
 
 

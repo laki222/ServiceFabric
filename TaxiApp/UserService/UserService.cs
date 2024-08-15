@@ -297,5 +297,58 @@ namespace UserService
 
             }
         }
+
+        public async Task<User> changeUserFields(UserForUpdateOverNetwork user)
+        {
+            var users = await this.StateManager.GetOrAddAsync<IReliableDictionary<Guid, User>>("UserEntities");
+            using (var tx = this.StateManager.CreateTransaction())
+            {
+                ConditionalValue<User> result = await users.TryGetValueAsync(tx, user.Id);
+                if (result.HasValue)
+                {
+                    User userFromReliable = result.Value;
+
+                    if (!string.IsNullOrEmpty(user.Email)) userFromReliable.Email = user.Email;
+
+                    if (!string.IsNullOrEmpty(user.FirstName)) userFromReliable.FirstName = user.FirstName;
+
+                    if (!string.IsNullOrEmpty(user.LastName)) userFromReliable.LastName = user.LastName;
+
+                    if (!string.IsNullOrEmpty(user.Address)) userFromReliable.Address = user.Address;
+
+                    if (user.Birthday != DateTime.MinValue) userFromReliable.Birthday = user.Birthday;
+
+                    if (!string.IsNullOrEmpty(user.Password)) userFromReliable.Password = user.Password;
+
+                    if (!string.IsNullOrEmpty(user.Username)) userFromReliable.Username = user.Username;
+
+                    if (user.ImageFile != null && user.ImageFile.FileContent != null && user.ImageFile.FileContent.Length > 0) userFromReliable.ImageFile = user.ImageFile;
+
+                    await users.TryRemoveAsync(tx, user.Id); // ukloni ovog proslog 
+
+                    await users.AddAsync(tx, userFromReliable.Id, userFromReliable); // dodaj ga prvo u reliable 
+
+                    if (user.ImageFile != null && user.ImageFile.FileContent != null && user.ImageFile.FileContent.Length > 0) // ako je promenjena slika u reliable upisi je i u blob 
+                    {
+                        CloudBlockBlob blob = await dataRepo.GetBlockBlobReference("usersimages", $"image_{userFromReliable.Id}"); // nadji prethodni blok u blobu
+                        await blob.DeleteIfExistsAsync(); // obrisi ga 
+
+                        CloudBlockBlob newblob = await dataRepo.GetBlockBlobReference("usersimages", $"image_{userFromReliable.Id}"); // kreiraj za ovaj novi username
+                        newblob.Properties.ContentType = userFromReliable.ImageFile.ContentType;
+                        await newblob.UploadFromByteArrayAsync(userFromReliable.ImageFile.FileContent, 0, userFromReliable.ImageFile.FileContent.Length); // upload novu sliku 
+                    }
+
+                    await dataRepo.UpdateUser(user, userFromReliable); // sacuva ga u bazu 
+                    await tx.CommitAsync();
+                    return userFromReliable;
+
+                }
+                else return null;
+            }
+
+        }
+
+
+
     }
 }

@@ -18,5 +18,8 @@ namespace Common.Interfaces
         Task<bool> changeDriverStatus(Guid id, bool status);
 
         Task<User> GetUserInfo(Guid id);
+        Task<User> changeUserFields(UserForUpdateOverNetwork user);
+
+
     }
 }
