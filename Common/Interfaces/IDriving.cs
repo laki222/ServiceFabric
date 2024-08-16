@@ -12,6 +12,12 @@ namespace Common.Interfaces
     {
         Task<TripInfo> AcceptCreatedTrip(TripInfo trip);
         Task<TripInfo> AcceptTripDriver(Guid tripId, Guid driverId);
+        Task<List<TripInfo>> GetRides();
+
+        Task<List<TripInfo>> GetCompletedRidesForDriver(Guid driverId);
+        Task<List<TripInfo>> GetCompletedRidesForRider(Guid riderId);
+        Task<List<TripInfo>> GetCompletedRidesForAdmin();
+       
 
     }
 }

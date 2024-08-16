@@ -36,7 +36,7 @@ namespace Common.Models
        
         public int SecondsToEndTrip { get; set; }
 
-        
+        public DateTime StartTime { get; set; }
         public bool IsFinished { get; set; }
 
         
@@ -54,6 +54,7 @@ namespace Common.Models
             Price = price;
             Accepted = accepted;
             TripId = Guid.NewGuid();
+            StartTime = DateTime.Now;
         }
         public TripInfo(string currentLocation, string destination, Guid riderId, double price, bool accepted, int minutes)
         {
@@ -67,6 +68,7 @@ namespace Common.Models
             SecondsToDriverArrive = minutes * 60;
             IsFinished = false;
             IsRated = false;
+            StartTime = DateTime.Now;
         }
 
         public TripInfo(string currentLocation, string destination, Guid riderId, Guid driverId, double price, bool accepted, Guid tripId, int minutesToDriverArrive, int minutesToEnd, bool isFinished, bool isRated) : this(currentLocation, destination, riderId, price, accepted, driverId)
@@ -76,6 +78,7 @@ namespace Common.Models
             SecondsToEndTrip = minutesToEnd;
             IsFinished = isFinished;
             IsRated = isRated;
+            StartTime = DateTime.Now;
         }
     }
 }

@@ -130,5 +130,195 @@ namespace WebApi.Controllers
         }
 
 
+        //[Authorize(Policy = "Driver")]
+        [HttpGet]
+        public async Task<IActionResult> GetAllUncompletedRides()
+        {
+            try
+            {
+
+                var fabricClient = new FabricClient();
+                List<TripInfo> result = null;
+
+                var partitionList = await fabricClient.QueryManager.GetPartitionListAsync(new Uri("fabric:/TaxiApp/DrivingService"));
+                foreach (var partition in partitionList)
+                {
+                    var partitionKey = new ServicePartitionKey(((Int64RangePartitionInformation)partition.PartitionInformation).LowKey);
+                    var proxy = ServiceProxy.Create<IDriving>(new Uri("fabric:/TaxiApp/DrivingService"), partitionKey);
+                    var parititonResult = await proxy.GetRides();
+                    if (parititonResult != null)
+                    {
+                        result = parititonResult;
+                        break;
+                    }
+
+                }
+
+                if (result != null)
+                {
+
+                    var response = new
+                    {
+                        rides = result,
+                        message = "Succesfuly get list of not completed rides"
+                    };
+                    return Ok(response);
+                }
+                else
+                {
+                    return BadRequest("Incorrect email or password");
+                }
+
+            }
+            catch (Exception)
+            {
+                return StatusCode(500, "An error occurred while registering new User");
+            }
+        }
+        //[Authorize(Policy = "Driver")]
+        [HttpGet]
+        public async Task<IActionResult> GetCompletedRidesForDriver([FromQuery] Guid id)
+        {
+            try
+            {
+
+                var fabricClient = new FabricClient();
+                List<TripInfo> result = null;
+
+                var partitionList = await fabricClient.QueryManager.GetPartitionListAsync(new Uri("fabric:/TaxiApp/DrivingService"));
+                foreach (var partition in partitionList)
+                {
+                    var partitionKey = new ServicePartitionKey(((Int64RangePartitionInformation)partition.PartitionInformation).LowKey);
+                    var proxy = ServiceProxy.Create<IDriving>(new Uri("fabric:/TaxiApp/DrivingService"), partitionKey);
+                    var parititonResult = await proxy.GetCompletedRidesForDriver(id);
+                    if (parititonResult != null)
+                    {
+                        result = parititonResult;
+                        break;
+                    }
+
+                }
+
+                if (result != null)
+                {
+
+                    var response = new
+                    {
+                        rides = result,
+                        message = "Succesfuly get list completed rides"
+                    };
+                    return Ok(response);
+                }
+                else
+                {
+                    return BadRequest("Incorrect email or password");
+                }
+
+            }
+            catch (Exception ex)
+            {
+                throw;
+            }
+        }
+
+
+        //[Authorize(Policy = "Rider")]
+        [HttpGet]
+        public async Task<IActionResult> GetCompletedRidesForRider([FromQuery] Guid id)
+        {
+            try
+            {
+
+                var fabricClient = new FabricClient();
+                List<TripInfo> result = null;
+
+                var partitionList = await fabricClient.QueryManager.GetPartitionListAsync(new Uri("fabric:/TaxiApp/DrivingService"));
+                foreach (var partition in partitionList)
+                {
+                    var partitionKey = new ServicePartitionKey(((Int64RangePartitionInformation)partition.PartitionInformation).LowKey);
+                    var proxy = ServiceProxy.Create<IDriving>(new Uri("fabric:/TaxiApp/DrivingService"), partitionKey);
+                    var parititonResult = await proxy.GetCompletedRidesForRider(id);
+                    if (parititonResult != null)
+                    {
+                        result = parititonResult;
+                        break;
+                    }
+
+                }
+
+                if (result != null)
+                {
+
+                    var response = new
+                    {
+                        rides = result,
+                        message = "Succesfuly get list completed rides"
+                    };
+                    return Ok(response);
+                }
+                else
+                {
+                    return BadRequest("Incorrect email or password");
+                }
+
+            }
+            catch (Exception ex)
+            {
+                throw;
+            }
+        }
+
+
+        //[Authorize(Policy = "Admin")]
+        [HttpGet]
+        public async Task<IActionResult> GetCompletedRidesForAdmin()
+        {
+            try
+            {
+
+                var fabricClient = new FabricClient();
+                List<TripInfo> result = null;
+
+                var partitionList = await fabricClient.QueryManager.GetPartitionListAsync(new Uri("fabric:/TaxiApp/DrivingService"));
+                foreach (var partition in partitionList)
+                {
+                    var partitionKey = new ServicePartitionKey(((Int64RangePartitionInformation)partition.PartitionInformation).LowKey);
+                    var proxy = ServiceProxy.Create<IDriving>(new Uri("fabric:/TaxiApp/DrivingService"), partitionKey);
+                    var parititonResult = await proxy.GetCompletedRidesForAdmin();
+                    if (parititonResult != null)
+                    {
+                        result = parititonResult;
+                        break;
+                    }
+
+                }
+
+                if (result != null)
+                {
+
+                    var response = new
+                    {
+                        rides = result,
+                        message = "Succesfuly get list completed rides"
+                    };
+                    return Ok(response);
+                }
+                else
+                {
+                    return BadRequest("Incorrect email or password");
+                }
+
+            }
+            catch (Exception ex)
+            {
+                throw;
+            }
+        }
+
+
+       
+
+
+
     }
 }

@@ -141,29 +141,46 @@ namespace DrivingService
         /// <param name="cancellationToken">Canceled when Service Fabric needs to shut down this service replica.</param>
         protected override async Task RunAsync(CancellationToken cancellationToken)
         {
-            // TODO: Replace the following sample code with your own logic 
-            //       or remove this RunAsync override if it's not needed in your service.
 
-            var myDictionary = await this.StateManager.GetOrAddAsync<IReliableDictionary<string, long>>("myDictionary");
-            var roadTrip = await this.StateManager.GetOrAddAsync<IReliableDictionary<Guid, TripInfo>>("Trips");
-
+            var roadTrips = await this.StateManager.GetOrAddAsync<IReliableDictionary<Guid, TripInfo>>("Trips");
             await LoadTrips();
-
             while (true)
             {
                 cancellationToken.ThrowIfCancellationRequested();
 
                 using (var tx = this.StateManager.CreateTransaction())
                 {
-                    var result = await myDictionary.TryGetValueAsync(tx, "Counter");
+                    var enumerable = await roadTrips.CreateEnumerableAsync(tx);
+                    if (await roadTrips.GetCountAsync(tx) > 0)
+                    {
+                        using (var enumerator = enumerable.GetAsyncEnumerator())
+                        {
 
-                    ServiceEventSource.Current.ServiceMessage(this.Context, "Current Counter Value: {0}",
-                        result.HasValue ? result.Value.ToString() : "Value does not exist.");
+                            while (await enumerator.MoveNextAsync(default(CancellationToken)))
+                            {
+                                if (!enumerator.Current.Value.Accepted || enumerator.Current.Value.IsFinished)
+                                {
+                                    continue;
+                                }
+                                else if (enumerator.Current.Value.Accepted && enumerator.Current.Value.SecondsToDriverArrive > 0)
+                                {
+                                    enumerator.Current.Value.SecondsToDriverArrive--;
+                                }
+                                else if (enumerator.Current.Value.Accepted && enumerator.Current.Value.SecondsToDriverArrive == 0 && enumerator.Current.Value.SecondsToEndTrip > 0)
+                                {
+                                    enumerator.Current.Value.SecondsToEndTrip--;
+                                }
+                                else if (enumerator.Current.Value.IsFinished == false)
+                                {
+                                    enumerator.Current.Value.IsFinished = true;
+                                    // ovde bi trebalo update baze da se izvrsi 
+                                    await dataRepo.FinishTrip(enumerator.Current.Value.TripId);
 
-                    await myDictionary.AddOrUpdateAsync(tx, "Counter", 0, (key, value) => ++value);
-
-                    // If an exception is thrown before calling CommitAsync, the transaction aborts, all changes are 
-                    // discarded, and nothing is saved to the secondary replicas.
+                                }
+                                await roadTrips.SetAsync(tx, enumerator.Current.Key, enumerator.Current.Value);
+                            }
+                        }
+                    }
                     await tx.CommitAsync();
                 }
 
@@ -211,5 +228,141 @@ namespace DrivingService
 
 
         }
+
+        public async Task<List<TripInfo>> GetRides()
+        {
+            var roadTrip = await this.StateManager.GetOrAddAsync<IReliableDictionary<Guid, TripInfo>>("Trips");
+            List<TripInfo> notCompletedTrips = new List<TripInfo>();
+            Guid forCompare = new Guid("00000000-0000-0000-0000-000000000000");
+            try
+            {
+                using (var tx = StateManager.CreateTransaction())
+                {
+
+                    var enumerable = await roadTrip.CreateEnumerableAsync(tx);
+
+                    using (var enumerator = enumerable.GetAsyncEnumerator())
+                    {
+                        while (await enumerator.MoveNextAsync(default(CancellationToken)))
+                        {
+                            if (enumerator.Current.Value.DriverId == forCompare)
+                            {
+                                notCompletedTrips.Add(enumerator.Current.Value);
+                            }
+                        }
+                    }
+                    await tx.CommitAsync();
+                }
+
+                return notCompletedTrips;
+            }
+
+            catch (Exception)
+            {
+                throw;
+            }
+        }
+
+        public async Task<List<TripInfo>> GetCompletedRidesForDriver(Guid driverId)
+        {
+            var roadTrip = await this.StateManager.GetOrAddAsync<IReliableDictionary<Guid, TripInfo>>("Trips");
+            List<TripInfo> driverTrips = new List<TripInfo>();
+            try
+            {
+                using (var tx = StateManager.CreateTransaction())
+                {
+
+                    var enumerable = await roadTrip.CreateEnumerableAsync(tx);
+
+                    using (var enumerator = enumerable.GetAsyncEnumerator())
+                    {
+                        while (await enumerator.MoveNextAsync(default(CancellationToken)))
+                        {
+                            if (enumerator.Current.Value.DriverId == driverId && enumerator.Current.Value.IsFinished)
+                            {
+                                driverTrips.Add(enumerator.Current.Value);
+                            }
+                        }
+                    }
+                    await tx.CommitAsync();
+                }
+
+                return driverTrips;
+            }
+
+            catch (Exception)
+            {
+                throw;
+            }
+
+
+        }
+
+        public async Task<List<TripInfo>> GetCompletedRidesForRider(Guid riderId)
+        {
+            var roadTrip = await this.StateManager.GetOrAddAsync<IReliableDictionary<Guid, TripInfo>>("Trips");
+            List<TripInfo> driverTrips = new List<TripInfo>();
+            try
+            {
+                using (var tx = StateManager.CreateTransaction())
+                {
+
+                    var enumerable = await roadTrip.CreateEnumerableAsync(tx);
+
+                    using (var enumerator = enumerable.GetAsyncEnumerator())
+                    {
+                        while (await enumerator.MoveNextAsync(default(CancellationToken)))
+                        {
+                            if (enumerator.Current.Value.RiderId == riderId && enumerator.Current.Value.IsFinished)
+                            {
+                                driverTrips.Add(enumerator.Current.Value);
+                            }
+                        }
+                    }
+                    await tx.CommitAsync();
+                }
+
+                return driverTrips;
+            }
+
+            catch (Exception)
+            {
+                throw;
+            }
+        }
+
+        public async Task<List<TripInfo>> GetCompletedRidesForAdmin()
+        {
+            var roadTrip = await this.StateManager.GetOrAddAsync<IReliableDictionary<Guid, TripInfo>>("Trips");
+            List<TripInfo> driverTrips = new List<TripInfo>();
+            try
+            {
+                using (var tx = StateManager.CreateTransaction())
+                {
+
+                    var enumerable = await roadTrip.CreateEnumerableAsync(tx);
+
+                    using (var enumerator = enumerable.GetAsyncEnumerator())
+                    {
+                        while (await enumerator.MoveNextAsync(default(CancellationToken)))
+                        {
+                          
+                                driverTrips.Add(enumerator.Current.Value);
+                            
+                        }
+                    }
+                    await tx.CommitAsync();
+                }
+
+                return driverTrips;
+            }
+
+            catch (Exception)
+            {
+                throw;
+            }
+        }
+
+       
     }
 }

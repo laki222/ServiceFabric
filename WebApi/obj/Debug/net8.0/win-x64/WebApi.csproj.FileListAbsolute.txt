@@ -1,3 +1,11 @@
+C:\Users\Lazar\Desktop\New folder\ServiceFabric\WebApi\obj\Debug\net8.0\win-x64\WebApi.csproj.AssemblyReference.cache
+C:\Users\Lazar\Desktop\New folder\ServiceFabric\WebApi\obj\Debug\net8.0\win-x64\WebApi.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Lazar\Desktop\New folder\ServiceFabric\WebApi\obj\Debug\net8.0\win-x64\WebApi.AssemblyInfoInputs.cache
+C:\Users\Lazar\Desktop\New folder\ServiceFabric\WebApi\obj\Debug\net8.0\win-x64\WebApi.AssemblyInfo.cs
+C:\Users\Lazar\Desktop\New folder\ServiceFabric\WebApi\obj\Debug\net8.0\win-x64\WebApi.csproj.CoreCompileInputs.cache
+C:\Users\Lazar\Desktop\New folder\ServiceFabric\WebApi\obj\Debug\net8.0\win-x64\WebApi.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Lazar\Desktop\New folder\ServiceFabric\WebApi\obj\Debug\net8.0\win-x64\WebApi.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Lazar\Desktop\New folder\ServiceFabric\WebApi\obj\Debug\net8.0\win-x64\WebApi.sourcelink.json
 C:\Users\Lazar\Desktop\New folder\ServiceFabric\WebApi\bin\Debug\net8.0\win-x64\appsettings.Development.json
 C:\Users\Lazar\Desktop\New folder\ServiceFabric\WebApi\bin\Debug\net8.0\win-x64\appsettings.json
 C:\Users\Lazar\Desktop\New folder\ServiceFabric\WebApi\bin\Debug\net8.0\win-x64\WebApi.exe
@@ -363,14 +371,6 @@ C:\Users\Lazar\Desktop\New folder\ServiceFabric\WebApi\bin\Debug\net8.0\win-x64\
 C:\Users\Lazar\Desktop\New folder\ServiceFabric\WebApi\bin\Debug\net8.0\win-x64\aspnetcorev2_inprocess.dll
 C:\Users\Lazar\Desktop\New folder\ServiceFabric\WebApi\bin\Debug\net8.0\win-x64\Common.dll
 C:\Users\Lazar\Desktop\New folder\ServiceFabric\WebApi\bin\Debug\net8.0\win-x64\Common.pdb
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\WebApi\obj\Debug\net8.0\win-x64\WebApi.csproj.AssemblyReference.cache
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\WebApi\obj\Debug\net8.0\win-x64\WebApi.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\WebApi\obj\Debug\net8.0\win-x64\WebApi.AssemblyInfoInputs.cache
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\WebApi\obj\Debug\net8.0\win-x64\WebApi.AssemblyInfo.cs
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\WebApi\obj\Debug\net8.0\win-x64\WebApi.csproj.CoreCompileInputs.cache
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\WebApi\obj\Debug\net8.0\win-x64\WebApi.MvcApplicationPartsAssemblyInfo.cs
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\WebApi\obj\Debug\net8.0\win-x64\WebApi.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\WebApi\obj\Debug\net8.0\win-x64\WebApi.sourcelink.json
 C:\Users\Lazar\Desktop\New folder\ServiceFabric\WebApi\obj\Debug\net8.0\win-x64\staticwebassets.build.json
 C:\Users\Lazar\Desktop\New folder\ServiceFabric\WebApi\obj\Debug\net8.0\win-x64\staticwebassets.development.json
 C:\Users\Lazar\Desktop\New folder\ServiceFabric\WebApi\obj\Debug\net8.0\win-x64\staticwebassets\msbuild.WebApi.Microsoft.AspNetCore.StaticWebAssets.props

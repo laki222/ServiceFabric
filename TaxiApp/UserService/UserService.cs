@@ -19,6 +19,7 @@ using Microsoft.WindowsAzure.Storage.Table;
 using UserService.Repository;
 using Microsoft.ServiceFabric.Data;
 using static Common.Enums.VerificationStatus;
+using static System.Collections.Specialized.BitVector32;
 
 namespace UserService
 {
@@ -379,5 +380,7 @@ namespace UserService
 
 
         }
+
+        
     }
 }
