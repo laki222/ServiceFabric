@@ -185,6 +185,8 @@ C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\pkg\Debug\EstimationServ
 C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\pkg\Debug\EstimationServicePkg\Code\mscordbi.dll
 C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\pkg\Debug\EstimationServicePkg\Code\mscorrc.dll
 C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\pkg\Debug\EstimationServicePkg\Code\msquic.dll
+C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\pkg\Debug\EstimationServicePkg\Code\Microsoft.AspNetCore.Http.Features.dll
+C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\pkg\Debug\EstimationServicePkg\Code\Microsoft.Extensions.Primitives.dll
 C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\pkg\Debug\EstimationServicePkg\Code\Microsoft.ServiceFabric.Internal.Strings.dll
 C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\pkg\Debug\EstimationServicePkg\Code\Microsoft.ServiceFabric.Internal.dll
 C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\pkg\Debug\EstimationServicePkg\Code\Microsoft.ServiceFabric.Preview.dll
@@ -197,4 +199,12 @@ C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\pkg\Debug\EstimationServ
 C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\pkg\Debug\EstimationServicePkg\Code\Microsoft.ServiceFabric.ReliableCollection.Interop.dll
 C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\pkg\Debug\EstimationServicePkg\Code\Microsoft.ServiceFabric.Data.Interfaces.dll
 C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\pkg\Debug\EstimationServicePkg\Code\Microsoft.ServiceFabric.Diagnostics.dll
+C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\pkg\Debug\EstimationServicePkg\Code\Microsoft.ServiceFabric.FabricTransport.V2.dll
+C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\pkg\Debug\EstimationServicePkg\Code\Microsoft.ServiceFabric.FabricTransport.dll
 C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\pkg\Debug\EstimationServicePkg\Code\Microsoft.ServiceFabric.Services.dll
+C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\pkg\Debug\EstimationServicePkg\Code\Microsoft.ServiceFabric.Services.Remoting.dll
+C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\pkg\Debug\EstimationServicePkg\Code\Newtonsoft.Json.dll
+C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\pkg\Debug\EstimationServicePkg\Code\System.IO.Pipelines.dll
+C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\pkg\Debug\EstimationServicePkg\Code\Microsoft.WindowsAzure.Storage.dll
+C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\pkg\Debug\EstimationServicePkg\Code\Common.dll
+C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\pkg\Debug\EstimationServicePkg\Code\Common.pdb

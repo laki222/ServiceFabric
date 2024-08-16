@@ -309,7 +309,7 @@ namespace WebApi.Controllers
             }
         }
 
-        //[Authorize(Policy = "Admin")]
+        [Authorize(Policy = "Admin")]
         [HttpPut]
         public async Task<IActionResult> VerifyDriver([FromBody] DriverVerificationDTO driver)
         {
@@ -371,6 +371,9 @@ namespace WebApi.Controllers
 
            
         }
+
+
+
 
 
 
