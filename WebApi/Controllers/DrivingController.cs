@@ -1,4 +1,5 @@
-﻿using Common.Interfaces;
+﻿using Common.DTO;
+using Common.Interfaces;
 using Common.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
@@ -85,7 +86,48 @@ namespace WebApi.Controllers
             }
         }
 
+        //[Authorize(Policy = "Driver")]
+        [HttpPut]
+        public async Task<IActionResult> AcceptNewRide([FromBody] RideForAcceptDTO ride)
+        {
+            try
+            {
+                var fabricClient = new FabricClient();
+                TripInfo result = null;
 
+                var partitionList = await fabricClient.QueryManager.GetPartitionListAsync(new Uri("fabric:/TaxiApp/DrivingService"));
+                foreach (var partition in partitionList)
+                {
+                    var partitionKey = new ServicePartitionKey(((Int64RangePartitionInformation)partition.PartitionInformation).LowKey);
+                    var proxy = ServiceProxy.Create<IDriving>(new Uri("fabric:/TaxiApp/DrivingService"), partitionKey);
+                    var partitionResult = await proxy.AcceptTripDriver(ride.TripId, ride.DriverId);
+                    if (partitionResult != null)
+                    {
+                        result = partitionResult;
+                        break;
+                    }
+                }
+
+                if (result != null)
+                {
+                    var response = new
+                    {
+                        ride = result,
+                        message = "Sucessfuly accepted driver!"
+                    };
+                    return Ok(response);
+                }
+                else
+                {
+                    return BadRequest("This id does not exist");
+                }
+
+            }
+            catch
+            {
+                return BadRequest("Something went wrong!");
+            }
+        }
 
 
     }

@@ -61,5 +61,28 @@ namespace DrivingService.Repository
             return qRes.Results;
         }
 
+        public async Task<bool> UpdateEntity(Guid driverId, Guid rideId)
+        {
+            TableQuery<RideEntity> rideQuery = new TableQuery<RideEntity>()
+        .Where(TableQuery.GenerateFilterConditionForGuid("TripId", QueryComparisons.Equal, rideId));
+            TableQuerySegment<RideEntity> queryResult = await Trips.ExecuteQuerySegmentedAsync(rideQuery, null);
+
+            if (queryResult.Results.Count > 0)
+            {
+                RideEntity trip = queryResult.Results[0];
+                trip.Accepted = true;
+                trip.SecondsToEndTrip = 60;
+                trip.DriverId = driverId;
+                var operation = TableOperation.Replace(trip);
+                await Trips.ExecuteAsync(operation);
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
+
     }
 }

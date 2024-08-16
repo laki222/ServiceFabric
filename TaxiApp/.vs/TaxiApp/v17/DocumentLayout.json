@@ -3,42 +3,18 @@
   "WorkspaceRootPath": "C:\\Users\\Lazar\\Desktop\\New folder\\ServiceFabric\\TaxiApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{41AD9640-42CB-499A-91A2-996D29B62AD7}|..\\WebApi\\WebApi.csproj|c:\\users\\lazar\\desktop\\new folder\\servicefabric\\webapi\\controllers\\drivingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E11EA3BF-93D2-4211-A864-09E6F59783D5}|DrivingService\\DrivingService.csproj|c:\\users\\lazar\\desktop\\new folder\\servicefabric\\taxiapp\\drivingservice\\drivingservice.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{E11EA3BF-93D2-4211-A864-09E6F59783D5}|DrivingService\\DrivingService.csproj|solutionrelative:drivingservice\\drivingservice.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CE790082-3901-4E74-9908-3352927D32DB}|..\\Common\\Common.csproj|c:\\users\\lazar\\desktop\\new folder\\servicefabric\\common\\models\\tripinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CE790082-3901-4E74-9908-3352927D32DB}|..\\Common\\Common.csproj|c:\\users\\lazar\\desktop\\new folder\\servicefabric\\common\\models\\createdtrip.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E11EA3BF-93D2-4211-A864-09E6F59783D5}|DrivingService\\DrivingService.csproj|c:\\users\\lazar\\desktop\\new folder\\servicefabric\\taxiapp\\drivingservice\\repository\\drivingdatarepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E11EA3BF-93D2-4211-A864-09E6F59783D5}|DrivingService\\DrivingService.csproj|solutionrelative:drivingservice\\repository\\drivingdatarepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E11EA3BF-93D2-4211-A864-09E6F59783D5}|DrivingService\\DrivingService.csproj|c:\\users\\lazar\\desktop\\new folder\\servicefabric\\taxiapp\\drivingservice\\drivingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E11EA3BF-93D2-4211-A864-09E6F59783D5}|DrivingService\\DrivingService.csproj|solutionrelative:drivingservice\\drivingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{32FFA6AA-2094-4F3A-881B-80F9C80EE71A}|UserService\\UserService.csproj|c:\\users\\lazar\\desktop\\new folder\\servicefabric\\taxiapp\\userservice\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{32FFA6AA-2094-4F3A-881B-80F9C80EE71A}|UserService\\UserService.csproj|solutionrelative:userservice\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CE790082-3901-4E74-9908-3352927D32DB}|..\\Common\\Common.csproj|c:\\users\\lazar\\desktop\\new folder\\servicefabric\\common\\interfaces\\idriving.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E11EA3BF-93D2-4211-A864-09E6F59783D5}|DrivingService\\DrivingService.csproj|c:\\users\\lazar\\desktop\\new folder\\servicefabric\\taxiapp\\drivingservice\\repository\\drivingdatarepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E11EA3BF-93D2-4211-A864-09E6F59783D5}|DrivingService\\DrivingService.csproj|solutionrelative:drivingservice\\repository\\drivingdatarepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{32FFA6AA-2094-4F3A-881B-80F9C80EE71A}|UserService\\UserService.csproj|c:\\users\\lazar\\desktop\\new folder\\servicefabric\\taxiapp\\userservice\\repository\\userdatarepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{32FFA6AA-2094-4F3A-881B-80F9C80EE71A}|UserService\\UserService.csproj|solutionrelative:userservice\\repository\\userdatarepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CE790082-3901-4E74-9908-3352927D32DB}|..\\Common\\Common.csproj|c:\\users\\lazar\\desktop\\new folder\\servicefabric\\common\\mappers\\tripmapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CE790082-3901-4E74-9908-3352927D32DB}|..\\Common\\Common.csproj|c:\\users\\lazar\\desktop\\new folder\\servicefabric\\common\\dto\\loggeduserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{41AD9640-42CB-499A-91A2-996D29B62AD7}|..\\WebApi\\WebApi.csproj|c:\\users\\lazar\\desktop\\new folder\\servicefabric\\webapi\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{41AD9640-42CB-499A-91A2-996D29B62AD7}|..\\WebApi\\WebApi.csproj|c:\\users\\lazar\\desktop\\new folder\\servicefabric\\webapi\\controllers\\drivingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -48,149 +24,58 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "CreatedTrip.cs",
-              "DocumentMoniker": "C:\\Users\\Lazar\\Desktop\\New folder\\ServiceFabric\\Common\\Models\\CreatedTrip.cs",
-              "RelativeDocumentMoniker": "..\\Common\\Models\\CreatedTrip.cs",
-              "ToolTip": "C:\\Users\\Lazar\\Desktop\\New folder\\ServiceFabric\\Common\\Models\\CreatedTrip.cs",
-              "RelativeToolTip": "..\\Common\\Models\\CreatedTrip.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-16T14:50:10.189Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "UserService.cs",
-              "DocumentMoniker": "C:\\Users\\Lazar\\Desktop\\New folder\\ServiceFabric\\TaxiApp\\UserService\\UserService.cs",
-              "RelativeDocumentMoniker": "UserService\\UserService.cs",
-              "ToolTip": "C:\\Users\\Lazar\\Desktop\\New folder\\ServiceFabric\\TaxiApp\\UserService\\UserService.cs",
-              "RelativeToolTip": "UserService\\UserService.cs",
-              "ViewState": "AQIAAGUAAAAAAAAAAAAwwHsAAABVAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-16T14:34:34.409Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "TripMapper.cs",
-              "DocumentMoniker": "C:\\Users\\Lazar\\Desktop\\New folder\\ServiceFabric\\Common\\Mappers\\TripMapper.cs",
-              "RelativeDocumentMoniker": "..\\Common\\Mappers\\TripMapper.cs",
-              "ToolTip": "C:\\Users\\Lazar\\Desktop\\New folder\\ServiceFabric\\Common\\Mappers\\TripMapper.cs",
-              "RelativeToolTip": "..\\Common\\Mappers\\TripMapper.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAfAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-16T14:44:19.244Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "UserDataRepo.cs",
-              "DocumentMoniker": "C:\\Users\\Lazar\\Desktop\\New folder\\ServiceFabric\\TaxiApp\\UserService\\Repository\\UserDataRepo.cs",
-              "RelativeDocumentMoniker": "UserService\\Repository\\UserDataRepo.cs",
-              "ToolTip": "C:\\Users\\Lazar\\Desktop\\New folder\\ServiceFabric\\TaxiApp\\UserService\\Repository\\UserDataRepo.cs",
-              "RelativeToolTip": "UserService\\Repository\\UserDataRepo.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAABEAAAAHAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-16T14:36:37.641Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 0,
               "Title": "DrivingDataRepo.cs",
               "DocumentMoniker": "C:\\Users\\Lazar\\Desktop\\New folder\\ServiceFabric\\TaxiApp\\DrivingService\\Repository\\DrivingDataRepo.cs",
               "RelativeDocumentMoniker": "DrivingService\\Repository\\DrivingDataRepo.cs",
               "ToolTip": "C:\\Users\\Lazar\\Desktop\\New folder\\ServiceFabric\\TaxiApp\\DrivingService\\Repository\\DrivingDataRepo.cs",
               "RelativeToolTip": "DrivingService\\Repository\\DrivingDataRepo.cs",
-              "ViewState": "AQIAABoAAAAAAAAAAAAqwCUAAAAAAAAA",
+              "ViewState": "AQIAAB8AAAAAAAAAAAAkwEcAAAAaAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-16T14:35:33.365Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "DrivingService.cs",
-              "DocumentMoniker": "C:\\Users\\Lazar\\Desktop\\New folder\\ServiceFabric\\TaxiApp\\DrivingService\\DrivingService.cs",
-              "RelativeDocumentMoniker": "DrivingService\\DrivingService.cs",
-              "ToolTip": "C:\\Users\\Lazar\\Desktop\\New folder\\ServiceFabric\\TaxiApp\\DrivingService\\DrivingService.cs",
-              "RelativeToolTip": "DrivingService\\DrivingService.cs",
-              "ViewState": "AQIAADsAAAAAAAAAAAAkwG8AAABYAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-16T14:21:59.753Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "TripInfo.cs",
-              "DocumentMoniker": "C:\\Users\\Lazar\\Desktop\\New folder\\ServiceFabric\\Common\\Models\\TripInfo.cs",
-              "RelativeDocumentMoniker": "..\\Common\\Models\\TripInfo.cs",
-              "ToolTip": "C:\\Users\\Lazar\\Desktop\\New folder\\ServiceFabric\\Common\\Models\\TripInfo.cs",
-              "RelativeToolTip": "..\\Common\\Models\\TripInfo.cs",
-              "ViewState": "AQIAAC8AAAAAAAAAAADwv0cAAAAeAQAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-16T14:21:05.631Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "LoggedUserDTO.cs",
-              "DocumentMoniker": "C:\\Users\\Lazar\\Desktop\\New folder\\ServiceFabric\\Common\\DTO\\LoggedUserDTO.cs",
-              "RelativeDocumentMoniker": "..\\Common\\DTO\\LoggedUserDTO.cs",
-              "ToolTip": "C:\\Users\\Lazar\\Desktop\\New folder\\ServiceFabric\\Common\\DTO\\LoggedUserDTO.cs",
-              "RelativeToolTip": "..\\Common\\DTO\\LoggedUserDTO.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-16T14:20:15.661Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "DrivingController.cs",
-              "DocumentMoniker": "C:\\Users\\Lazar\\Desktop\\New folder\\ServiceFabric\\WebApi\\Controllers\\DrivingController.cs",
-              "RelativeDocumentMoniker": "..\\WebApi\\Controllers\\DrivingController.cs",
-              "ToolTip": "C:\\Users\\Lazar\\Desktop\\New folder\\ServiceFabric\\WebApi\\Controllers\\DrivingController.cs",
-              "RelativeToolTip": "..\\WebApi\\Controllers\\DrivingController.cs",
-              "ViewState": "AQIAABwAAAAAAAAAAAAnwBIAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-16T13:46:05.647Z",
+              "WhenOpened": "2024-08-16T15:53:10.028Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "DrivingService",
-              "DocumentMoniker": "C:\\Users\\Lazar\\Desktop\\New folder\\ServiceFabric\\TaxiApp\\DrivingService\\DrivingService.csproj",
-              "RelativeDocumentMoniker": "DrivingService\\DrivingService.csproj",
-              "ToolTip": "C:\\Users\\Lazar\\Desktop\\New folder\\ServiceFabric\\TaxiApp\\DrivingService\\DrivingService.csproj",
-              "RelativeToolTip": "DrivingService\\DrivingService.csproj",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-08-16T14:52:33.557Z",
+              "Title": "DrivingService.cs",
+              "DocumentMoniker": "C:\\Users\\Lazar\\Desktop\\New folder\\ServiceFabric\\TaxiApp\\DrivingService\\DrivingService.cs",
+              "RelativeDocumentMoniker": "DrivingService\\DrivingService.cs",
+              "ToolTip": "C:\\Users\\Lazar\\Desktop\\New folder\\ServiceFabric\\TaxiApp\\DrivingService\\DrivingService.cs",
+              "RelativeToolTip": "DrivingService\\DrivingService.cs",
+              "ViewState": "AQIAAKwAAAAAAAAAAAAkwMkAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-16T15:49:03.404Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "UserController.cs",
-              "DocumentMoniker": "C:\\Users\\Lazar\\Desktop\\New folder\\ServiceFabric\\WebApi\\Controllers\\UserController.cs",
-              "RelativeDocumentMoniker": "..\\WebApi\\Controllers\\UserController.cs",
-              "ToolTip": "C:\\Users\\Lazar\\Desktop\\New folder\\ServiceFabric\\WebApi\\Controllers\\UserController.cs",
-              "RelativeToolTip": "..\\WebApi\\Controllers\\UserController.cs",
-              "ViewState": "AQIAAFkAAAAAAAAAAAAIwAAAAAAAAAAA",
+              "DocumentIndex": 2,
+              "Title": "IDriving.cs",
+              "DocumentMoniker": "C:\\Users\\Lazar\\Desktop\\New folder\\ServiceFabric\\Common\\Interfaces\\IDriving.cs",
+              "RelativeDocumentMoniker": "..\\Common\\Interfaces\\IDriving.cs",
+              "ToolTip": "C:\\Users\\Lazar\\Desktop\\New folder\\ServiceFabric\\Common\\Interfaces\\IDriving.cs",
+              "RelativeToolTip": "..\\Common\\Interfaces\\IDriving.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAxAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-16T14:19:48.502Z",
+              "WhenOpened": "2024-08-16T15:46:45.597Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DrivingController.cs",
+              "DocumentMoniker": "C:\\Users\\Lazar\\Desktop\\New folder\\ServiceFabric\\WebApi\\Controllers\\DrivingController.cs",
+              "RelativeDocumentMoniker": "..\\WebApi\\Controllers\\DrivingController.cs",
+              "ToolTip": "C:\\Users\\Lazar\\Desktop\\New folder\\ServiceFabric\\WebApi\\Controllers\\DrivingController.cs",
+              "RelativeToolTip": "..\\WebApi\\Controllers\\DrivingController.cs",
+              "ViewState": "AQIAAFIAAAAAAAAAAAAswGYAAABSAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-16T13:46:05.647Z",
               "EditorCaption": ""
             }
           ]

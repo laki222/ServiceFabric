@@ -11,7 +11,7 @@ namespace Common.Interfaces
     public interface IDriving:IService
     {
         Task<TripInfo> AcceptCreatedTrip(TripInfo trip);
-
+        Task<TripInfo> AcceptTripDriver(Guid tripId, Guid driverId);
 
     }
 }

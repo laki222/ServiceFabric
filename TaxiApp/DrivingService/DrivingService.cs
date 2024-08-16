@@ -170,5 +170,46 @@ namespace DrivingService
                 await Task.Delay(TimeSpan.FromSeconds(1), cancellationToken);
             }
         }
+
+        public async Task<TripInfo> AcceptTripDriver(Guid tripId, Guid driverId)
+        {
+            var roadTrip = await this.StateManager.GetOrAddAsync<IReliableDictionary<Guid, TripInfo>>("Trips");
+            Guid forCompare = new Guid("00000000-0000-0000-0000-000000000000");
+            try
+            {
+                using (var tx = StateManager.CreateTransaction())
+                {
+                    ConditionalValue<TripInfo> result = await roadTrip.TryGetValueAsync(tx, tripId);
+
+                    if (result.HasValue && result.Value.DriverId == forCompare)
+                    {
+                        // azuriranje polja u reliable 
+                        TripInfo tripForAccept = result.Value;
+                        tripForAccept.SecondsToEndTrip = 60; // ovde mozda da se zove servis za estimaciju opet 
+                        tripForAccept.DriverId = driverId;
+                        tripForAccept.Accepted = true;
+                        await roadTrip.SetAsync(tx, tripForAccept.TripId, tripForAccept);
+                        if (await dataRepo.UpdateEntity(driverId, tripId))
+                        {
+                            await tx.CommitAsync();
+                            return tripForAccept;
+                        }
+                        else return null;
+                    }
+                    else return null;
+
+                }
+            }
+
+            catch (Exception)
+            {
+                throw;
+            }
+
+
+
+
+
+        }
     }
 }
