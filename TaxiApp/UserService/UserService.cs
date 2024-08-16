@@ -26,7 +26,7 @@ namespace UserService
     /// <summary>
     /// An instance of this class is created for each service replica by the Service Fabric runtime.
     /// </summary>
-    public sealed class UserService : StatefulService,IUser
+    public sealed class UserService : StatefulService,IUser,IRating
     {
         public UserDataRepo dataRepo;
         public UserService(StatefulServiceContext context)
@@ -257,7 +257,7 @@ namespace UserService
             return drivers;
         }
 
-        public async Task<bool> changeDriverStatus(Guid id, bool status)
+        public async Task<bool> BlockUser(Guid id, bool status)
         {
             var users = await this.StateManager.GetOrAddAsync<IReliableDictionary<Guid, User>>("UserEntities");
             using (var tx = this.StateManager.CreateTransaction())
@@ -300,7 +300,7 @@ namespace UserService
             }
         }
 
-        public async Task<User> changeUserFields(UserForUpdateOverNetwork user)
+        public async Task<User> updateUser(UpdatedUser user)
         {
             var users = await this.StateManager.GetOrAddAsync<IReliableDictionary<Guid, User>>("UserEntities");
             using (var tx = this.StateManager.CreateTransaction())
@@ -381,6 +381,39 @@ namespace UserService
 
         }
 
-        
+        public async Task<bool> AddRating(Guid driverId, int rating)
+        {
+            var users = await this.StateManager.GetOrAddAsync<IReliableDictionary<Guid, User>>("UserEntities");
+            bool operation = false;
+            using (var tx = this.StateManager.CreateTransaction())
+            {
+                var enumerable = await users.CreateEnumerableAsync(tx);
+                using (var enumerator = enumerable.GetAsyncEnumerator())
+                {
+                    while (await enumerator.MoveNextAsync(default(CancellationToken)))
+                    {
+                        if (enumerator.Current.Value.Id == driverId)
+                        {
+                            var user = enumerator.Current.Value;
+                            user.NumOfRatings++;
+                            user.SumOfRatings += rating;
+                            user.AverageRating = (double)user.SumOfRatings / (double)user.NumOfRatings;
+
+
+                            await users.SetAsync(tx, driverId, user); 
+
+                            await dataRepo.UpdateRating(user.Id, user.SumOfRatings, user.NumOfRatings, user.AverageRating);  
+
+                            await tx.CommitAsync();
+
+                            operation = true;
+                            break;
+                        }
+                    }
+                }
+            }
+
+            return operation;
+        }
     }
 }

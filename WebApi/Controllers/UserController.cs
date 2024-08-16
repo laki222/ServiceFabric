@@ -32,7 +32,7 @@ namespace WebApi.Controllers
 
 
         [HttpPost]
-        public async Task<IActionResult> RegularRegister([FromForm] UserRegisterDTO userData)
+        public async Task<IActionResult> Register([FromForm] UserRegisterDTO userData)
         {
             if (string.IsNullOrEmpty(userData.Email) || !IsValidEmail(userData.Email)) return BadRequest("Invalid email format");
             if (string.IsNullOrEmpty(userData.Password)) return BadRequest("Password cannot be null or empty");
@@ -154,7 +154,6 @@ namespace WebApi.Controllers
                     var partitionKey = new ServicePartitionKey(((Int64RangePartitionInformation)partition.PartitionInformation).LowKey);
                     var proxy = ServiceProxy.Create<IUser>(new Uri("fabric:/TaxiApp/UserService"), partitionKey);
 
-                    // Pozivanje metode koja dobavlja sve korisnike
                     var users = await proxy.GetAllUsers();
                     allUsers.AddRange(users);
                 }
@@ -197,7 +196,7 @@ namespace WebApi.Controllers
 
         [Authorize(Policy = "Admin")]
         [HttpPut]
-        public async Task<IActionResult> ChangeDriverStatus([FromBody] DriverChangeStatusDTO driver)
+        public async Task<IActionResult> BlockUser([FromBody] DriverChangeStatusDTO driver)
         {
             try
             {
@@ -210,7 +209,7 @@ namespace WebApi.Controllers
                 {
                     var partitionKey = new ServicePartitionKey(((Int64RangePartitionInformation)partition.PartitionInformation).LowKey);
                     var proxy = ServiceProxy.Create<IUser>(new Uri("fabric:/TaxiApp/UserService"), partitionKey);
-                    bool parititonResult = await proxy.changeDriverStatus(driver.Id, driver.Status);
+                    bool parititonResult = await proxy.BlockUser(driver.Id, driver.Status);
                     result = parititonResult;
                 }
 
@@ -269,9 +268,9 @@ namespace WebApi.Controllers
 
         [AllowAnonymous]
         [HttpPut]
-        public async Task<IActionResult> ChangeUserFields([FromForm] UserForUpdate user)
+        public async Task<IActionResult> UpdatedUser([FromForm] UserForUpdate user)
         {
-            UserForUpdateOverNetwork userForUpdate = new UserForUpdateOverNetwork(user);
+            UpdatedUser userForUpdate = new UpdatedUser(user);
 
             try
             {
@@ -283,7 +282,7 @@ namespace WebApi.Controllers
                 {
                     var partitionKey = new ServicePartitionKey(((Int64RangePartitionInformation)partition.PartitionInformation).LowKey);
                     var proxy = ServiceProxy.Create<IUser>(new Uri("fabric:/TaxiApp/UserService"), partitionKey);
-                    var proxyResult = await proxy.changeUserFields(userForUpdate);
+                    var proxyResult = await proxy.updateUser(userForUpdate);
                     if (proxyResult != null)
                     {
                         result = proxyResult;

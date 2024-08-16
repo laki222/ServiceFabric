@@ -15,10 +15,10 @@ namespace Common.Interfaces
         Task<LoggedUserDTO> loginUser(LoginUserDTO loginUserDTO);
         Task<List<User>> GetAllUsers();
         Task<List<DriverViewDTO>> GetAllDrivers();
-        Task<bool> changeDriverStatus(Guid id, bool status);
+        Task<bool> BlockUser(Guid id, bool status);
 
         Task<User> GetUserInfo(Guid id);
-        Task<User> changeUserFields(UserForUpdateOverNetwork user);
+        Task<User> updateUser(UpdatedUser user);
         Task<bool> VerifyDriver(Guid id, string email, string action);
 
     }

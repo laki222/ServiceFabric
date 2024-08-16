@@ -11,7 +11,9 @@ using Common.Models;
 using DrivingService.Repository;
 using Microsoft.ServiceFabric.Data;
 using Microsoft.ServiceFabric.Data.Collections;
+using Microsoft.ServiceFabric.Services.Client;
 using Microsoft.ServiceFabric.Services.Communication.Runtime;
+using Microsoft.ServiceFabric.Services.Remoting.Client;
 using Microsoft.ServiceFabric.Services.Remoting.Runtime;
 using Microsoft.ServiceFabric.Services.Runtime;
 using Microsoft.WindowsAzure.Storage.Table;
@@ -363,6 +365,58 @@ namespace DrivingService
             }
         }
 
-       
+        public async Task<bool> SubmitRating(Guid tripid, int rating)
+        {
+            var roadTrip = await this.StateManager.GetOrAddAsync<IReliableDictionary<Guid, TripInfo>>("Trips");
+            bool result = false;
+            var fabricClient = new FabricClient();
+            try
+            {
+                using (var tx = StateManager.CreateTransaction())
+                {
+                    var trip = await roadTrip.TryGetValueAsync(tx, tripid);
+                    if (!trip.HasValue)
+                    {
+                        return false; 
+                    }
+
+
+                    Guid driverId = trip.Value.DriverId;
+                    var partitionList = await fabricClient.QueryManager.GetPartitionListAsync(new Uri("fabric:/TaxiApp/UserService"));
+
+                    foreach (var partition in partitionList)
+                    {
+                        var partitionKey = new ServicePartitionKey(((Int64RangePartitionInformation)partition.PartitionInformation).LowKey);
+                        var proxy = ServiceProxy.Create<IRating>(new Uri("fabric:/TaxiApp/UserService"), partitionKey);
+
+                        try
+                        {
+                            var partitionResult = await proxy.AddRating(driverId, rating);
+                            if (partitionResult)
+                            {
+                                result = true;
+                                trip.Value.IsRated = true;
+                                await roadTrip.SetAsync(tx, trip.Value.TripId, trip.Value);
+                               
+                                await dataRepo.RateTrip(trip.Value.TripId);
+                                break;
+                            }
+                        }
+                        catch (Exception)
+                        {
+                            throw;
+                        }
+                    }
+
+                    await tx.CommitAsync();
+                }
+                return result;
+            }
+            catch (Exception ex)
+            {
+                // Log exception
+                throw new ApplicationException($"Failed to submit rating for TripId: {tripid}", ex);
+            }
+        }
     }
 }
