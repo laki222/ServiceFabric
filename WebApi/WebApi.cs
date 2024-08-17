@@ -14,6 +14,7 @@ using Microsoft.ServiceFabric.Data;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
+using SignalRChat.Hubs;
 
 namespace WebApi
 {
@@ -68,6 +69,7 @@ namespace WebApi
                                     .UseServiceFabricIntegration(listener, ServiceFabricIntegrationOptions.None)
                                     .UseUrls(url);
                         builder.Services.AddControllers();
+                        builder.Services.AddSignalR();
                         builder.Services.AddEndpointsApiExplorer();
                         builder.Services.AddSwaggerGen();
 
@@ -77,17 +79,29 @@ namespace WebApi
                                options.AddPolicy("Rider", policy => policy.RequireClaim("MyCustomClaim", "Rider"));
                                options.AddPolicy("Driver", policy => policy.RequireClaim("MyCustomClaim", "Driver"));
                         });
+                          builder.Services.AddCors(options =>
+                        {
+                            options.AddPolicy(name: "cors", builder => {
+                                builder.WithOrigins("http://localhost:3000")
+                                        .AllowAnyHeader()
+                                        .AllowAnyMethod()
+                                        .AllowCredentials();
 
+                                });
+                            });
                         var app = builder.Build();
                         if (app.Environment.IsDevelopment())
                         {
                         app.UseSwagger();
                         app.UseSwaggerUI();
                         }
+                         app.UseCors("cors");
+                        app.UseRouting();
+                        app.UseHttpsRedirection();
                         app.UseAuthentication();
                         app.UseAuthorization();
                         app.MapControllers();
-                        
+                        app.MapHub<ChatHub>("/chatHub");
                         return app;
 
                     }))

@@ -360,6 +360,7 @@ C:\Users\Lazar\Desktop\New folder\ServiceFabric\WebApi\obj\Debug\net8.0\win-x64\
 C:\Users\Lazar\Desktop\New folder\ServiceFabric\WebApi\obj\Debug\net8.0\win-x64\PubTmp\Out\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\Lazar\Desktop\New folder\ServiceFabric\WebApi\obj\Debug\net8.0\win-x64\PubTmp\Out\Swashbuckle.AspNetCore.SwaggerUI.dll
 C:\Users\Lazar\Desktop\New folder\ServiceFabric\WebApi\obj\Debug\net8.0\win-x64\PubTmp\Out\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\Lazar\Desktop\New folder\ServiceFabric\WebApi\obj\Debug\net8.0\win-x64\PubTmp\Out\System.Net.WebSockets.WebSocketProtocol.dll
 C:\Users\Lazar\Desktop\New folder\ServiceFabric\WebApi\obj\Debug\net8.0\win-x64\PubTmp\Out\Microsoft.WindowsAzure.Storage.dll
 C:\Users\Lazar\Desktop\New folder\ServiceFabric\WebApi\obj\Debug\net8.0\win-x64\PubTmp\Out\Common.dll
 C:\Users\Lazar\Desktop\New folder\ServiceFabric\WebApi\obj\Debug\net8.0\win-x64\PubTmp\Out\Common.pdb

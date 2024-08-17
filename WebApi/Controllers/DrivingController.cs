@@ -4,8 +4,10 @@ using Common.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.ViewEngines;
+using Microsoft.AspNetCore.SignalR;
 using Microsoft.ServiceFabric.Services.Client;
 using Microsoft.ServiceFabric.Services.Remoting.Client;
+using SignalRChat.Hubs;
 using System.Fabric;
 
 namespace WebApi.Controllers
@@ -14,6 +16,14 @@ namespace WebApi.Controllers
     [Route("api/[controller]/[action]")]
     public class DrivingController : ControllerBase
     {
+
+        private readonly IHubContext<ChatHub> _hubContext;
+
+        public DrivingController(IHubContext<ChatHub> hubContext)
+        {
+            _hubContext = hubContext;
+        }
+
 
         //[Authorize(Policy = "Rider")]
         [HttpGet]
@@ -356,7 +366,6 @@ namespace WebApi.Controllers
             }
 
         }
-
 
 
 

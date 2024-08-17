@@ -13,7 +13,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DrivingService", "DrivingSe
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EstimationService", "EstimationService\EstimationService.csproj", "{40158D71-16F3-4E4A-955F-0685BE810C1A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common", "..\Common\Common.csproj", "{CE790082-3901-4E74-9908-3352927D32DB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Common", "..\Common\Common.csproj", "{CE790082-3901-4E74-9908-3352927D32DB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChatService", "ChatService\ChatService.csproj", "{BD159FD0-D671-4A76-87D1-3E5EE562165D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -75,6 +77,14 @@ Global
 		{CE790082-3901-4E74-9908-3352927D32DB}.Release|Any CPU.Build.0 = Release|Any CPU
 		{CE790082-3901-4E74-9908-3352927D32DB}.Release|x64.ActiveCfg = Release|Any CPU
 		{CE790082-3901-4E74-9908-3352927D32DB}.Release|x64.Build.0 = Release|Any CPU
+		{BD159FD0-D671-4A76-87D1-3E5EE562165D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD159FD0-D671-4A76-87D1-3E5EE562165D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD159FD0-D671-4A76-87D1-3E5EE562165D}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{BD159FD0-D671-4A76-87D1-3E5EE562165D}.Debug|x64.Build.0 = Debug|Any CPU
+		{BD159FD0-D671-4A76-87D1-3E5EE562165D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD159FD0-D671-4A76-87D1-3E5EE562165D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BD159FD0-D671-4A76-87D1-3E5EE562165D}.Release|x64.ActiveCfg = Release|Any CPU
+		{BD159FD0-D671-4A76-87D1-3E5EE562165D}.Release|x64.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

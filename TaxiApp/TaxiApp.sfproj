@@ -39,6 +39,7 @@
     <ProjectReference Include="..\WebApi\WebApi.csproj">
       <ServiceLaunchUrl>http://localhost:{ServicePort}/swagger</ServiceLaunchUrl>
     </ProjectReference>
+    <ProjectReference Include="ChatService\ChatService.csproj" />
     <ProjectReference Include="DrivingService\DrivingService.csproj" />
     <ProjectReference Include="EstimationService\EstimationService.csproj" />
     <ProjectReference Include="UserService\UserService.csproj" />
