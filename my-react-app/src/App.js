@@ -1,6 +1,6 @@
 import Register from './Components/Register';
-
-
+import Login from './Components/Login';
+import Dashboard from './Components/Dashboard';
 import {
   BrowserRouter as Router,
   Routes,
@@ -13,9 +13,9 @@ function App() {
     <>
         <Router>
             <Routes>
-               
+                <Route   path="/" element={<Login />} />  
                 <Route  path="/Register" element={<Register />} />
-               
+                <Route  exact path='/Dashboard' element={<Dashboard/>} ></Route>
             </Routes>
         </Router>
     </>
