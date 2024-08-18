@@ -47,10 +47,7 @@ export default function Login() {
     const isValidPassword = /^(?=.*[A-Z])(?=.*[!@#$%^&*])(?=.{8,})/.test(value);
     if (value.trim() === '') {
       setPasswordError(true);
-    } else if (!isValidPassword) {
-      setPasswordError(true);
-    } else if (!value.trim() === passwordError) {
-      setPasswordError(true);
+    
     }
     else {
       setPasswordError(false);
