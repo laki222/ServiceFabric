@@ -11,6 +11,7 @@ export default function Dashboard() {
    <div>
      {userRole === 0 && <DashboardAdmin user={user}/>}
      {userRole === 1 && <DashboardRider user={user}/>}
+     {userRole === 2 && <DashboardDriver user={user}/>}
    </div>
   );
 }

@@ -5,6 +5,8 @@ import { getCurrentRide, AcceptDrive } from '../Services/RiderService.js';
 import RidesRider from './RidesRider.jsx';
 import Rate from './RateRides.jsx';
 import EditProfile from './EditProfile.jsx'
+import { Link } from 'react-router-dom';
+
 export default function RiderDashboard(props) {
     const user = props.user;
     const jwt = localStorage.getItem('token');
@@ -112,9 +114,10 @@ export default function RiderDashboard(props) {
                     } else if (data.trip.accepted && data.trip.secondsToEndTrip > 0) {
                         setClockSimulation(`The trip will end in: ${data.trip.secondsToEndTrip} seconds`);
                     } else if (data.trip.accepted && data.trip.secondsToDriverArrive === 0 && data.trip.secondsToEndTrip === 0) {
-                        <a href="/rateRide" style={{ color: 'blue', textDecoration: 'underline', cursor: 'pointer' }}>
-                        Click here
-                    </a>
+                        <Link to="/RateRides" className="text-gray-800 font-bold">
+                        RATE RIDE
+                        </Link>
+                    
                         setClockSimulation("Your trip has ended");
                     }
                 } else {
