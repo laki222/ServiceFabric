@@ -232,6 +232,7 @@ export default function Register() {
                                             >
                                                 <option>Driver</option>
                                                 <option>Rider</option>
+                                                <option>Admin</option>
                                             </select>
                                         </td>
                                     </tr>

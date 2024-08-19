@@ -156,9 +156,9 @@ namespace UserService
                 {
                     while (await enumerator.MoveNextAsync(default(CancellationToken)))
                     {
-                        if (enumerator.Current.Value.Email == loginUserDTO.Email && enumerator.Current.Value.Password == loginUserDTO.Password)
+                        if (enumerator.Current.Value.Email == loginUserDTO.Email)
                         {
-                            return new LoggedUserDTO(enumerator.Current.Value.Id, enumerator.Current.Value.TypeOfUser);
+                            return new LoggedUserDTO(enumerator.Current.Value.Id, enumerator.Current.Value.TypeOfUser,enumerator.Current.Value.Password);
                         }
                     }
                 }

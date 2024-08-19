@@ -25,6 +25,7 @@ export default function VerifyDrivers() {
         try {
             const data = await VerifyDriver(verifyDriversEndpoint, id, "Accepted", email, token);
             console.log("Drivers for verify:", data);
+            fetchDrivers();
             //setDrivers(data.drivers);
         } catch (error) {
             console.error('Error fetching drivers:', error);
@@ -37,6 +38,7 @@ export default function VerifyDrivers() {
         try {
             const data = await VerifyDriver(verifyDriversEndpoint, id, "Rejected", email, token);
             console.log("Drivers for verify:", data);
+            fetchDrivers();
         } catch (error) {
             console.error('Error fetching drivers:', error);
         }

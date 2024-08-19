@@ -17,10 +17,13 @@ namespace Common.DTO
        
         public UserType.Role Role { get; set; }
 
-        public LoggedUserDTO(Guid id, UserType.Role role)
+        public string HashedPassword { get; set; } 
+
+        public LoggedUserDTO(Guid id, UserType.Role role, string hashedPassword)
         {
             Id = id;
             Role = role;
+            HashedPassword = hashedPassword;
         }
 
         public LoggedUserDTO()

@@ -15,6 +15,7 @@ using Microsoft.AspNetCore.Authorization;
 using System.Net.Mail;
 using System.Net;
 using PostmarkDotNet;
+using Microsoft.AspNetCore.Identity;
 
 namespace WebApi.Controllers
 {
@@ -29,22 +30,34 @@ namespace WebApi.Controllers
            
         }
 
-
-
         [HttpPost]
+
         public async Task<IActionResult> Register([FromForm] UserRegisterDTO userData)
         {
-            if (string.IsNullOrEmpty(userData.Email) || !IsValidEmail(userData.Email)) return BadRequest("Invalid email format");
-            if (string.IsNullOrEmpty(userData.Password)) return BadRequest("Password cannot be null or empty");
-            if (string.IsNullOrEmpty(userData.Username)) return BadRequest("Username cannot be null or empty");
-            if (string.IsNullOrEmpty(userData.FirstName)) return BadRequest("First name cannot be null or empty");
-            if (string.IsNullOrEmpty(userData.LastName)) return BadRequest("Last name cannot be null or empty");
-            if (string.IsNullOrEmpty(userData.Address)) return BadRequest("Address cannot be null or empty");
-            if (string.IsNullOrEmpty(userData.TypeOfUser)) return BadRequest("Type of user must be selected!");
-            if (string.IsNullOrEmpty(userData.Birthday)) return BadRequest("Birthday need to be selected!");
-            if (userData.ImageUrl.Length == 0) return BadRequest("You need to send image while doing registration!");
+            if (string.IsNullOrEmpty(userData.Email) || !IsValidEmail(userData.Email))
+                return BadRequest("Invalid email format");
+            if (string.IsNullOrEmpty(userData.Password))
+                return BadRequest("Password cannot be null or empty");
+            if (string.IsNullOrEmpty(userData.Username))
+                return BadRequest("Username cannot be null or empty");
+            if (string.IsNullOrEmpty(userData.FirstName))
+                return BadRequest("First name cannot be null or empty");
+            if (string.IsNullOrEmpty(userData.LastName))
+                return BadRequest("Last name cannot be null or empty");
+            if (string.IsNullOrEmpty(userData.Address))
+                return BadRequest("Address cannot be null or empty");
+            if (string.IsNullOrEmpty(userData.TypeOfUser))
+                return BadRequest("Type of user must be selected!");
+            if (string.IsNullOrEmpty(userData.Birthday))
+                return BadRequest("Birthday needs to be selected!");
+            if (userData.ImageUrl.Length == 0)
+                return BadRequest("You need to send an image while doing registration!");
+
             try
             {
+                
+                var passwordHasher = new PasswordHasher<UserRegisterDTO>();
+                userData.Password = passwordHasher.HashPassword(userData, userData.Password);
 
                 User userForRegister = new User(userData);
 
@@ -59,18 +72,19 @@ namespace WebApi.Controllers
                     result = await proxy.addUser(userForRegister);
                 }
 
-                if (result) return Ok($"Successfully registered new User: {userData.Username}");
-                else return StatusCode(409, "User already exists in database!");
-
-
+                if (result)
+                    return Ok($"Successfully registered new User: {userData.Username}");
+                else
+                    return StatusCode(409, "User already exists in database!");
             }
             catch (Exception)
             {
                 return StatusCode(500, "An error occurred while registering new User");
             }
+        }
 
-            }
-            private bool IsValidEmail(string email)
+
+        private bool IsValidEmail(string email)
             {
                 const string pattern = @"^[^\s@]+@[^\s@]+\.[^\s@]+$";
                 return Regex.IsMatch(email, pattern);
@@ -103,28 +117,40 @@ namespace WebApi.Controllers
 
                 if (result != null)
                 {
-                    var securityKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_config["Jwt:Key"]));
-                    var credentials = new SigningCredentials(securityKey, SecurityAlgorithms.HmacSha256);
+                    var passwordHasher = new PasswordHasher<LoginUserDTO>();
+                    var passwordVerificationResult = passwordHasher.VerifyHashedPassword(user, result.HashedPassword, user.Password);
 
-                    List<Claim> claims = new List<Claim>();
-                    claims.Add(new Claim("MyCustomClaim", result.Role.ToString()));
-
-                    var Sectoken = new JwtSecurityToken(_config["Jwt:Issuer"],
-                        _config["Jwt:Issuer"],
-                        claims,
-                        expires: DateTime.Now.AddMinutes(360),
-                        signingCredentials: credentials);
-
-                    var token = new JwtSecurityTokenHandler().WriteToken(Sectoken);
-
-                    var response = new
+                    if (passwordVerificationResult == PasswordVerificationResult.Success)
                     {
-                        token = token,
-                        user = result,
-                        message = "Login successful"
-                    };
 
-                    return Ok(response);
+
+                        var securityKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_config["Jwt:Key"]));
+                        var credentials = new SigningCredentials(securityKey, SecurityAlgorithms.HmacSha256);
+
+                        List<Claim> claims = new List<Claim>();
+                        claims.Add(new Claim("MyCustomClaim", result.Role.ToString()));
+
+                        var Sectoken = new JwtSecurityToken(_config["Jwt:Issuer"],
+                            _config["Jwt:Issuer"],
+                            claims,
+                            expires: DateTime.Now.AddMinutes(360),
+                            signingCredentials: credentials);
+
+                        var token = new JwtSecurityTokenHandler().WriteToken(Sectoken);
+
+                        var response = new
+                        {
+                            token = token,
+                            user = result,
+                            message = "Login successful"
+                        };
+
+                        return Ok(response);
+                    }
+                    else
+                    {
+                        return BadRequest("Incorrect email or password");
+                    }
                 }
                 else
                 {
