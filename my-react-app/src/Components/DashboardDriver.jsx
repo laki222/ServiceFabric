@@ -4,10 +4,10 @@ import { useNavigate } from "react-router-dom";
 import { getUserInfo } from '../Services/ProfileService';
 import { getAllAvailableRides } from '../Services/DriverService.js'
 import { AcceptDrive } from '../Services/DriverService.js';
-import {getCurrentRide} from '../Services/DriverService.js';
+import {getCurrentRideDriver} from '../Services/DriverService.js';
 import RidesDriver from './RidesDriver.jsx'
 import EditProfile from './EditProfile.jsx'
-
+import Chat from './Chat.jsx'
 
 export default function DashboardDriver(props) {
 
@@ -39,7 +39,7 @@ export default function DashboardDriver(props) {
     const apiToGetAllRides = process.env.REACT_APP_GET_ALL_RIDES_UNCOMPLETED;
     const [minutesToDriverArrive, setMinutesToDriverArrive] = useState(null);
     const [minutesToEndTrip, setMinutesToEndTrip] = useState(null);
-
+    const [CurrentRide, setCurrentRide] = useState('');
 
     const [clockSimulation, setClockSimulation] = useState();
     useEffect(() => {
@@ -96,6 +96,7 @@ export default function DashboardDriver(props) {
         try {
             const data = await AcceptDrive(apiAcceptDrive, userId, tripId, jwt); // Drive accepted
             setCurrentRides(data.ride);
+            setCurrentRide(data.ride);
             console.log(data);
 
             setTripIsActive(true);
@@ -105,7 +106,7 @@ export default function DashboardDriver(props) {
             console.error('Error accepting drive:', error.message);
         }
     };
-
+   
 
     const handleDriveHistory = () => {
         setView("driveHistory");
@@ -118,8 +119,11 @@ export default function DashboardDriver(props) {
     useEffect(() => {
         const fetchRideData = async () => {
             try {
-                const data = await getCurrentRide(jwt, apiEndpointForCurrentRide, userId);
+                const data = await getCurrentRideDriver(jwt, apiEndpointForCurrentRide, userId);
                 console.log("Active trip:", data);
+
+                
+
 
                 if (data.error && data.error.status === 400) {
                     setClockSimulation("You don't have an active trip!");
@@ -130,11 +134,14 @@ export default function DashboardDriver(props) {
                     console.log("Active trip:", data.trip);
 
                     if (data.trip.accepted && data.trip.secondsToDriverArrive > 0) {
+                        setView('chat');
                         setClockSimulation(`You will arrive in: ${data.trip.secondsToDriverArrive} seconds`);
                     } else if (data.trip.accepted && data.trip.secondsToEndTrip > 0) {
+                        setView('chat');
                         setClockSimulation(`The trip will end in: ${data.trip.secondsToEndTrip} seconds`);
                     } else if (data.trip.accepted && data.trip.secondsToDriverArrive === 0 && data.trip.secondsToEndTrip === 0) {
                         setClockSimulation("Your trip has ended");
+                        setView('editProfile');
                     }
                 } else {
                     setClockSimulation("You don't have an active trip!");
@@ -263,11 +270,15 @@ export default function DashboardDriver(props) {
                                     </div>
                                 ) : null
                             ) : view === 'driveHistory' ? (
-                                <RidesDriver />
+                                <RidesDriver />  
                             ) : null}
                         </div>
                     </div>
-                ) : null}
+                ) : (
+                <div style={{ height: '100%', display: 'flex' }}>
+                    <Chat userId={user.id} />
+                </div>
+                )}
             </div>
         </div>
     );

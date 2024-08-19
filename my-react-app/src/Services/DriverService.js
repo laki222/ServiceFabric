@@ -40,7 +40,7 @@ export  async function AcceptDrive(apiEndpoint, driverId,idRide,jwt) {
     }
 }
 
-export async function getCurrentRide(jwt, apiEndpoint,userId) {
+export async function getCurrentRideDriver(jwt, apiEndpoint,userId) {
     try {
         const config = {
             headers: {

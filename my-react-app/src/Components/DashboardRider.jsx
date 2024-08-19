@@ -5,7 +5,11 @@ import { getCurrentRide, AcceptDrive } from '../Services/RiderService.js';
 import RidesRider from './RidesRider.jsx';
 import Rate from './RateRides.jsx';
 import EditProfile from './EditProfile.jsx'
+import Chat from './Chat.jsx'
+
 import { Link } from 'react-router-dom';
+
+
 
 export default function RiderDashboard(props) {
     const user = props.user;
@@ -70,7 +74,7 @@ export default function RiderDashboard(props) {
     };
 
     const [view, setView] = useState('editProfile');
-    const [isEditing, setIsEditing] = useState(false);
+    const [CurrentRide, setCurrentRide] = useState('');
     const [selectedFile, setSelectedFile] = useState(null);
 
     const handleSignOut = () => {
@@ -100,7 +104,7 @@ export default function RiderDashboard(props) {
             try {
                 const data = await getCurrentRide(jwt, apiEndpointForCurrentDrive, userId);
                 console.log("Active trip:", data);
-
+                setCurrentRide(data.tripId)
                 if (data.error && data.error.status === 400) {
                     setClockSimulation("You don't have an active trip!");
                     return;
@@ -110,13 +114,13 @@ export default function RiderDashboard(props) {
                     if (!data.trip.accepted) {
                         setClockSimulation("Your current ticket is not accepted by any driver!");
                     } else if (data.trip.accepted && data.trip.secondsToDriverArrive > 0) {
+                        setView('chat');
                         setClockSimulation(`The driver will arrive in: ${data.trip.secondsToDriverArrive} seconds`);
                     } else if (data.trip.accepted && data.trip.secondsToEndTrip > 0) {
+                        setView('chat');
                         setClockSimulation(`The trip will end in: ${data.trip.secondsToEndTrip} seconds`);
                     } else if (data.trip.accepted && data.trip.secondsToDriverArrive === 0 && data.trip.secondsToEndTrip === 0) {
-                        <Link to="/RateRides" className="text-gray-800 font-bold">
-                        RATE RIDE
-                        </Link>
+                        setView('editProfile');
                     
                         setClockSimulation("Your trip has ended");
                     }
@@ -208,7 +212,10 @@ export default function RiderDashboard(props) {
                             </div>
                         </div>
                     ) : view === 'driveHistory' ? (
-                        <RidesRider />
+                        <RidesRider />  
+                    ) : view === 'chat' ? (
+                        <Chat userId={user.id} />
+                    
                     ) : view === 'rateTrips' ? (
                         <Rate userId={user.id}/>
                     ) : (
