@@ -1,250 +1,250 @@
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\EstimationService.exe
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\EstimationService.deps.json
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\EstimationService.runtimeconfig.json
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\EstimationService.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\EstimationService.pdb
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\Microsoft.AspNetCore.Authentication.Abstractions.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\Microsoft.AspNetCore.Authorization.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\Microsoft.AspNetCore.Authorization.Policy.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\Microsoft.AspNetCore.Connections.Abstractions.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\Microsoft.AspNetCore.Hosting.Abstractions.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\Microsoft.AspNetCore.Hosting.Server.Abstractions.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\Microsoft.AspNetCore.Http.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\Microsoft.AspNetCore.Http.Abstractions.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\Microsoft.AspNetCore.Http.Connections.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\Microsoft.AspNetCore.Http.Connections.Common.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\Microsoft.AspNetCore.Http.Extensions.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\Microsoft.AspNetCore.Http.Features.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\Microsoft.AspNetCore.Routing.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\Microsoft.AspNetCore.Routing.Abstractions.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\Microsoft.AspNetCore.SignalR.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\Microsoft.AspNetCore.SignalR.Common.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\Microsoft.AspNetCore.SignalR.Core.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\Microsoft.AspNetCore.SignalR.Protocols.Json.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\Microsoft.AspNetCore.WebSockets.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\Microsoft.AspNetCore.WebUtilities.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\Microsoft.Extensions.Configuration.Abstractions.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\Microsoft.Extensions.DependencyInjection.Abstractions.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\Microsoft.Extensions.FileProviders.Abstractions.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\Microsoft.Extensions.Hosting.Abstractions.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\Microsoft.Extensions.Logging.Abstractions.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\Microsoft.Extensions.ObjectPool.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\Microsoft.Extensions.Options.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\Microsoft.Extensions.Primitives.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\Microsoft.Net.Http.Headers.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\Microsoft.ServiceFabric.Internal.Strings.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\Microsoft.ServiceFabric.Internal.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\Microsoft.ServiceFabric.Preview.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\StartupServicesModel.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Fabric.Management.ServiceModel.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Fabric.Strings.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Fabric.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\Microsoft.ServiceFabric.Data.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\Microsoft.ServiceFabric.Data.Extensions.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\Microsoft.ServiceFabric.ReliableCollection.Interop.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\Microsoft.ServiceFabric.Data.Interfaces.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\Microsoft.ServiceFabric.Diagnostics.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\Microsoft.ServiceFabric.FabricTransport.V2.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\Microsoft.ServiceFabric.FabricTransport.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\Microsoft.ServiceFabric.Services.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\Microsoft.ServiceFabric.Services.Remoting.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\Newtonsoft.Json.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.IO.Pipelines.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Net.WebSockets.WebSocketProtocol.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\Microsoft.WindowsAzure.Storage.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\Microsoft.CSharp.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\Microsoft.VisualBasic.Core.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\Microsoft.VisualBasic.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\Microsoft.Win32.Primitives.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\Microsoft.Win32.Registry.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.AppContext.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Buffers.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Collections.Concurrent.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Collections.Immutable.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Collections.NonGeneric.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Collections.Specialized.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Collections.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.ComponentModel.Annotations.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.ComponentModel.DataAnnotations.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.ComponentModel.EventBasedAsync.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.ComponentModel.Primitives.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.ComponentModel.TypeConverter.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.ComponentModel.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Configuration.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Console.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Core.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Data.Common.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Data.DataSetExtensions.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Data.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Diagnostics.Contracts.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Diagnostics.Debug.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Diagnostics.DiagnosticSource.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Diagnostics.FileVersionInfo.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Diagnostics.Process.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Diagnostics.StackTrace.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Diagnostics.TextWriterTraceListener.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Diagnostics.Tools.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Diagnostics.TraceSource.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Diagnostics.Tracing.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Drawing.Primitives.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Drawing.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Dynamic.Runtime.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Formats.Asn1.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Formats.Tar.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Globalization.Calendars.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Globalization.Extensions.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Globalization.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.IO.Compression.Brotli.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.IO.Compression.FileSystem.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.IO.Compression.ZipFile.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.IO.Compression.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.IO.FileSystem.AccessControl.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.IO.FileSystem.DriveInfo.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.IO.FileSystem.Primitives.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.IO.FileSystem.Watcher.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.IO.FileSystem.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.IO.IsolatedStorage.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.IO.MemoryMappedFiles.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.IO.Pipes.AccessControl.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.IO.Pipes.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.IO.UnmanagedMemoryStream.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.IO.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Linq.Expressions.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Linq.Parallel.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Linq.Queryable.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Linq.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Memory.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Net.Http.Json.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Net.Http.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Net.HttpListener.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Net.Mail.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Net.NameResolution.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Net.NetworkInformation.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Net.Ping.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Net.Primitives.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Net.Quic.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Net.Requests.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Net.Security.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Net.ServicePoint.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Net.Sockets.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Net.WebClient.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Net.WebHeaderCollection.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Net.WebProxy.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Net.WebSockets.Client.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Net.WebSockets.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Net.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Numerics.Vectors.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Numerics.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.ObjectModel.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Private.CoreLib.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Private.DataContractSerialization.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Private.Uri.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Private.Xml.Linq.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Private.Xml.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Reflection.DispatchProxy.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Reflection.Emit.ILGeneration.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Reflection.Emit.Lightweight.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Reflection.Emit.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Reflection.Extensions.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Reflection.Metadata.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Reflection.Primitives.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Reflection.TypeExtensions.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Reflection.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Resources.Reader.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Resources.ResourceManager.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Resources.Writer.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Runtime.CompilerServices.Unsafe.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Runtime.CompilerServices.VisualC.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Runtime.Extensions.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Runtime.Handles.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Runtime.InteropServices.JavaScript.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Runtime.InteropServices.RuntimeInformation.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Runtime.InteropServices.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Runtime.Intrinsics.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Runtime.Loader.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Runtime.Numerics.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Runtime.Serialization.Formatters.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Runtime.Serialization.Json.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Runtime.Serialization.Primitives.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Runtime.Serialization.Xml.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Runtime.Serialization.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Runtime.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Security.AccessControl.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Security.Claims.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Security.Cryptography.Algorithms.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Security.Cryptography.Cng.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Security.Cryptography.Csp.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Security.Cryptography.Encoding.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Security.Cryptography.OpenSsl.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Security.Cryptography.Primitives.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Security.Cryptography.X509Certificates.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Security.Cryptography.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Security.Principal.Windows.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Security.Principal.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Security.SecureString.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Security.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.ServiceModel.Web.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.ServiceProcess.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Text.Encoding.CodePages.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Text.Encoding.Extensions.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Text.Encoding.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Text.Encodings.Web.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Text.Json.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Text.RegularExpressions.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Threading.Channels.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Threading.Overlapped.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Threading.Tasks.Dataflow.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Threading.Tasks.Extensions.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Threading.Tasks.Parallel.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Threading.Tasks.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Threading.Thread.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Threading.ThreadPool.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Threading.Timer.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Threading.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Transactions.Local.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Transactions.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.ValueTuple.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Web.HttpUtility.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Web.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Windows.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Xml.Linq.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Xml.ReaderWriter.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Xml.Serialization.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Xml.XDocument.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Xml.XPath.XDocument.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Xml.XPath.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Xml.XmlDocument.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Xml.XmlSerializer.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Xml.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\WindowsBase.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\mscorlib.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\netstandard.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\Microsoft.DiaSymReader.Native.amd64.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.IO.Compression.Native.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\clretwrc.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\clrgc.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\clrjit.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\coreclr.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\createdump.exe
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\hostfxr.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\hostpolicy.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\mscordaccore.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\mscordaccore_amd64_amd64_8.0.724.31311.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\mscordbi.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\mscorrc.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\msquic.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\Common.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\Common.pdb
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\obj\Debug\net8.0\win-x64\EstimationService.csproj.AssemblyReference.cache
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\obj\Debug\net8.0\win-x64\EstimationService.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\obj\Debug\net8.0\win-x64\EstimationService.AssemblyInfoInputs.cache
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\obj\Debug\net8.0\win-x64\EstimationService.AssemblyInfo.cs
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\obj\Debug\net8.0\win-x64\EstimationService.csproj.CoreCompileInputs.cache
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\obj\Debug\net8.0\win-x64\EstimationService.sourcelink.json
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\obj\Debug\net8.0\win-x64\Estimati.F6455690.Up2Date
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\obj\Debug\net8.0\win-x64\EstimationService.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\obj\Debug\net8.0\win-x64\refint\EstimationService.dll
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\obj\Debug\net8.0\win-x64\EstimationService.pdb
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\obj\Debug\net8.0\win-x64\EstimationService.genruntimeconfig.cache
-C:\Users\Lazar\Desktop\New folder\ServiceFabric\TaxiApp\EstimationService\obj\Debug\net8.0\win-x64\ref\EstimationService.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\EstimationService.exe
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\EstimationService.deps.json
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\EstimationService.runtimeconfig.json
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\EstimationService.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\EstimationService.pdb
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\Microsoft.AspNetCore.Authentication.Abstractions.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\Microsoft.AspNetCore.Authorization.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\Microsoft.AspNetCore.Authorization.Policy.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\Microsoft.AspNetCore.Connections.Abstractions.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\Microsoft.AspNetCore.Hosting.Abstractions.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\Microsoft.AspNetCore.Hosting.Server.Abstractions.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\Microsoft.AspNetCore.Http.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\Microsoft.AspNetCore.Http.Abstractions.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\Microsoft.AspNetCore.Http.Connections.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\Microsoft.AspNetCore.Http.Connections.Common.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\Microsoft.AspNetCore.Http.Extensions.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\Microsoft.AspNetCore.Http.Features.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\Microsoft.AspNetCore.Routing.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\Microsoft.AspNetCore.Routing.Abstractions.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\Microsoft.AspNetCore.SignalR.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\Microsoft.AspNetCore.SignalR.Common.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\Microsoft.AspNetCore.SignalR.Core.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\Microsoft.AspNetCore.SignalR.Protocols.Json.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\Microsoft.AspNetCore.WebSockets.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\Microsoft.AspNetCore.WebUtilities.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\Microsoft.Extensions.FileProviders.Abstractions.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\Microsoft.Extensions.Hosting.Abstractions.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\Microsoft.Extensions.ObjectPool.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\Microsoft.Extensions.Options.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\Microsoft.Extensions.Primitives.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\Microsoft.Net.Http.Headers.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\Microsoft.ServiceFabric.Internal.Strings.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\Microsoft.ServiceFabric.Internal.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\Microsoft.ServiceFabric.Preview.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\StartupServicesModel.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Fabric.Management.ServiceModel.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Fabric.Strings.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Fabric.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\Microsoft.ServiceFabric.Data.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\Microsoft.ServiceFabric.Data.Extensions.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\Microsoft.ServiceFabric.ReliableCollection.Interop.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\Microsoft.ServiceFabric.Data.Interfaces.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\Microsoft.ServiceFabric.Diagnostics.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\Microsoft.ServiceFabric.FabricTransport.V2.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\Microsoft.ServiceFabric.FabricTransport.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\Microsoft.ServiceFabric.Services.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\Microsoft.ServiceFabric.Services.Remoting.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\Newtonsoft.Json.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.IO.Pipelines.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Net.WebSockets.WebSocketProtocol.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\Microsoft.WindowsAzure.Storage.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\Microsoft.CSharp.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\Microsoft.VisualBasic.Core.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\Microsoft.VisualBasic.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\Microsoft.Win32.Primitives.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\Microsoft.Win32.Registry.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.AppContext.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Buffers.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Collections.Concurrent.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Collections.Immutable.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Collections.NonGeneric.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Collections.Specialized.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Collections.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.ComponentModel.Annotations.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.ComponentModel.DataAnnotations.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.ComponentModel.EventBasedAsync.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.ComponentModel.Primitives.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.ComponentModel.TypeConverter.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.ComponentModel.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Configuration.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Console.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Core.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Data.Common.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Data.DataSetExtensions.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Data.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Diagnostics.Contracts.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Diagnostics.Debug.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Diagnostics.FileVersionInfo.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Diagnostics.Process.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Diagnostics.StackTrace.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Diagnostics.TextWriterTraceListener.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Diagnostics.Tools.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Diagnostics.TraceSource.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Diagnostics.Tracing.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Drawing.Primitives.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Drawing.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Dynamic.Runtime.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Formats.Asn1.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Formats.Tar.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Globalization.Calendars.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Globalization.Extensions.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Globalization.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.IO.Compression.Brotli.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.IO.Compression.FileSystem.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.IO.Compression.ZipFile.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.IO.Compression.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.IO.FileSystem.AccessControl.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.IO.FileSystem.DriveInfo.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.IO.FileSystem.Primitives.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.IO.FileSystem.Watcher.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.IO.FileSystem.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.IO.IsolatedStorage.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.IO.MemoryMappedFiles.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.IO.Pipes.AccessControl.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.IO.Pipes.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.IO.UnmanagedMemoryStream.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.IO.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Linq.Expressions.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Linq.Parallel.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Linq.Queryable.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Linq.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Memory.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Net.Http.Json.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Net.Http.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Net.HttpListener.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Net.Mail.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Net.NameResolution.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Net.NetworkInformation.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Net.Ping.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Net.Primitives.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Net.Quic.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Net.Requests.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Net.Security.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Net.ServicePoint.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Net.Sockets.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Net.WebClient.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Net.WebHeaderCollection.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Net.WebProxy.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Net.WebSockets.Client.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Net.WebSockets.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Net.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Numerics.Vectors.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Numerics.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.ObjectModel.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Private.CoreLib.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Private.DataContractSerialization.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Private.Uri.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Private.Xml.Linq.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Private.Xml.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Reflection.DispatchProxy.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Reflection.Emit.ILGeneration.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Reflection.Emit.Lightweight.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Reflection.Emit.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Reflection.Extensions.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Reflection.Metadata.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Reflection.Primitives.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Reflection.TypeExtensions.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Reflection.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Resources.Reader.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Resources.ResourceManager.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Resources.Writer.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Runtime.CompilerServices.VisualC.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Runtime.Extensions.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Runtime.Handles.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Runtime.InteropServices.JavaScript.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Runtime.InteropServices.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Runtime.Intrinsics.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Runtime.Loader.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Runtime.Numerics.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Runtime.Serialization.Formatters.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Runtime.Serialization.Json.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Runtime.Serialization.Primitives.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Runtime.Serialization.Xml.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Runtime.Serialization.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Runtime.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Security.AccessControl.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Security.Claims.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Security.Cryptography.Algorithms.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Security.Cryptography.Cng.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Security.Cryptography.Csp.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Security.Cryptography.Encoding.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Security.Cryptography.OpenSsl.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Security.Cryptography.Primitives.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Security.Cryptography.X509Certificates.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Security.Cryptography.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Security.Principal.Windows.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Security.Principal.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Security.SecureString.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Security.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.ServiceModel.Web.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.ServiceProcess.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Text.Encoding.CodePages.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Text.Encoding.Extensions.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Text.Encoding.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Text.Encodings.Web.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Text.Json.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Text.RegularExpressions.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Threading.Channels.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Threading.Overlapped.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Threading.Tasks.Dataflow.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Threading.Tasks.Extensions.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Threading.Tasks.Parallel.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Threading.Tasks.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Threading.Thread.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Threading.ThreadPool.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Threading.Timer.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Threading.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Transactions.Local.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Transactions.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.ValueTuple.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Web.HttpUtility.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Web.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Windows.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Xml.Linq.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Xml.ReaderWriter.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Xml.Serialization.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Xml.XDocument.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Xml.XPath.XDocument.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Xml.XPath.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Xml.XmlDocument.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Xml.XmlSerializer.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.Xml.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\WindowsBase.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\mscorlib.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\netstandard.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\System.IO.Compression.Native.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\clretwrc.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\clrgc.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\clrjit.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\coreclr.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\createdump.exe
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\hostfxr.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\hostpolicy.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\mscordaccore.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\mscordaccore_amd64_amd64_8.0.724.31311.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\mscordbi.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\mscorrc.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\msquic.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\Common.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\bin\Debug\net8.0\win-x64\Common.pdb
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\obj\Debug\net8.0\win-x64\EstimationService.csproj.AssemblyReference.cache
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\obj\Debug\net8.0\win-x64\EstimationService.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\obj\Debug\net8.0\win-x64\EstimationService.AssemblyInfoInputs.cache
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\obj\Debug\net8.0\win-x64\EstimationService.AssemblyInfo.cs
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\obj\Debug\net8.0\win-x64\EstimationService.csproj.CoreCompileInputs.cache
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\obj\Debug\net8.0\win-x64\EstimationService.sourcelink.json
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\obj\Debug\net8.0\win-x64\Estimati.F6455690.Up2Date
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\obj\Debug\net8.0\win-x64\EstimationService.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\obj\Debug\net8.0\win-x64\refint\EstimationService.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\obj\Debug\net8.0\win-x64\EstimationService.pdb
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\obj\Debug\net8.0\win-x64\EstimationService.genruntimeconfig.cache
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\EstimationService\obj\Debug\net8.0\win-x64\ref\EstimationService.dll

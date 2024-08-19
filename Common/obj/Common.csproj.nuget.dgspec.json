@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Lazar\\Desktop\\New folder\\ServiceFabric\\Common\\Common.csproj": {}
+    "C:\\Users\\Lazar\\Desktop\\WebProj\\ServiceFabric\\Common\\Common.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Lazar\\Desktop\\New folder\\ServiceFabric\\Common\\Common.csproj": {
+    "C:\\Users\\Lazar\\Desktop\\WebProj\\ServiceFabric\\Common\\Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Lazar\\Desktop\\New folder\\ServiceFabric\\Common\\Common.csproj",
+        "projectUniqueName": "C:\\Users\\Lazar\\Desktop\\WebProj\\ServiceFabric\\Common\\Common.csproj",
         "projectName": "Common",
-        "projectPath": "C:\\Users\\Lazar\\Desktop\\New folder\\ServiceFabric\\Common\\Common.csproj",
+        "projectPath": "C:\\Users\\Lazar\\Desktop\\WebProj\\ServiceFabric\\Common\\Common.csproj",
         "packagesPath": "C:\\Users\\Lazar\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Lazar\\Desktop\\New folder\\ServiceFabric\\Common\\obj\\",
+        "outputPath": "C:\\Users\\Lazar\\Desktop\\WebProj\\ServiceFabric\\Common\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

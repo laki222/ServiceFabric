@@ -10868,11 +10868,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Lazar\\Desktop\\New folder\\ServiceFabric\\WebApi\\WebApi.csproj",
+      "projectUniqueName": "C:\\Users\\Lazar\\Desktop\\WebProj\\ServiceFabric\\WebApi\\WebApi.csproj",
       "projectName": "WebApi",
-      "projectPath": "C:\\Users\\Lazar\\Desktop\\New folder\\ServiceFabric\\WebApi\\WebApi.csproj",
+      "projectPath": "C:\\Users\\Lazar\\Desktop\\WebProj\\ServiceFabric\\WebApi\\WebApi.csproj",
       "packagesPath": "C:\\Users\\Lazar\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Lazar\\Desktop\\New folder\\ServiceFabric\\WebApi\\obj\\",
+      "outputPath": "C:\\Users\\Lazar\\Desktop\\WebProj\\ServiceFabric\\WebApi\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -10896,8 +10896,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\Lazar\\Desktop\\New folder\\ServiceFabric\\Common\\Common.csproj": {
-              "projectPath": "C:\\Users\\Lazar\\Desktop\\New folder\\ServiceFabric\\Common\\Common.csproj"
+            "C:\\Users\\Lazar\\Desktop\\WebProj\\ServiceFabric\\Common\\Common.csproj": {
+              "projectPath": "C:\\Users\\Lazar\\Desktop\\WebProj\\ServiceFabric\\Common\\Common.csproj"
             }
           }
         }

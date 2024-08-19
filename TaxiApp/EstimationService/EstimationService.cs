@@ -28,7 +28,7 @@ namespace EstimationService
             Random r = new Random();
             double price = rangeMin + (rangeMax - rangeMin) * r.NextDouble();
 
-            TimeSpan estimatedTime = new TimeSpan(0, 1, 30);
+            TimeSpan estimatedTime = new TimeSpan(0, 1, 0);
 
             return Task.FromResult(new Estimation(price, estimatedTime));
         }

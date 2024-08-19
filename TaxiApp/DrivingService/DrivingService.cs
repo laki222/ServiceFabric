@@ -418,5 +418,97 @@ namespace DrivingService
                 throw new ApplicationException($"Failed to submit rating for TripId: {tripid}", ex);
             }
         }
+
+        public async Task<TripInfo> GetCurrentTrip(Guid id)
+        {
+            var roadTrip = await this.StateManager.GetOrAddAsync<IReliableDictionary<Guid, TripInfo>>("Trips");
+            try
+            {
+                using (var tx = StateManager.CreateTransaction())
+                {
+
+                    var enumerable = await roadTrip.CreateEnumerableAsync(tx);
+
+                    using (var enumerator = enumerable.GetAsyncEnumerator())
+                    {
+                        while (await enumerator.MoveNextAsync(default(CancellationToken)))
+                        {
+                            if ((enumerator.Current.Value.RiderId == id && enumerator.Current.Value.IsFinished == false))
+                            {
+                                return enumerator.Current.Value;
+                            }
+                        }
+                    }
+                }
+                return null;
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+        }
+
+        public async Task<TripInfo> GetCurrentTripDriver(Guid id)
+        {
+            var roadTrip = await this.StateManager.GetOrAddAsync<IReliableDictionary<Guid, TripInfo>>("Trips");
+            try
+            {
+                using (var tx = StateManager.CreateTransaction())
+                {
+
+                    var enumerable = await roadTrip.CreateEnumerableAsync(tx);
+
+                    using (var enumerator = enumerable.GetAsyncEnumerator())
+                    {
+                        while (await enumerator.MoveNextAsync(default(CancellationToken)))
+                        {
+                            if ((enumerator.Current.Value.DriverId == id && enumerator.Current.Value.IsFinished == false))
+                            {
+                                return enumerator.Current.Value;
+                            }
+                        }
+                    }
+                }
+                return null;
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+        }
+
+        public async Task<List<TripInfo>> GetAllNotRatedTrips()
+        {
+            var roadTrip = await this.StateManager.GetOrAddAsync<IReliableDictionary<Guid, TripInfo>>("Trips");
+            List<TripInfo> trips = new List<TripInfo>();
+            try
+            {
+                using (var tx = StateManager.CreateTransaction())
+                {
+
+                    var enumerable = await roadTrip.CreateEnumerableAsync(tx);
+
+                    using (var enumerator = enumerable.GetAsyncEnumerator())
+                    {
+                        while (await enumerator.MoveNextAsync(default(CancellationToken)))
+                        {
+                            if (!enumerator.Current.Value.IsRated && enumerator.Current.Value.IsFinished)
+                            {
+                                trips.Add(enumerator.Current.Value);
+                            }
+                        }
+                    }
+                }
+                return trips;
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+        }
+
+
+
+
     }
 }

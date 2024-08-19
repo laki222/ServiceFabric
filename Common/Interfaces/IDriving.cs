@@ -19,6 +19,11 @@ namespace Common.Interfaces
         Task<List<TripInfo>> GetCompletedRidesForAdmin();
 
         Task<bool> SubmitRating(Guid tripid,int rating);
+        Task<TripInfo> GetCurrentTrip(Guid id);
+        Task<TripInfo> GetCurrentTripDriver(Guid id);
+
+       
+        Task<List<TripInfo>> GetAllNotRatedTrips();
 
     }
 }

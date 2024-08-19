@@ -56,7 +56,7 @@ namespace Common.Models
             if (user.Address != null) Address = user.Address;
 
             
-            if (user.Birthday != null) Birthday = DateTime.ParseExact(user.Birthday, "yyyy-MM-dd", CultureInfo.InvariantCulture);
+            if (user.Birthday != null) Birthday = DateTime.ParseExact(user.Birthday, "MM-dd-yyyy", CultureInfo.InvariantCulture);
             else Birthday = DateTime.MinValue;
 
             if (user.Email != null) Email = user.Email;
