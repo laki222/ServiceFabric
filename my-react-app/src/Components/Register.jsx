@@ -1,11 +1,18 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
+import '../Style/Register.css';
+import { gapi } from 'gapi-script';
 import { Link } from 'react-router-dom';
 import { RegisterApiCall } from '../Services/RegisterService.js';
 import { useNavigate } from 'react-router-dom';
-import '../Style/Register.css'; // Uvezite CSS fajl ovde
+import { GoogleLogin } from '@react-oauth/google';
+import {jwtDecode}  from 'jwt-decode';
+
 
 export default function Register() {
+    const clientId = process.env.REACT_APP_CLIENT_ID;
     const regularRegisterApiEndpoint = process.env.REACT_APP_REGISTER_API_URL;
+
+    
 
     const [firstName, setFirstName] = useState('');
     const [firstNameError, setFirstNameError] = useState(true);
@@ -27,18 +34,18 @@ export default function Register() {
 
     const [password, setPassword] = useState('');
     const [passwordError, setPasswordError] = useState(true);
-   
+
     const [repeatPassword, setRepeatPassword] = useState('');
     const [repeatPasswordError, setRepeatPasswordError] = useState(true);
-   
+
     const [typeOfUser, setTypeOfUser] = useState('Driver');
     const [typeOfUserError, setTypeOfUserError] = useState(false);
 
     const [imageUrl, setImageUrl] = useState(null);
     const [imageUrlError, setImageUrlError] = useState(true);
 
-    const navigate = useNavigate();
 
+    const navigate = useNavigate();
     const handleRegisterClick = async (e) => {
         e.preventDefault();
 
@@ -69,11 +76,15 @@ export default function Register() {
             navigate("/");
         }
     };
-
+    
     const handleTypeOfUserChange = (e) => {
         const value = e.target.value;
         setTypeOfUser(value);
-        setTypeOfUserError(value.trim() === '');
+        if (value.trim() === '') {
+            setTypeOfUserError(true);
+        } else {
+            setTypeOfUserError(false);
+        }
     };
 
     const handleInputChange = (setter, errorSetter) => (e) => {
@@ -106,8 +117,49 @@ export default function Register() {
         const selectedFile = e.target.files[0];
         setImageUrl(selectedFile || null);
         setImageUrlError(!selectedFile);
-        console.log(selectedFile);
     };
+
+    useEffect(() => {
+        if (clientId) {
+            function start() {
+                gapi.client.init({
+                    clientId: clientId,
+                    scope: ""
+                });
+            }
+            gapi.load('client:auth2', start);
+        } else {
+            console.error("Client ID is not defined in .env file");
+        }
+    }, [clientId]);
+
+    const onSuccess = (credentialResponse) => {
+        try {
+            const decoded = jwtDecode (credentialResponse.credential);
+            const profile = {
+                email: decoded.email,
+                firstName: decoded.given_name,
+                lastName: decoded.family_name
+            };
+
+            setEmail(profile.email);
+            setFirstName(profile.firstName);
+            setLastName(profile.lastName);
+            
+            setEmailError(!profile.email);
+            setFirstNameError(!profile.firstName);
+            setLastNameError(!profile.lastName);
+
+            alert("Please complete other fields!");
+        } catch (error) {
+            console.error("Error decoding token", error);
+        }
+    }
+
+    const onFailure = (res) => {
+        console.log("Failed to register:", res);
+    }
+
 
     return (
         <div>
@@ -223,12 +275,13 @@ export default function Register() {
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td><label className='font-serif font-bold'>Type of user:</label></td>
+                                    <td><label className='font-serif font-bold'>Type of user:</label></td>
                                         <td>
-                                            <select className={`input-field mb-4 w-full md:ml-2`}
+                                        <select className={`input-field mb-4 w-full md:ml-2`}
                                                 style={{ borderColor: typeOfUserError ? '#EF4444' : '#E5E7EB' }}
                                                 value={typeOfUser}
                                                 onChange={handleTypeOfUserChange}
+
                                             >
                                                 <option>Driver</option>
                                                 <option>Rider</option>
@@ -238,20 +291,27 @@ export default function Register() {
                                     </tr>
                                     <tr>
                                         <td><label className='font-serif font-bold'>Profile picture:</label></td>
-                                        <td>
+                                        <td> 
                                             <input
                                                 className={`input-field mb-4 w-full md:ml-2`}
                                                 type="file"
                                                 onChange={handleImageUrlChange}
                                                 required
-                                            />
-                                        </td>
+                                            /></td>
                                     </tr>
                                 </tbody>
                             </table>
-                            <button type="submit" className="btn-primary">Register</button>
+                            <button type="submit" className="btn btn-primary">Register</button>
                         </form>
                     </div>
+                    <br />
+                    <GoogleLogin
+            onSuccess={onSuccess}
+            onError={() => {
+                console.log('Login Failed');
+            }}
+        />
+
                     <br />
                     <br />
                     <Link to="/" className='link-underline'>Already registered? <b>Login now!</b></Link>
