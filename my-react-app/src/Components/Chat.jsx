@@ -3,7 +3,7 @@ import * as signalR from '@microsoft/signalr';
 import { getCurrentRide} from '../Services/RiderService.js';
 import { getUserInfo } from '../Services/ProfileService';
 import { getCurrentRideDriver } from '../Services/DriverService.js';
-
+import '../Style/Chat.css';
 
 export default function Chat({ userId }) {
   const [connection, setConnection] = useState(null);
@@ -15,25 +15,27 @@ export default function Chat({ userId }) {
   const apiEndpointForCurrentRide = process.env.REACT_APP_CURRENT_TRIP;
   const apiForCurrentUserInfo = process.env.REACT_APP_GET_USER_INFO;
   const apiEndpointForCurrentRideDriver = process.env.REACT_APP_CURRENT_TRIP_DRIVER;
+  const apiEndpointForChatHub = process.env.REACT_APP_CHAT_HUB;
+
+
 
   useEffect(() => {
     
     const newConnection = new signalR.HubConnectionBuilder()
-      .withUrl("http://localhost:9055/chatHub")
+      .withUrl(apiEndpointForChatHub)
       .build();
 
     setConnection(newConnection);
     setUser(userId);
     
     newConnection.on("ReceiveMessage", (user, message) => {
-      setMessages(messages => [...messages, `${user} says ${message}`]);
+      setMessages(messages => [...messages, { user, message }]);
     });
 
     newConnection.start()
       .then(() => {
         console.log('Connected!');
         fetchUserInfo();
-        fetchRideData(); // Premesti ovu funkciju unutar then blok
       })
       .catch(err => console.error(err.toString()));
 
@@ -46,64 +48,59 @@ export default function Chat({ userId }) {
     try {
         const jwt = localStorage.getItem('token');
         const userInfo = await getUserInfo(jwt, apiForCurrentUserInfo, userId);
-        console.log(userInfo);
+        console.log("Fetched user info:", userInfo);
         setUserCurrent(userInfo.user);
-        console.log(user);
-       
 
-     
+        // Pokreni fetchRideData samo nakon što su korisničke informacije ažurirane
+        // Koristimo useEffect da se izvrši kada se userCurrent ažurira
     } catch (error) {
         console.error('Error fetching user info:', error.message);
     }
 };
 
+useEffect(() => {
+    if (userCurrent) {
+        fetchRideData();
+    }
+}, [userCurrent]); // Ova useEffect će se izvršiti kada se userCurrent ažurira
 
-
-  const fetchRideData = async () => {
+const fetchRideData = async () => {
     try {
         const jwt = localStorage.getItem('token');
-      
+        console.log("Current user type:", userCurrent?.typeOfUser);
 
-      if (userCurrent.typeOfUser
-        ===1) {
-
-      const data = await getCurrentRide(jwt, apiEndpointForCurrentRide, userId);
-      console.log("rider");
-      console.log(data);
-      setTrip(data.trip.tripId);
-      }else{
-        const data = await getCurrentRideDriver(jwt, apiEndpointForCurrentRideDriver, userId);
-        console.log("driver");
+        let data;
+        if (userCurrent?.typeOfUser === 1) {
+            data = await getCurrentRide(jwt, apiEndpointForCurrentRide, userId);
+            console.log("rider data:", data);
+        } else {
+            data = await getCurrentRideDriver(jwt, apiEndpointForCurrentRideDriver, userId);
+            console.log("driver data:", data);
+        }
+        
         console.log(data);
         setTrip(data.trip.tripId);
 
-      }
-    
-     
-      
+        if (connection) {
+            await connection.invoke("JoinRide", data.trip.tripId)
+                .catch(err => console.error("Error joining ride:", err.toString()));
+        }
+
     } catch (error) {
-      console.log("Error fetching ride data:", error);
-    
+        console.log("Error fetching ride data:", error);
     }
-  };
+};
 
   const sendMessage = (event) => {
     event.preventDefault();
 
     if (connection) {
-      connection.invoke("SendMessage", trip, userId, message)
+      connection.invoke("SendMessage", trip, userCurrent.firstName, message)
         .catch(err => console.error(err.toString()));
     }
   };
 
-  const joinRide = (event) => {
-    event.preventDefault();
-
-    if (connection) {
-      connection.invoke("JoinRide", trip)
-        .catch(err => console.error(err.toString()));
-    }
-  };
+ 
 
   return (
     <div className="container">
@@ -112,7 +109,7 @@ export default function Chat({ userId }) {
         <div className="col-5">
           <input 
             type="text" 
-            value={user} 
+            value={userCurrent.firstName} 
             onChange={e => setUser(e.target.value)} 
             readOnly
           />
@@ -137,13 +134,7 @@ export default function Chat({ userId }) {
             onClick={sendMessage} 
             disabled={!connection} 
           />
-          <input 
-            type="button" 
-            value="Join Chat" 
-            onClick={joinRide} 
-            disabled={!connection} 
-          />
-        </div>
+         </div>
       </div>
       <div className="row p-1">
         <div className="col-6">
@@ -152,11 +143,14 @@ export default function Chat({ userId }) {
       </div>
       <div className="row p-1">
         <div className="col-6">
-          <ul>
-            {messages.map((msg, index) => (
-              <li key={index}>{msg}</li>
-            ))}
-          </ul>
+        <ul className="chat-list">
+          {messages.map((msg, index) => (
+            <li key={index} className={msg.user === userCurrent.firstName ? 'message-left' : 'message-right'}>
+              <p><strong>{msg.user}:</strong></p>
+              <p>{msg.message}</p>
+            </li>
+          ))}
+        </ul>
         </div>
       </div>
       <div className="row p-1">

@@ -50,57 +50,53 @@ export default function RateRides({ userId }) {
     };
 
     return (
-        <div className="centered" style={{ width: '100%', height: '10%' }}>
-            <table className="styled-table">
+        <div className="centered" style={{ width: '100%', height: '90%' }}>
+            <table className="styled-table" style={{ width: '100%', borderCollapse: 'collapse' }}>
                 <thead>
-                    <tr>
-                        <th>From</th>
-                        <th>To</th>
-                        <th>Price</th>
-                        <th>Rating</th>
-                        <th>Action</th>
+                    <tr style={{ backgroundColor: '#f4f4f4', color: '#333' }}>
+                        <th style={{ padding: '10px', textAlign: 'center' }}>Start point</th>
+                        <th style={{ padding: '10px', textAlign: 'center' }}>Destination</th>
+                        <th style={{ padding: '10px', textAlign: 'center' }}>Price</th>
+                        <th style={{ padding: '10px', textAlign: 'center', backgroundColor: '#ADD8E6', color: 'black' }}>Rating</th>
+                        <th style={{ padding: '10px', textAlign: 'center', backgroundColor: '#4CAF50', color: 'black' }}>Action</th>
                     </tr>
                 </thead>
                 <tbody>
                     {rides.filter(val => val.riderId === userId).map((ride, index) => (
-                        <tr key={index}>
-                            <td>{ride.currentLocation}</td>
-                            <td>{ride.destination}</td>
-                            <td>{ride.price}</td>
-                            <td style={{ textAlign: 'center' }}>
-                                <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+                        <tr key={index} style={{ borderBottom: '1px solid #ddd' }}>
+                            <td style={{ padding: '10px' }}>{ride.currentLocation}</td>
+                            <td style={{ padding: '10px' }}>{ride.destination}</td>
+                            <td style={{ padding: '10px' }}>{ride.price}</td>
+                            <td style={{ textAlign: 'center', padding: '10px' }}>
                                 <input 
-    type="number" 
-    onChange={(e) => {
-        let value = parseInt(e.target.value);
-        if (value >= 1 && value <= 5) {
-            handleRating(ride.tripId, value);
-        } else {
-            alert('Rating must be between 1 and 5');
-            e.target.value = 1; // Postavi vrednost na minimalno dozvoljenu (1)
-        }
-    }} 
-    min="1" 
-    max="5"
-/>
-
-                               
-                               
-                              
-                                </div>
+                                    type="number" 
+                                    min="1" 
+                                    max="5" 
+                                    onChange={(e) => {
+                                        let value = parseInt(e.target.value);
+                                        if (value >= 1 && value <= 5) {
+                                            handleRating(ride.tripId, value);
+                                        } else {
+                                            alert('Rating must be between 1 and 5');
+                                            e.target.value = 1; // Postavi vrednost na minimalno dozvoljenu (1)
+                                        }
+                                    }} 
+                                    style={{ width: '60px', textAlign: 'center' }}
+                                />
                             </td>
-                            <td>
+                            <td style={{ textAlign: 'center', padding: '10px' }}>
                                 {selectedTripId === ride.tripId && (
                                     <button
                                         onClick={submitRatingToBackend}
                                         style={{
                                             borderRadius: '20px',
                                             padding: '5px 10px',
-                                            color: 'red',
+                                            color: 'white',
                                             fontWeight: 'bold',
                                             cursor: 'pointer',
                                             outline: 'none',
-                                            background: 'green'
+                                            background: 'green',
+                                            border: 'none'
                                         }}
                                     >
                                         Submit
@@ -113,4 +109,4 @@ export default function RateRides({ userId }) {
             </table>
         </div>
     );
-}
+}    

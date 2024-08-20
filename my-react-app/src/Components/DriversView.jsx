@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { ChangeDriverStatus, GetAllDrivers } from '../Services/AdminService.js';
+import '../Style/DriversAdmin.css';
 
 export default function DriversView() {
     const [drivers, setDrivers] = useState([]);
@@ -33,7 +34,7 @@ export default function DriversView() {
     };
 
     return (
-        <div className="centered" style={{ width: '100%', height: '10%' }}>
+        <div >
             <table className="styled-table">
                 <thead>
                     <tr>
@@ -41,18 +42,17 @@ export default function DriversView() {
                         <th>Last Name</th>
                         <th>Email</th>
                         <th>Username</th>
-                        <th>Average rating</th>
+                        <th>Average Rating</th>
                         <th>Status</th>
                     </tr>
                 </thead>
                 <tbody>
-                    {drivers.map((val, key) => (
+                    {drivers.map((val) => (
                         <tr key={val.id}>
                             <td>{val.name}</td>
                             <td>{val.lastName}</td>
                             <td>{val.email}</td>
                             <td>{val.username}</td>
-
                             <td>{val.averageRating}</td>
                             <td>
                                 {val.isBlocked ? (

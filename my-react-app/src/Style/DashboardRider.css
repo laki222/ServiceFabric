@@ -1,0 +1,148 @@
+.drive-form-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Stil za input polja */
+.form-input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.form-input:focus {
+    border-color: #3498db;
+    outline: none;
+}
+
+/* Stil za dugmad */
+.form-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    color: white;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin: 10px 0;
+}
+
+.estimation-button {
+    background-color: #3498db;
+}
+
+.estimation-button:hover {
+    background-color: #2980b9;
+}
+
+.submit-button {
+    background-color: #2ecc71;
+}
+
+.submit-button:hover {
+    background-color: #27ae60;
+}
+
+/* Stil za informacije o proceni */
+.estimation-info {
+    margin: 10px 0;
+    font-size: 16px;
+    color: #333;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    color: white;
+    background-color: #3498db;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin: 10px 0;
+    text-align: center;
+}
+
+/* Stil za različite vrste dugmadi */
+.profile-button {
+    background-color: #3498db;
+}
+
+.profile-button:hover {
+    background-color: #2980b9;
+}
+
+.new-drive-button {
+    background-color: #2ecc71;
+}
+
+.new-drive-button:hover {
+    background-color: #27ae60;
+}
+
+.drive-history-button {
+    background-color: #f39c12;
+}
+
+.drive-history-button:hover {
+    background-color: #e67e22;
+}
+
+.rate-trips-button {
+    background-color: #e74c3c;
+}
+
+.rate-trips-button:hover {
+    background-color: #c0392b;
+}
+
+/* Ako treba dodati ikone, možeš koristiti ove stilove */
+.button span {
+    margin-left: 8px; /* Razmak između ikone i teksta */
+}
+
+.black-header-dashboard {
+    background-color: #000; /* Crna pozadina */
+    color: #fff; /* Bela boja teksta */
+    display: flex;
+    justify-content: space-between; /* Raspoređuje sadržaj na levo i desno */
+    align-items: center; /* Poravnanje stavki vertikalno u sredini */
+    padding: 10px 20px; /* Padding oko sadržaja */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Blaga senka za dubinu */
+}
+
+/* Stil za dugme za odjavu */
+.button-logout {
+    background-color: #e74c3c; /* Crvena boja pozadine */
+    color: #fff; /* Bela boja teksta */
+    border: none; /* Bez obruba */
+    border-radius: 5px; /* Zaobljeni uglovi */
+    padding: 8px 16px; /* Padding unutar dugmeta */
+    cursor: pointer; /* Pokazuje da je klikabilno */
+    font-size: 16px; /* Velicina fonta */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Efekti prelaska */
+}
+
+/* Stil za dugme kada je mišem iznad */
+.button-logout:hover {
+    background-color: #c0392b; /* Tamnija crvena boja */
+    transform: scale(1.05); /* Blagi efekat uvećanja */
+}
+
+/* Stil za dugme kada je u fokusu */
+.button-logout:focus {
+    outline: none; /* Uklanja obris fokusa */
+    box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.2); /* Dodaje obris fokusa */
+}

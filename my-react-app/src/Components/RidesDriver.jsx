@@ -23,27 +23,25 @@ export default function RidesDrivers() {
     
 
     return (
-        <div className="centered" style={{ width: '100%', height: '10%' }}>
-            <table className="styled-table">
+        <div className="centered" >
+            <table className="styled-table" >
                 <thead>
-                    <tr>
-                        <th>From</th>
-                        <th>To</th>
-                        <th>Price</th>
+                    <tr style={{ backgroundColor: '#4CAF50', color: 'white', textAlign: 'center' }}>
+                        <th style={{ padding: '10px', borderBottom: '2px solid #ddd' }}>From</th>
+                        <th style={{ padding: '10px', borderBottom: '2px solid #ddd' }}>To</th>
+                        <th style={{ padding: '10px', borderBottom: '2px solid #ddd' }}>Price</th>
                     </tr>
                 </thead>
                 <tbody>
                     {rides.map((ride, index) => (
-                        <tr key={index}>
-                            <td>{ride.currentLocation}</td>
-                            <td>{ride.destination}</td>
-                            <td>{ride.price}&euro;</td>
-
+                        <tr key={index} style={{ textAlign: 'center', borderBottom: '1px solid #ddd' }}>
+                            <td style={{ padding: '10px' }}>{ride.currentLocation}</td>
+                            <td style={{ padding: '10px' }}>{ride.destination}</td>
+                            <td style={{ padding: '10px' }}>{ride.price} &euro;</td>
                         </tr>
                     ))}
                 </tbody>
             </table>
-
         </div>
     );
-}
+}    

@@ -6,7 +6,7 @@ import RidesRider from './RidesRider.jsx';
 import Rate from './RateRides.jsx';
 import EditProfile from './EditProfile.jsx'
 import Chat from './Chat.jsx'
-
+import '../Style/DashboardRider.css';
 import { Link } from 'react-router-dom';
 
 
@@ -141,55 +141,39 @@ export default function RiderDashboard(props) {
 
     return (
         <div style={{ display: 'flex', flexDirection: 'column', height: '100vh' }}>
-            <div className="black-headerDashboar flex justify-between items-center p-4">
-                <button className="button-logout" onClick={handleSignOut}>
-                    <div style={{ display: 'flex', alignItems: 'center' }}>
-                        <span>Sign out</span>
-                    </div>
-                </button>
-            </div>
+          
             <div style={{ display: 'flex', flexDirection: 'row', flex: 1, justifyContent: 'flex-start' }}>
                 <div style={{ width: '20%', height: '100%', backgroundColor: 'black', display: 'flex', flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'center', columnGap: '10px' }}>
-                    <div>
-                        <p style={{ color: "white", textAlign: "left", fontSize: "20px" }}>Hi, {user.username}</p>
-                    </div>
+                <div className="black-header-dashboard">
+    <button className="button-logout" onClick={handleSignOut}>
+        <span>Sign out</span>
+    </button>
+</div>
                     <div>
                         <hr style={{ width: '330px' }} />
                     </div>
                     <div>
                         {clockSimulation === "Your current ticket is not accepted by any driver!" || clockSimulation === "You don't have an active trip!" ? (
-                            <>
-                                <button className="button" onClick={handleEditProfile}>
-                                    <div style={{ display: 'flex', alignItems: 'center' }}>
-                                     
-                                        <span>Profile</span>
-                                    </div>
-                                </button>
-                                <button className="button" onClick={handleNewDriveClick}>
-                                    <div style={{ display: 'flex', alignItems: 'center' }}>
-                                     
-                                        <span>New drive</span>
-                                    </div>
-                                </button>
-                                <button className="button" onClick={handleDriveHistory}>
-                                    <div style={{ display: 'flex', alignItems: 'center' }}>
-                                       
-                                        <span>Driving history</span>
-                                    </div>
-                                </button>
-                                <button className='button' onClick={handleRateTrips}>
-                                    <div style={{ display: 'flex', alignItems: 'center' }}>
-                                      
-                                        <span>Rate rides</span>
-                                    </div>
-                                </button>
-                            </>
+                           <>
+                           <button className="button profile-button" onClick={handleEditProfile}>
+                               <span>Profile</span>
+                           </button>
+                           <button className="button new-drive-button" onClick={handleNewDriveClick}>
+                               <span>New Drive</span>
+                           </button>
+                           <button className="button drive-history-button" onClick={handleDriveHistory}>
+                               <span>Driving History</span>
+                           </button>
+                           <button className="button rate-trips-button" onClick={handleRateTrips}>
+                               <span>Rate Rides</span>
+                           </button>
+                       </>
                         ) : null}
                         <p style={{ color: 'white', marginTop: '20px', marginLeft: '20px' }}>{clockSimulation}</p>
                     </div>
                 </div>
 
-                <div style={{ flex: 1, display: 'flex', flexDirection: 'column' }}>
+                <div style={{ flex: 1, display: 'flex' }}>
                     {view === 'editProfile' ? (
                        <EditProfile userId={user.id}/>
                     ) : view === 'newDrive' ? (
@@ -202,23 +186,54 @@ export default function RiderDashboard(props) {
                             flexDirection: 'column',
                             padding: '20px'
                         }}>
-                            <div style={{ width: '100%', textAlign: 'center' }}>
-                                <input type="text" placeholder="Current Location" value={currentLocation} onChange={handleLocationChange} />
-                                <input type="text" placeholder="Destination" value={destination} onChange={handleDestinationChange} />
-                                <button onClick={handleEstimationSubmit}>Get Estimation</button>
-                                <p>Estimated price: {estimation}</p>
-                                <p>Driver Arrival Time: {driversArivalSeconds} minutes</p>
-                                <button onClick={handleAcceptDriveSubmit}>Submit Request</button>
-                            </div>
+                           <div className="drive-form-container">
+    <input
+        type="text"
+        placeholder="Current Location"
+        value={currentLocation}
+        onChange={handleLocationChange}
+        className="form-input"
+    />
+    <input
+        type="text"
+        placeholder="Destination"
+        value={destination}
+        onChange={handleDestinationChange}
+        className="form-input"
+    />
+    <button
+        onClick={handleEstimationSubmit}
+        className="form-button estimation-button"
+    >
+        Get Estimation
+    </button>
+    <p className="estimation-info">Estimated price: {estimation}</p>
+    <p className="estimation-info">Driver Arrival Time: {driversArivalSeconds} minutes</p>
+    <button
+        onClick={handleAcceptDriveSubmit}
+        className="form-button submit-button"
+    >
+        Submit Request
+    </button>
+</div>
                         </div>
                     ) : view === 'driveHistory' ? (
                         <RidesRider />  
                     ) : view === 'chat' ? (
-                        <Chat userId={user.id} />
+                      
+                        <div className="centered" style={{ width: '100%', backgroundColor: '#f0f0f0', padding: '20px' }}>
+                        <div style={{ width: '100%', maxWidth: '700px', margin: '0 auto', backgroundColor: '#ffffff', borderRadius: '8px', boxShadow: '0 2px 4px rgba(0,0,0,0.1)', padding: '20px' }}>
+                            <Chat userId={user.id} />
+                        </div>
+                    </div>
+                    
                     
                     ) : view === 'rateTrips' ? (
                         <Rate userId={user.id}/>
-                    ) : (
+                    ) :  view === 'editProfile' ? (
+                        <EditProfile userId={user.id}/>
+                    )
+                     : (
                         <div>Default view or handle cases where view is not recognized</div>
                     )}
                 </div>

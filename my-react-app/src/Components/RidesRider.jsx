@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import {getMyRides} from '../Services/RiderService';
+import '../Style/RidesRider.css';
 
 export default function RidesRider() {
     const [rides, setRides] = useState([]);
@@ -23,26 +24,25 @@ export default function RidesRider() {
     
 
     return (
-        <div className="centered" style={{ width: '100%', height: '10%' }}>
-            <table className="styled-table">
-                <thead>
-                    <tr>
-                        <th>From</th>
-                        <th>To</th>
-                        <th>Price</th>
+        <div className="centered">
+        <table className="styled-table">
+            <thead>
+                <tr>
+                    <th>Start point</th>
+                    <th>Destination</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                {rides.map((ride, index) => (
+                    <tr key={index}>
+                        <td>{ride.currentLocation}</td>
+                        <td>{ride.destination}</td>
+                        <td>{ride.price}$</td>
                     </tr>
-                </thead>
-                <tbody>
-                    {rides.map((ride, index) => (
-                        <tr key={index}>
-                            <td>{ride.currentLocation}</td>
-                            <td>{ride.destination}</td>
-                            <td>{ride.price}</td>
-                        </tr>
-                    ))}
-                </tbody>
-            </table>
-
-        </div>
+                ))}
+            </tbody>
+        </table>
+    </div>
     );
 }

@@ -1,0 +1,69 @@
+/* Stil za kontejner tabele */
+.centered {
+    width: 100%; /* Širina tabele */
+    height: 100%; /* Visina tabele, koristi 100% visine dostupnog prostora */
+    display: flex; /* Flexbox za centriranje sadržaja */
+    justify-content: center; /* Horizontalno centriranje */
+    align-items: center; /* Vertikalno centriranje */
+    padding: 20px; /* Padding oko tabele */
+    box-sizing: border-box; /* Uključuje padding i border u ukupnu širinu i visinu */
+}
+
+/* Stil za tabelu */
+.styled-table {
+    width: 100%; /* Širina tabele */
+    border-collapse: collapse; /* Slučaj svih ivica u jednu */
+    background-color: #fff; /* Bela pozadina tabele */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Blaga senka za dubinu */
+}
+
+/* Stil za zaglavlje tabele */
+.styled-table thead tr {
+    background-color: #f4f4f4; /* Svetlosiva pozadina za zaglavlje */
+    text-align: left; /* Poravnanje teksta ulevo */
+}
+
+.styled-table th {
+    padding: 12px; /* Padding unutar ćelija zaglavlja */
+    font-weight: bold; /* Podebljan font */
+}
+
+/* Stil za redove u telu tabele */
+.styled-table tbody tr {
+    border-bottom: 1px solid #ddd; /* Svetlosiva donja ivica */
+}
+
+/* Stil za ćelije tabele */
+.styled-table td {
+    padding: 12px; /* Padding unutar ćelija */
+}
+
+/* Stil za redove tabele kada se prelazi mišem preko njih */
+.styled-table tbody tr:hover {
+    background-color: #f1f1f1; /* Svetlosiva pozadina kada se prelazi mišem */
+}
+
+/* Stil za zaglavlje tabele */
+.styled-table thead tr {
+    background-color: #4CAF50; /* Tamnozelena pozadina za zaglavlje */
+    color: white; /* Bela boja teksta za zaglavlje */
+}
+
+.styled-table th {
+    padding: 12px; /* Padding unutar ćelija zaglavlja */
+    font-weight: bold; /* Podebljan font */
+    text-align: left; /* Poravnanje teksta ulevo */
+}
+
+/* Dodaj boje za svaku kolonu u zaglavlju (opciono) */
+.styled-table th:nth-child(1) {
+    background-color: #2196F3; /* Plava pozadina za prvu kolonu */
+}
+
+.styled-table th:nth-child(2) {
+    background-color: #FF5722; /* Narandžasta pozadina za drugu kolonu */
+}
+
+.styled-table th:nth-child(3) {
+    background-color: #FFC107; /* Žuta pozadina za treću kolonu */
+}

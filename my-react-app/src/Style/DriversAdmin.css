@@ -1,0 +1,122 @@
+.styled-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 18px;
+    background-color: #f9f9f9;
+  }
+  
+  .styled-table th, .styled-table td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .styled-table th {
+    background-color: #4CAF50; /* Zelena boja za zaglavlja */
+    color: white; /* Boja teksta za zaglavlja */
+  }
+  
+  .styled-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  .styled-table tr:hover {
+    background-color: #ddd;
+  }
+  
+  .green-button {
+    background-color: #4CAF50; /* Zelena boja za dugme */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .red-button {
+    background-color: #f44336; /* Crvena boja za dugme */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  .styled-table {
+    width: 100%; /* Širina tabele */
+    border-collapse: collapse; /* Slučaj svih ivica u jednu */
+    background-color: #fff; /* Bela pozadina tabele */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Blaga senka za dubinu */
+}
+
+/* Stil za zaglavlje tabele */
+.styled-table thead tr {
+    background-color: #f4f4f4; /* Svetlosiva pozadina za zaglavlje */
+    text-align: left; /* Poravnanje teksta ulevo */
+}
+
+.styled-table th {
+    padding: 12px; /* Padding unutar ćelija zaglavlja */
+    font-weight: bold; /* Podebljan font */
+}
+
+/* Stil za redove u telu tabele */
+.styled-table tbody tr {
+    border-bottom: 1px solid #ddd; /* Svetlosiva donja ivica */
+}
+
+/* Stil za ćelije tabele */
+.styled-table td {
+    padding: 12px; /* Padding unutar ćelija */
+}
+
+/* Stil za redove tabele kada se prelazi mišem preko njih */
+.styled-table tbody tr:hover {
+    background-color: #f1f1f1; /* Svetlosiva pozadina kada se prelazi mišem */
+}
+
+/* Stil za zaglavlje tabele */
+.styled-table thead tr {
+    background-color: #4CAF50; /* Tamnozelena pozadina za zaglavlje */
+    color: white; /* Bela boja teksta za zaglavlje */
+}
+
+.styled-table th {
+    padding: 12px; /* Padding unutar ćelija zaglavlja */
+    font-weight: bold; /* Podebljan font */
+    text-align: left; /* Poravnanje teksta ulevo */
+}
+
+/* Dodaj boje za svaku kolonu u zaglavlju (opciono) */
+.styled-table th:nth-child(1) {
+    background-color: #2196F3; /* Plava pozadina za prvu kolonu */
+}
+
+.styled-table th:nth-child(2) {
+    background-color: #FF5722; /* Narandžasta pozadina za drugu kolonu */
+}
+
+.styled-table th:nth-child(3) {
+    background-color: #FFC107; /* Žuta pozadina za treću kolonu */
+}
+.styled-table th:nth-child(4) {
+    background-color: green; /* Plava pozadina za prvu kolonu */
+}
+
+.styled-table th:nth-child(5) {
+    background-color: firebrick; /* Narandžasta pozadina za drugu kolonu */
+}
+
+.styled-table th:nth-child(6) {
+    background-color: orange; /* Žuta pozadina za treću kolonu */
+}

@@ -9,9 +9,12 @@ import {
   Route,
 } from "react-router-dom";
 
+
+
 function App() {
+  const apiEndpointClient = process.env.REACT_APP_CLIENT_ID;
   return (
-    <GoogleOAuthProvider clientId="666899120556-pgqh6ju9k0aur2mcgv94eker6endktdo.apps.googleusercontent.com">
+    <GoogleOAuthProvider clientId={apiEndpointClient}>
         <Router>
             <Routes>
                 <Route path="/" element={<Login />} />

@@ -59,3 +59,31 @@
 .font-bold {
     font-weight: bold;
 }
+
+
+
+.login-button {
+    background-color: #1D4ED8; /* Plava boja */
+    color: #FFFFFF; /* Bela boja teksta */
+    font-weight: bold;
+    padding: 0.5rem 1rem; /* Padding */
+    border-radius: 0.375rem; /* Zaobljeni uglovi */
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Senka */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Efekat prelaska */
+  }
+  
+  .login-button:hover {
+    background-color: #2563EB; /* Tamnija plava boja za hover efekat */
+  }
+  
+  .login-button:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(66, 153, 225, 0.5); /* Plavi okvir pri fokusu */
+  }
+  
+  .login-button:disabled {
+    background-color: #D1D5DB; /* Siva boja za deaktivirano dugme */
+    cursor: not-allowed;
+  }

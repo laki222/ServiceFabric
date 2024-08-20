@@ -165,73 +165,55 @@ export default function DashboardDriver(props) {
 
     return (
         <div style={{ display: 'flex', flexDirection: 'column', height: '100vh' }}>
-            <div className="black-headerDashboar flex justify-between items-center p-4">
-                <button className="button-logout" onClick={handleSignOut}>
-                    <div style={{ display: 'flex', alignItems: 'center' }}>
-                      
-                        <span>Sign out</span>
-                    </div>
-                </button>
-            </div>
             <div style={{ display: 'flex', flexDirection: 'row', flex: 1, justifyContent: 'flex-start' }}>
                 <div style={{ width: '20%', height: '100%', backgroundColor: 'black', display: 'flex', flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'center', columnGap: '10px' }}>
-                    <div>
-                        {isBlocked ? (
-                            <p style={{ color: "white", textAlign: "left", fontSize: "20px", display: "flex", alignItems: "center" }}>
-                               You are blocked
-                            </p>
-                        ) : (
-                            <p style={{ color: "white", textAlign: "left", fontSize: "20px", display: "flex", alignItems: "center" }}>
-                                Hi, {username}
-                                <span style={{ marginLeft: "10px" }}>
-                                    {status == 0 }
-                                    {status == 1 }
-                                    {status == 2 }
-                                </span>
-                            </p>
-                        )}
+                    <div className="black-header-dashboard">
+                        <button className="button-logout" onClick={handleSignOut}>
+                            <span>Sign out</span>
+                        </button>
                     </div>
-    
                     <div>
-                        <hr style={{ width: '330px' }}></hr>
+                        <hr style={{ width: '330px' }} />
                     </div>
-                    {clockSimulation == "You don't have an active trip!" ? (
+                    {isBlocked && (
+                        <div style={{ display: 'flex', flexDirection: 'row', flex: 1, justifyContent: 'flex-start' }}>
+                            <div style={{ width: '20%', height: '100%', backgroundColor: 'black', display: 'flex', flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'center', columnGap: '10px' }}>
+                                <p style={{ color: "white", textAlign: "left", fontSize: "20px", display: "flex", alignItems: "center" }}>
+                                    You are blocked!
+                                </p>
+                            </div>
+                        </div>
+                    )}
+                    <div>
+                        <hr style={{ width: '330px' }} />
+                    </div>
+                    {clockSimulation === "You don't have an active trip!" && (
                         <>
-                           
-                            {!isBlocked && isVerified === true ? (
+                            {!isBlocked && isVerified === true && (
                                 <>
-                                <button className="button" onClick={handleEditProfile}>
-                                        <div style={{ display: 'flex', alignItems: 'center' }}>
-                                           
-                                            <span>Edit profile</span>
-                                        </div>
+                                    <button className="button profile-button" onClick={handleEditProfile}>
+                                        <span>Profile</span>
                                     </button>
-                                    <button className="button" onClick={handleViewRides}>
-                                        <div style={{ display: 'flex', alignItems: 'center' }}>
-                                           
-                                            <span>New rides</span>
-                                        </div>
+                                    <button className="button new-drive-button" onClick={handleViewRides}>
+                                        <span>Available Rides</span>
                                     </button>
-                                    <button className="button" onClick={handleDriveHistory}>
-                                        <div style={{ display: 'flex', alignItems: 'center' }}>
-                                           
-                                            <span>Rides history</span>
-                                        </div>
+                                    <button className="button drive-history-button" onClick={handleDriveHistory}>
+                                        <span>Driving History</span>
                                     </button>
                                 </>
-                            ) : null}
+                            )}
                         </>
-                    ) : null}
+                    )}
                     <p style={{ color: 'white', marginTop: '20px', marginLeft: '20px' }}>{clockSimulation}</p>
                 </div>
                 {!tripIsActive ? (
                     <div style={{ flex: 1, display: 'flex', flexDirection: 'column' }}>
                         <div style={{ height: '100%', display: 'flex' }}>
-                        {view === 'editProfile' ? (
-                       <EditProfile userId={user.id}/>
-                         ) : view === 'rides' ? (
-                                (clockSimulation === "You don't have an active trip!") ? (
-                                    <div className="centered" style={{ width: '100%', height: '10%' }}>
+                            {view === 'editProfile' ? (
+                                <EditProfile userId={user.id} />
+                            ) : view === 'rides' ? (
+                                clockSimulation === "You don't have an active trip!" && (
+                                    <div className="centered" style={{ width: '100%', height: '30%' }}>
                                         <table className="styled-table" style={{ width: '70%' }}>
                                             <thead>
                                                 <tr>
@@ -268,18 +250,17 @@ export default function DashboardDriver(props) {
                                             </tbody>
                                         </table>
                                     </div>
-                                ) : null
+                                )
                             ) : view === 'driveHistory' ? (
-                                <RidesDriver />  
+                                <RidesDriver />
                             ) : null}
                         </div>
                     </div>
-                ) : (
-                <div style={{ height: '100%', display: 'flex' }}>
+                ) : ( <div className="centered" style={{ width: '300%'}}>
                     <Chat userId={user.id} />
-                </div>
+                    </div>
                 )}
             </div>
         </div>
     );
-}   
+}    

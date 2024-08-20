@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { getUserInfo, makeImage,convertDateTimeToDateOnly,changeUserFields } from '../Services/ProfileService.js';
+import '../Style/Profile.css';
+
 
 export default function EditProfile({ userId }) {
     const [user, setUser] = useState({
@@ -98,108 +100,132 @@ export default function EditProfile({ userId }) {
     }
 
     return (
-        <div>
-            <div>
-            <label>First Name</label>
-            <input
-                type="text"
-                name="firstName"
-                value={user.firstName}
-                onChange={handleInputChange}
-                readOnly={!isEditing}
-            />
-        </div>
+        <div className="profile-form">
+          <h2>{isEditing ? 'Edit Profile' : 'Profile'}</h2>
           
-        
-        <div>
-            <label>Last Name</label>
-            <input
-                type="text"
-                name="lastName"
-                value={user.lastName}
-                onChange={handleInputChange}
-                readOnly={!isEditing}
-            />
-        </div>
-        <div>
-            <label>Address</label>
-            <input
-                type="text"
-                name="address"
-                value={user.address}
-                onChange={handleInputChange}
-                readOnly={!isEditing}
-            />
-        </div>
-        <div>
-            <label>Birthday</label>
-            <input
-                type="text"
-                name="birthday"
-                value={birthday}
-                onChange={handleInputChange}
-                readOnly={!isEditing}
-            />
+          <div className="form-group profile-image">
            
-        </div>
-        <div>
-            <label>Email</label>
-            <input
-                type="email"
-                name="email"
-                value={user.email}
-                onChange={handleInputChange}
-                readOnly={!isEditing}
-            />
-        </div>
-        <div>
-            <label>Password</label>
-            <input
-                type="password"
-                name="password"
-                
-                placeholder='********'
-                onChange={handleInputChange}
-                readOnly={!isEditing}
-            />
-        </div>
-        <div>
-            <label>Profile Image</label>
-            <div style={{ display: 'flex', alignItems: 'center' }}>
-                <img
-                    src={imageFile || 'default-image-url'} // Use a default image if no image is selected
-                    alt="User"
-                    style={{ width: '100px', height: '100px', marginRight: '15px' }}
+            <div>
+              <img
+                src={imageFile || 'default-image-url'}
+                alt="User"
+              />
+              {isEditing && (
+                <input
+                  type="file"
+                  name="imageUrl"
+                  onChange={handleImageChange}
                 />
-                {isEditing && (
-                    <input
-                        type="file"
-                        name="imageUrl"
-                        onChange={handleImageChange}
-                    />
-                )}
+              )}
             </div>
-        </div>
-        <div>
-            <label>Username</label>
+          </div>
+
+          <div className="form-group">
+            <label htmlFor="firstName">First Name</label>
             <input
-                type="text"
-                name="username"
-                value={user.username}
-                onChange={handleInputChange}
-                readOnly={!isEditing}
+              type="text"
+              name="firstName"
+              id="firstName"
+              value={user.firstName}
+              onChange={handleInputChange}
+              readOnly={!isEditing}
             />
-        </div>
-        <div>
+          </div>
+    
+          <div className="form-group">
+            <label htmlFor="lastName">Last Name</label>
+            <input
+              type="text"
+              name="lastName"
+              id="lastName"
+              value={user.lastName}
+              onChange={handleInputChange}
+              readOnly={!isEditing}
+            />
+          </div>
+    
+          <div className="form-group">
+            <label htmlFor="address">Address</label>
+            <input
+              type="text"
+              name="address"
+              id="address"
+              value={user.address}
+              onChange={handleInputChange}
+              readOnly={!isEditing}
+            />
+          </div>
+    
+          <div className="form-group">
+            <label htmlFor="birthday">Birthday</label>
+            <input
+              type="text"
+              name="birthday"
+              id="birthday"
+              value={birthday}
+              onChange={handleInputChange}
+              readOnly={!isEditing}
+            />
+          </div>
+    
+          <div className="form-group">
+            <label htmlFor="email">Email</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              value={user.email}
+              onChange={handleInputChange}
+              readOnly={!isEditing}
+            />
+          </div>
+    
+          <div className="form-group">
+        
+            <label  htmlFor="password">Password</label>
+            <div>
+            <span><i aria-hidden="true" class="fa fa-envelope"></i></span>
+            <input
+              type="password"
+              name="password"
+              id="password"
+              placeholder='********'
+              onChange={handleInputChange}
+              readOnly={!isEditing}
+            />
+            </div>
+          </div>
+    
+         
+    
+          <div className="buttons">
             {isEditing ? (
-                <>
-                    <button type="buttom" onClick={handleSaveClick}>Save Changes</button>
-                    <button type="button" onClick={handleCancelClick}>Cancel</button>
-                </>
+              <>
+                <button
+                  type="button"
+                  onClick={handleSaveClick}
+                  className="save-button"
+                >
+                  Save Changes
+                </button>
+                <button
+                  type="button"
+                  onClick={handleCancelClick}
+                  className="cancel-button"
+                >
+                  Cancel
+                </button>
+              </>
             ) : (
-                <button type="button" onClick={handleEditClick}>Edit Profile</button>
+              <button
+                type="button"
+                onClick={handleEditClick}
+                className="edit-button"
+              >
+                Edit Profile
+              </button>
             )}
+          </div>
         </div>
-        </div>
-    );
-}
+      );
+    }

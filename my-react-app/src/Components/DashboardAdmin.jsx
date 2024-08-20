@@ -4,6 +4,8 @@ import DriversView from './DriversView.jsx';
 import VerifyDrivers from './VerifyDrivers.jsx';
 import RidesAdmin from './RidesAdmin.jsx';
 import EditProfile from './EditProfile.jsx'
+import '../Style/DashboardRider.css';
+
 
 export default function DashboardAdmin(props) {
     const user = props.user;
@@ -40,44 +42,34 @@ export default function DashboardAdmin(props) {
 
     return (
         <div style={{ display: 'flex', flexDirection: 'column', height: '100vh' }}>
-            <div className="black-headerDashboard flex justify-between items-center p-4">
-                <button className="button-logout" onClick={handleSignOut}>
-                    <div style={{ display: 'flex', alignItems: 'center' }}>
-                       
-                        <span>Sign out</span>
-                    </div>
-                </button>
-            </div>
-            <div style={{ display: 'flex', flexDirection: 'row', flex: 1, justifyContent: 'flex-start' }}>
+               <div style={{ display: 'flex', flexDirection: 'row', flex: 1, justifyContent: 'flex-start' }}>
                 <div style={{ width: '20%', height: '100%', backgroundColor: 'black', display: 'flex', flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'center', columnGap: '10px' }}>
-                    <div>
-                        <p style={{ color: "white", textAlign: "left", fontSize: "20px" }}>Hi, {username}</p>
-                    </div>
+                <div className="black-header-dashboard">
+    <button className="button-logout" onClick={handleSignOut}>
+        <span>Sign out</span>
+    </button>
+</div>
                     <div>
                         <hr style={{ width: '330px' }} />
                     </div>
-                    <button className="button" onClick={handleShowDriversForVerification}>
-                        <div style={{ display: 'flex', alignItems: 'center' }}>
-                            <span>Verify drivers</span>
-                        </div>
-                    </button>
-                    <button className="button" onClick={handleShowDrivers}>
-                        <div style={{ display: 'flex', alignItems: 'center' }}>
-                            <span>Drivers</span>
-                        </div>
-                    </button>
-                    <button className="button" onClick={handleShowAllRides}>
-                        <div style={{ display: 'flex', alignItems: 'center' }}>
-                            <span>Rides</span>
-                        </div>
-                    </button>
-                    <button className="button" onClick={handleEditProfile}>
-                        <div style={{ display: 'flex', alignItems: 'center' }}>
-                            <span>Profile</span>
-                        </div>
-                    </button>
-                </div>
-
+                    <div>
+                      
+                           <>
+                           <button className="button profile-button" onClick={handleEditProfile}>
+                               <span>Profile</span>
+                           </button>
+                           <button className="button new-drive-button" onClick={handleShowAllRides}>
+                               <span>All rides</span>
+                           </button>
+                           <button className="button drive-history-button" onClick={handleShowDriversForVerification}>
+                               <span>Drivers for verify</span>
+                           </button>
+                           <button className="button rate-trips-button" onClick={handleShowDrivers}>
+                               <span>All drivers</span>
+                           </button>
+                       </>
+                       </div>
+                       </div>
                 <div style={{ flex: 1, padding: '20px' }}>
                     {view === 'drivers' ? (
                         <DriversView />

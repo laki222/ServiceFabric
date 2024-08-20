@@ -23,7 +23,7 @@ export default function RidesAdmin() {
     
 
     return (
-        <div className="centered" style={{ width: '100%', height: '10%' }}>
+        <div >
             <table className="styled-table">
                 <thead>
                     <tr>
