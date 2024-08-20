@@ -21,7 +21,7 @@ namespace ChatService.Hubs
         {
 
             await Clients.Group(rideId.ToString()).SendAsync("ReceiveMessage", senderId, message);
-            _chatService.AddMessage(rideId,senderId, message);
+           
 
         }
     }

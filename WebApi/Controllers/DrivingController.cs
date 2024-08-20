@@ -17,12 +17,7 @@ namespace WebApi.Controllers
     public class DrivingController : ControllerBase
     {
 
-        private readonly IHubContext<ChatHub> _hubContext;
-
-        public DrivingController(IHubContext<ChatHub> hubContext)
-        {
-            _hubContext = hubContext;
-        }
+       
 
 
         //[Authorize(Policy = "Rider")]

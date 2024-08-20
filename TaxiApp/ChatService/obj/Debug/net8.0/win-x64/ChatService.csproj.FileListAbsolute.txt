@@ -3,6 +3,7 @@ C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\ChatService\bin\Debug\net8.
 C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\ChatService\bin\Debug\net8.0\win-x64\ChatService.runtimeconfig.json
 C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\ChatService\bin\Debug\net8.0\win-x64\ChatService.dll
 C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\ChatService\bin\Debug\net8.0\win-x64\ChatService.pdb
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\ChatService\bin\Debug\net8.0\win-x64\Microsoft.AspNet.SignalR.Client.dll
 C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\ChatService\bin\Debug\net8.0\win-x64\Microsoft.AspNetCore.Authentication.Abstractions.dll
 C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\ChatService\bin\Debug\net8.0\win-x64\Microsoft.AspNetCore.Authorization.dll
 C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\ChatService\bin\Debug\net8.0\win-x64\Microsoft.AspNetCore.Authorization.Policy.dll

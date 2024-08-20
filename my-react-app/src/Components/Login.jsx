@@ -69,24 +69,26 @@ export default function Login() {
 
 
   return (
-    <div className='font-serif'>
+    <div className='font-serif' style={{ background: "orange" }}>
       <div className="black-header">
         <h1>TAXI</h1>
       </div>
-      <div className="login-container flex justify-center items-center h-screen">
+      <div className="login-container flex justify-center items-center h-screen" style={{ background: "orange" }}>
 
-        <div className="login-form">
-          <h3 className='text-4xl dark:text-white font-serif'>LOGIN</h3>
+        <div className="login-form" style={{ background: "black" }}>
+          <h3 className='text-4xl dark:text-white font-serif' style={{ color: "orange" }}>LOGIN</h3>
           <hr className="mb-4"></hr>
           <br></br>
           <form onSubmit={handleLoginClick} method='post'>
-            <input className="input-field" type="text" placeholder="Email" value={email} onChange={handleEmailChange} />
+          <div className="inputContainerStyle">
+            <input className="input-field" type="text" style={{ marginBottom: 20}} placeholder="Email" value={email} onChange={handleEmailChange} />
             <input className="input-field" type="password" placeholder="Password" value={password} onChange={handlePasswordChange} title='Passoword need 8 character one capital letter,number and special character' />
-            <button className="login-button" type='submit'>Login</button>
+            <button className="login-button" type='submit' style={{ color: "black",background:"orange" }}>Login</button>
+          </div>
           </form>
-          <p className="signup-link">Don't have an account? &nbsp;
+          <p className="signup-link" style={{ color: "orange" }}>Don't have an account? &nbsp;
             {/* <a href="#" className="text-gray-800 font-bold">Sign up</a> */}
-            <Link to="/Register" className="text-gray-800 font-bold">
+            <Link to="/Register" className="text-gray-800 font-bold" style={{ color: "white" }}>
               Register
             </Link>
           </p>

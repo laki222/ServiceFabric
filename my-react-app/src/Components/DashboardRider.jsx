@@ -140,7 +140,7 @@ export default function RiderDashboard(props) {
     }, [jwt, apiEndpointForCurrentDrive, userId]);
 
     return (
-        <div style={{ display: 'flex', flexDirection: 'column', height: '100vh' }}>
+        <div style={{ display: 'flex', flexDirection: 'column', height: '200vh' }}>
           
             <div style={{ display: 'flex', flexDirection: 'row', flex: 1, justifyContent: 'flex-start' }}>
                 <div style={{ width: '20%', height: '100%', backgroundColor: 'black', display: 'flex', flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'center', columnGap: '10px' }}>
@@ -173,7 +173,7 @@ export default function RiderDashboard(props) {
                     </div>
                 </div>
 
-                <div style={{ flex: 1, display: 'flex' }}>
+                <div style={{ flex: 1, padding: '20px' }}>
                     {view === 'editProfile' ? (
                        <EditProfile userId={user.id}/>
                     ) : view === 'newDrive' ? (
@@ -186,7 +186,7 @@ export default function RiderDashboard(props) {
                             flexDirection: 'column',
                             padding: '20px'
                         }}>
-                           <div className="drive-form-container">
+                           <div className="drive-form-container" style={{ background:'black' }}>
     <input
         type="text"
         placeholder="Current Location"
@@ -201,17 +201,17 @@ export default function RiderDashboard(props) {
         onChange={handleDestinationChange}
         className="form-input"
     />
-    <button
+    <button style={{ background:'orange' ,color:'black'}}
         onClick={handleEstimationSubmit}
         className="form-button estimation-button"
     >
         Get Estimation
     </button>
-    <p className="estimation-info">Estimated price: {estimation}</p>
-    <p className="estimation-info">Driver Arrival Time: {driversArivalSeconds} minutes</p>
+    <p className="estimation-info" style={{ color:'orange' }}>Estimated price: <strong>{estimation}</strong></p>
+    <p className="estimation-info"style={{ color:'orange' }}>Driver Arrival Time: <strong>{driversArivalSeconds}</strong> minutes</p>
     <button
         onClick={handleAcceptDriveSubmit}
-        className="form-button submit-button"
+        className="form-button submit-button" style={{ color:'black'}}
     >
         Submit Request
     </button>
@@ -221,8 +221,8 @@ export default function RiderDashboard(props) {
                         <RidesRider />  
                     ) : view === 'chat' ? (
                       
-                        <div className="centered" style={{ width: '100%', backgroundColor: '#f0f0f0', padding: '20px' }}>
-                        <div style={{ width: '100%', maxWidth: '700px', margin: '0 auto', backgroundColor: '#ffffff', borderRadius: '8px', boxShadow: '0 2px 4px rgba(0,0,0,0.1)', padding: '20px' }}>
+                        <div  style={{ margin: '0 auto',  backgroundColor: 'orange', padding: '20px' , justifyContent: 'center', alignItems: 'center'}}>
+                        <div style={{ width: '100%', maxWidth: '500px', margin: '0 auto', backgroundColor: 'orange', borderRadius: '8px', boxShadow: '0 2px 4px rgba(0,0,0,0.1)', padding: '20px' }}>
                             <Chat userId={user.id} />
                         </div>
                     </div>

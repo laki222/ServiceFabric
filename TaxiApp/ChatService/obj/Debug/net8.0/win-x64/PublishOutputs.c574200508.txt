@@ -185,6 +185,7 @@ C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\pkg\Debug\ChatServicePkg\Co
 C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\pkg\Debug\ChatServicePkg\Code\mscordbi.dll
 C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\pkg\Debug\ChatServicePkg\Code\mscorrc.dll
 C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\pkg\Debug\ChatServicePkg\Code\msquic.dll
+C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\pkg\Debug\ChatServicePkg\Code\Microsoft.AspNet.SignalR.Client.dll
 C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\pkg\Debug\ChatServicePkg\Code\Microsoft.AspNetCore.Authentication.Abstractions.dll
 C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\pkg\Debug\ChatServicePkg\Code\Microsoft.AspNetCore.Authorization.dll
 C:\Users\Lazar\Desktop\WebProj\ServiceFabric\TaxiApp\pkg\Debug\ChatServicePkg\Code\Microsoft.AspNetCore.Authorization.Policy.dll

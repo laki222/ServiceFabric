@@ -13,7 +13,7 @@
       </ExeHost>
     </EntryPoint>
     <EnvironmentVariables>
-      <EnvironmentVariable Name="DataConnectionString" Value="DefaultEndpointsProtocol=https;AccountName=cloudprojekat;AccountKey=vwtXRnG7VWT0L3Dl6wBIwSWbOv91HzphoDDTRn27xmJl+JB0asd/54IqXn43gDEWFyok+3cjlNaz+AStMTUDsg==;EndpointSuffix=core.windows.net"></EnvironmentVariable>
+      <EnvironmentVariable Name="DataConnectionString" Value="UseDevelopmentStorage=true"></EnvironmentVariable>
     </EnvironmentVariables>
   </CodePackage>
   <!-- Config package is the contents of the Config directory under PackageRoot that contains an 

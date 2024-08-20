@@ -166,12 +166,12 @@ export default function Register() {
             <div className='black-header'>
                 <h1>TAXI</h1>
             </div>
-            <div className="register-container">
-                <div className="register-form">
-                    <h3 className='text-4xl dark:text-white font-serif'>Registration</h3>
+            <div className="register-container" style={{ background: "orange" }}>
+                <div className="register-form" style={{ background: "black" }}>
+                    <h3 className='text-4xl dark:text-white font-serif' style={{ color: "orange" }}>Registration</h3>
                     <hr />
                     <br />
-                    <div className="flex flex-col md:flex-row w-max">
+                    <div className="flex flex-col md:flex-row w-max" style={{ background: "black" }}>
                         <form onSubmit={handleRegisterClick} encType="multipart/form-data" method='post'>
                             <table className="w-full">
                                 <tbody>
@@ -200,7 +200,7 @@ export default function Register() {
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td className='font-serif font-bold'>Date of birth</td>
+                                        <td className='font-serif font-bold'style={{ color: "orange" }}>Date of birth</td>
                                         <td>
                                             <input
                                                 className={`input-field mb-4 w-full md:ml-2`}
@@ -275,7 +275,7 @@ export default function Register() {
                                         </td>
                                     </tr>
                                     <tr>
-                                    <td><label className='font-serif font-bold'>Type of user:</label></td>
+                                    <td><label className='font-serif font-bold'style={{ color: "orange" }}>Type of user:</label></td>
                                         <td>
                                         <select className={`input-field mb-4 w-full md:ml-2`}
                                                 style={{ borderColor: typeOfUserError ? '#EF4444' : '#E5E7EB' }}
@@ -290,8 +290,8 @@ export default function Register() {
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td><label className='font-serif font-bold'>Profile picture:</label></td>
-                                        <td> 
+                                        <td><label className='font-serif font-bold' style={{ marginBottom: 20,color: "orange" }}>Profile picture:</label></td>
+                                        <td style={{ marginBottom: 20}}> 
                                             <input
                                                 className={`input-field mb-4 w-full md:ml-2`}
                                                 type="file"
@@ -301,7 +301,7 @@ export default function Register() {
                                     </tr>
                                 </tbody>
                             </table>
-                            <button type="submit" className="btn btn-primary">Register</button>
+                            <button type="submit" className="btn btn-primary"style={{ background: "orange",color: "black" }}>Register</button>
                         </form>
                     </div>
                     <br />
@@ -314,7 +314,7 @@ export default function Register() {
 
                     <br />
                     <br />
-                    <Link to="/" className='link-underline'>Already registered? <b>Login now!</b></Link>
+                    <Link to="/" className='link-underline' style={{ color: "orange" }}>Already registered? <b>Login now!</b></Link>
                 </div>
             </div>
         </div>

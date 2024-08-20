@@ -52,18 +52,18 @@
 .styled-table th {
     padding: 12px; /* Padding unutar ćelija zaglavlja */
     font-weight: bold; /* Podebljan font */
-    text-align: left; /* Poravnanje teksta ulevo */
+    text-align: center; /* Poravnanje teksta ulevo */
 }
 
 /* Dodaj boje za svaku kolonu u zaglavlju (opciono) */
 .styled-table th:nth-child(1) {
-    background-color: #2196F3; /* Plava pozadina za prvu kolonu */
+    background-color: black; /* Plava pozadina za prvu kolonu */
 }
 
 .styled-table th:nth-child(2) {
-    background-color: #FF5722; /* Narandžasta pozadina za drugu kolonu */
+    background-color: black; /* Narandžasta pozadina za drugu kolonu */
 }
 
 .styled-table th:nth-child(3) {
-    background-color: #FFC107; /* Žuta pozadina za treću kolonu */
+    background-color: black; /* Žuta pozadina za treću kolonu */
 }

@@ -47,22 +47,23 @@ export default function DriversView() {
                     </tr>
                 </thead>
                 <tbody>
-                    {drivers.map((val) => (
-                        <tr key={val.id}>
-                            <td>{val.name}</td>
-                            <td>{val.lastName}</td>
-                            <td>{val.email}</td>
-                            <td>{val.username}</td>
-                            <td>{val.averageRating}</td>
-                            <td>
-                                {val.isBlocked ? (
-                                    <button className="green-button" onClick={() => handleChangeStatus(val.id, val.isBlocked)}>Unblock</button>
-                                ) : (
-                                    <button className="red-button" onClick={() => handleChangeStatus(val.id, val.isBlocked)}>Block</button>
-                                )}
-                            </td>
-                        </tr>
-                    ))}
+                {drivers.filter(val => val.status === 1).map(val => (
+    <tr key={val.id}>
+        <td>{val.name}</td>
+        <td>{val.lastName}</td>
+        <td>{val.email}</td>
+        <td>{val.username}</td>
+        <td>{val.averageRating}</td>
+        <td>
+            {val.isBlocked ? (
+                <button className="green-button" onClick={() => handleChangeStatus(val.id, false)}>Unblock</button>
+            ) : (
+                <button className="red-button" onClick={() => handleChangeStatus(val.id, true)}>Block</button>
+            )}
+        </td>
+    </tr>
+))}
+
                 </tbody>
             </table>
         </div>

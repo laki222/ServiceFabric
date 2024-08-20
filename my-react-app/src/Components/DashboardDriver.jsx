@@ -8,7 +8,7 @@ import {getCurrentRideDriver} from '../Services/DriverService.js';
 import RidesDriver from './RidesDriver.jsx'
 import EditProfile from './EditProfile.jsx'
 import Chat from './Chat.jsx'
-
+import '../Style/DashboardRider.css';
 export default function DashboardDriver(props) {
 
     const user = props.user;
@@ -140,8 +140,9 @@ export default function DashboardDriver(props) {
                         setView('chat');
                         setClockSimulation(`The trip will end in: ${data.trip.secondsToEndTrip} seconds`);
                     } else if (data.trip.accepted && data.trip.secondsToDriverArrive === 0 && data.trip.secondsToEndTrip === 0) {
-                        setClockSimulation("Your trip has ended");
                         setView('editProfile');
+                        setClockSimulation("Your trip has ended");
+                       
                     }
                 } else {
                     setClockSimulation("You don't have an active trip!");
@@ -164,7 +165,7 @@ export default function DashboardDriver(props) {
     }, [jwt, apiEndpointForCurrentRide, userId]);
 
     return (
-        <div style={{ display: 'flex', flexDirection: 'column', height: '100vh' }}>
+        <div style={{ display: 'flex', flexDirection: 'column', height: '200vh' }}>
             <div style={{ display: 'flex', flexDirection: 'row', flex: 1, justifyContent: 'flex-start' }}>
                 <div style={{ width: '20%', height: '100%', backgroundColor: 'black', display: 'flex', flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'center', columnGap: '10px' }}>
                     <div className="black-header-dashboard">
@@ -187,6 +188,7 @@ export default function DashboardDriver(props) {
                     <div>
                         <hr style={{ width: '330px' }} />
                     </div>
+                    <div>
                     {clockSimulation === "You don't have an active trip!" && (
                         <>
                             {!isBlocked && isVerified === true && (
@@ -205,10 +207,11 @@ export default function DashboardDriver(props) {
                         </>
                     )}
                     <p style={{ color: 'white', marginTop: '20px', marginLeft: '20px' }}>{clockSimulation}</p>
+                    </div>
                 </div>
                 {!tripIsActive ? (
-                    <div style={{ flex: 1, display: 'flex', flexDirection: 'column' }}>
-                        <div style={{ height: '100%', display: 'flex' }}>
+                     <div style={{ flex: 1, padding: '20px' }}>
+                       
                             {view === 'editProfile' ? (
                                 <EditProfile userId={user.id} />
                             ) : view === 'rides' ? (
@@ -255,10 +258,12 @@ export default function DashboardDriver(props) {
                                 <RidesDriver />
                             ) : null}
                         </div>
+                    
+                ) : (    <div  style={{ margin: '0 auto',  backgroundColor: 'orange', padding: '20px' , justifyContent: 'center', alignItems: 'center'}}>
+                    <div style={{ width: '100%', maxWidth: '500px', margin: '0 auto', backgroundColor: 'orange', borderRadius: '8px', boxShadow: '0 2px 4px rgba(0,0,0,0.1)', padding: '20px' }}>
+                        <Chat userId={user.id} />
                     </div>
-                ) : ( <div className="centered" style={{ width: '300%'}}>
-                    <Chat userId={user.id} />
-                    </div>
+                </div>
                 )}
             </div>
         </div>

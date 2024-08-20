@@ -68,16 +68,18 @@
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
-    color: white;
+    color: black;
     background-color: #3498db;
     transition: background-color 0.3s ease, transform 0.2s ease;
-    margin: 10px 0;
+    margin: 10px 10px 10px 10px; /* Margin top, right, bottom, and left */
     text-align: center;
+    width: calc(100% - 20px); /* Adjust width to account for left and right margins */
 }
+
 
 /* Stil za različite vrste dugmadi */
 .profile-button {
-    background-color: #3498db;
+    background-color: orange;
 }
 
 .profile-button:hover {
@@ -85,7 +87,7 @@
 }
 
 .new-drive-button {
-    background-color: #2ecc71;
+    background-color: orange;
 }
 
 .new-drive-button:hover {
@@ -93,7 +95,7 @@
 }
 
 .drive-history-button {
-    background-color: #f39c12;
+    background-color: orange;
 }
 
 .drive-history-button:hover {
@@ -101,7 +103,7 @@
 }
 
 .rate-trips-button {
-    background-color: #e74c3c;
+    background-color: orange;
 }
 
 .rate-trips-button:hover {

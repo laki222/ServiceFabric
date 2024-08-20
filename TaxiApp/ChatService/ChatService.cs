@@ -10,45 +10,27 @@ using Common.Interfaces;
 using Microsoft.ServiceFabric.Services.Remoting.Runtime;
 using Common.DTO;
 using Common.Models;
+using SignalRChat.Hubs;
+using Microsoft.AspNetCore.SignalR;
+using Microsoft.AspNet.SignalR.Client;
+
 
 namespace ChatService
 {
     /// <summary>
     /// An instance of this class is created for each service instance by the Service Fabric runtime.
     /// </summary>
-    internal sealed class ChatService : StatelessService,IChat
+    public sealed class ChatService : StatelessService,IChat
     {
+       
+
         public ChatService(StatelessServiceContext context)
-            : base(context)
-        { }
-        private readonly List<Message> _messages
-       = new List<Message>();
-
-
-        public void AddMessage(Guid rideId, Guid senderId, string message)
+        : base(context)
         {
             
-            var _message = new Message() { RideId=rideId,SenderId=senderId,Content=message,Timestamp=DateTime.Now};
-            
-            _messages.Add(_message);
         }
 
-        public async Task <List<Message>> GetAllMessage(Guid rideId)
-        {
-            await Task.Delay(1000);
-            List<Message> listRet = new List<Message>();
 
-            foreach (var item in _messages)
-            {
-                if (item.RideId == rideId)
-                {
-                    listRet.Add(item);
-                }
-            }
-        
-            return listRet;
-        }
-      
         /// <summary>
         /// Optional override to create listeners (e.g., TCP, HTTP) for this service replica to handle client or user requests.
         /// </summary>
@@ -75,6 +57,19 @@ namespace ChatService
 
                 await Task.Delay(TimeSpan.FromSeconds(1), cancellationToken);
             }
+        }
+
+        public Task<List<Message>> GetAllMessage(Guid rideID)
+        {
+            throw new NotImplementedException();
+        }
+
+        public async Task<bool> SendMessage(Guid rideId, string senderId, string message, IHubContext<ChatHub> hubContext)
+        {
+            await hubContext.Clients.Group(rideId.ToString()).SendAsync("ReceiveMessage", senderId, message);
+
+            return true;
+
         }
     }
 }

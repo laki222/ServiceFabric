@@ -73,17 +73,40 @@ export default function VerifyDrivers() {
                                 ) : (
                                     <>
                                         <button
-                                            className="custom-button accept-button"
-                                            onClick={() => handleAccept(val)} // Pass val to handleAccept
-                                        >
-                                            Accept
-                                        </button>
-                                        <button
-                                            className="custom-button decline-button"
-                                            onClick={() => handleDecline(val)}
-                                        >
-                                            Decline
-                                        </button>
+    style={{
+        padding: '0.5rem 1rem',
+        backgroundColor: 'green', // Tailwind green-500
+        color: 'black',
+        fontWeight: 'bold',
+        borderRadius: '0.375rem', // Tailwind rounded
+        cursor: 'pointer',
+        transition: 'background-color 0.2s ease-in-out',
+        margin:10
+    }}
+    onClick={() => handleAccept(val)} // Pass val to handleAccept
+    aria-label="Accept"
+    onMouseOver={(e) => e.currentTarget.style.backgroundColor = '#38a169'} // Tailwind green-600 on hover
+    onMouseOut={(e) => e.currentTarget.style.backgroundColor = '#48bb78'}
+>
+    Accept
+</button>
+<button
+    style={{
+        padding: '0.5rem 1rem',
+        backgroundColor: 'red', // Tailwind red-500
+        color: 'black',
+        fontWeight: 'bold',
+        borderRadius: '0.375rem', // Tailwind rounded
+        cursor: 'pointer',
+        transition: 'background-color 0.2s ease-in-out'
+    }}
+    onClick={() => handleDecline(val)}
+    aria-label="Decline"
+    onMouseOver={(e) => e.currentTarget.style.backgroundColor = '#e53e3e'} // Tailwind red-600 on hover
+    onMouseOut={(e) => e.currentTarget.style.backgroundColor = '#f56565'}
+>
+    Decline
+</button>
                                     </>
                                 )}
                             </td>

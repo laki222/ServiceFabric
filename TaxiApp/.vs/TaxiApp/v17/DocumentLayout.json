@@ -3,32 +3,42 @@
   "WorkspaceRootPath": "C:\\Users\\Lazar\\Desktop\\WebProj\\ServiceFabric\\TaxiApp\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{E11EA3BF-93D2-4211-A864-09E6F59783D5}|DrivingService\\DrivingService.csproj|c:\\users\\lazar\\desktop\\webproj\\servicefabric\\taxiapp\\drivingservice\\repository\\drivingdatarepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E11EA3BF-93D2-4211-A864-09E6F59783D5}|DrivingService\\DrivingService.csproj|solutionrelative:drivingservice\\repository\\drivingdatarepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32FFA6AA-2094-4F3A-881B-80F9C80EE71A}|UserService\\UserService.csproj|c:\\users\\lazar\\desktop\\webproj\\servicefabric\\taxiapp\\userservice\\packageroot\\servicemanifest.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{32FFA6AA-2094-4F3A-881B-80F9C80EE71A}|UserService\\UserService.csproj|solutionrelative:userservice\\packageroot\\servicemanifest.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E11EA3BF-93D2-4211-A864-09E6F59783D5}|DrivingService\\DrivingService.csproj|c:\\users\\lazar\\desktop\\webproj\\servicefabric\\taxiapp\\drivingservice\\packageroot\\servicemanifest.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{E11EA3BF-93D2-4211-A864-09E6F59783D5}|DrivingService\\DrivingService.csproj|solutionrelative:drivingservice\\packageroot\\servicemanifest.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{41AD9640-42CB-499A-91A2-996D29B62AD7}|..\\WebApi\\WebApi.csproj|c:\\users\\lazar\\desktop\\webproj\\servicefabric\\webapi\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE790082-3901-4E74-9908-3352927D32DB}|..\\Common\\Common.csproj|c:\\users\\lazar\\desktop\\webproj\\servicefabric\\common\\dto\\driverviewdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{41AD9640-42CB-499A-91A2-996D29B62AD7}|..\\WebApi\\WebApi.csproj|c:\\users\\lazar\\desktop\\webproj\\servicefabric\\webapi\\controllers\\chatcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{41AD9640-42CB-499A-91A2-996D29B62AD7}|..\\WebApi\\WebApi.csproj|c:\\users\\lazar\\desktop\\webproj\\servicefabric\\webapi\\controllers\\drivingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CE790082-3901-4E74-9908-3352927D32DB}|..\\Common\\Common.csproj|c:\\users\\lazar\\desktop\\webproj\\servicefabric\\common\\hub\\chathub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BD159FD0-D671-4A76-87D1-3E5EE562165D}|ChatService\\ChatService.csproj|c:\\users\\lazar\\desktop\\webproj\\servicefabric\\taxiapp\\chatservice\\chatservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD159FD0-D671-4A76-87D1-3E5EE562165D}|ChatService\\ChatService.csproj|solutionrelative:chatservice\\chatservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CE790082-3901-4E74-9908-3352927D32DB}|..\\Common\\Common.csproj|c:\\users\\lazar\\desktop\\webproj\\servicefabric\\common\\models\\tripinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CE790082-3901-4E74-9908-3352927D32DB}|..\\Common\\Common.csproj|c:\\users\\lazar\\desktop\\webproj\\servicefabric\\common\\interfaces\\ichat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{41AD9640-42CB-499A-91A2-996D29B62AD7}|..\\WebApi\\WebApi.csproj|c:\\users\\lazar\\desktop\\webproj\\servicefabric\\webapi\\webapi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CE790082-3901-4E74-9908-3352927D32DB}|..\\Common\\Common.csproj|c:\\users\\lazar\\desktop\\webproj\\servicefabric\\common\\dto\\chatmessagedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{41AD9640-42CB-499A-91A2-996D29B62AD7}|..\\WebApi\\WebApi.csproj|c:\\users\\lazar\\desktop\\webproj\\servicefabric\\webapi\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CE790082-3901-4E74-9908-3352927D32DB}|..\\Common\\Common.csproj|c:\\users\\lazar\\desktop\\webproj\\servicefabric\\common\\enums\\verificationstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{32FFA6AA-2094-4F3A-881B-80F9C80EE71A}|UserService\\UserService.csproj|c:\\users\\lazar\\desktop\\webproj\\servicefabric\\taxiapp\\userservice\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{32FFA6AA-2094-4F3A-881B-80F9C80EE71A}|UserService\\UserService.csproj|solutionrelative:userservice\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CE790082-3901-4E74-9908-3352927D32DB}|..\\Common\\Common.csproj|c:\\users\\lazar\\desktop\\webproj\\servicefabric\\common\\dto\\loggeduserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BD159FD0-D671-4A76-87D1-3E5EE562165D}|ChatService\\ChatService.csproj|c:\\users\\lazar\\desktop\\webproj\\servicefabric\\taxiapp\\chatservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD159FD0-D671-4A76-87D1-3E5EE562165D}|ChatService\\ChatService.csproj|solutionrelative:chatservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,120 +48,149 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ChatController.cs",
-              "DocumentMoniker": "C:\\Users\\Lazar\\Desktop\\WebProj\\ServiceFabric\\WebApi\\Controllers\\ChatController.cs",
-              "RelativeDocumentMoniker": "..\\WebApi\\Controllers\\ChatController.cs",
-              "ToolTip": "C:\\Users\\Lazar\\Desktop\\WebProj\\ServiceFabric\\WebApi\\Controllers\\ChatController.cs",
-              "RelativeToolTip": "..\\WebApi\\Controllers\\ChatController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-20T16:59:48.418Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "TripInfo.cs",
-              "DocumentMoniker": "C:\\Users\\Lazar\\Desktop\\WebProj\\ServiceFabric\\Common\\Models\\TripInfo.cs",
-              "RelativeDocumentMoniker": "..\\Common\\Models\\TripInfo.cs",
-              "ToolTip": "C:\\Users\\Lazar\\Desktop\\WebProj\\ServiceFabric\\Common\\Models\\TripInfo.cs",
-              "RelativeToolTip": "..\\Common\\Models\\TripInfo.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAABgAAAAKAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-20T15:25:59.775Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "DrivingController.cs",
-              "DocumentMoniker": "C:\\Users\\Lazar\\Desktop\\WebProj\\ServiceFabric\\WebApi\\Controllers\\DrivingController.cs",
-              "RelativeDocumentMoniker": "..\\WebApi\\Controllers\\DrivingController.cs",
-              "ToolTip": "C:\\Users\\Lazar\\Desktop\\WebProj\\ServiceFabric\\WebApi\\Controllers\\DrivingController.cs",
-              "RelativeToolTip": "..\\WebApi\\Controllers\\DrivingController.cs",
-              "ViewState": "AQIAANoBAAAAAAAAAAAtwO0AAAApAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-20T15:25:43.302Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "WebApi.cs",
-              "DocumentMoniker": "C:\\Users\\Lazar\\Desktop\\WebProj\\ServiceFabric\\WebApi\\WebApi.cs",
-              "RelativeDocumentMoniker": "..\\WebApi\\WebApi.cs",
-              "ToolTip": "C:\\Users\\Lazar\\Desktop\\WebProj\\ServiceFabric\\WebApi\\WebApi.cs",
-              "RelativeToolTip": "..\\WebApi\\WebApi.cs",
-              "ViewState": "AQIAAEgAAAAAAAAAAAAYwF4AAAApAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-20T14:12:26.232Z",
+              "Title": "ServiceManifest.xml",
+              "DocumentMoniker": "C:\\Users\\Lazar\\Desktop\\WebProj\\ServiceFabric\\TaxiApp\\UserService\\PackageRoot\\ServiceManifest.xml",
+              "RelativeDocumentMoniker": "UserService\\PackageRoot\\ServiceManifest.xml",
+              "ToolTip": "C:\\Users\\Lazar\\Desktop\\WebProj\\ServiceFabric\\TaxiApp\\UserService\\PackageRoot\\ServiceManifest.xml",
+              "RelativeToolTip": "UserService\\PackageRoot\\ServiceManifest.xml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAABXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2024-08-20T22:33:05.733Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "ChatHub.cs",
-              "DocumentMoniker": "C:\\Users\\Lazar\\Desktop\\WebProj\\ServiceFabric\\Common\\Hub\\ChatHub.cs",
-              "RelativeDocumentMoniker": "..\\Common\\Hub\\ChatHub.cs",
-              "ToolTip": "C:\\Users\\Lazar\\Desktop\\WebProj\\ServiceFabric\\Common\\Hub\\ChatHub.cs",
-              "RelativeToolTip": "..\\Common\\Hub\\ChatHub.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-20T13:13:27.61Z",
+              "Title": "ServiceManifest.xml",
+              "DocumentMoniker": "C:\\Users\\Lazar\\Desktop\\WebProj\\ServiceFabric\\TaxiApp\\DrivingService\\PackageRoot\\ServiceManifest.xml",
+              "RelativeDocumentMoniker": "DrivingService\\PackageRoot\\ServiceManifest.xml",
+              "ToolTip": "C:\\Users\\Lazar\\Desktop\\WebProj\\ServiceFabric\\TaxiApp\\DrivingService\\PackageRoot\\ServiceManifest.xml",
+              "RelativeToolTip": "DrivingService\\PackageRoot\\ServiceManifest.xml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAABXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2024-08-20T22:32:42.039Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "VerificationStatus.cs",
-              "DocumentMoniker": "C:\\Users\\Lazar\\Desktop\\WebProj\\ServiceFabric\\Common\\Enums\\VerificationStatus.cs",
-              "RelativeDocumentMoniker": "..\\Common\\Enums\\VerificationStatus.cs",
-              "ToolTip": "C:\\Users\\Lazar\\Desktop\\WebProj\\ServiceFabric\\Common\\Enums\\VerificationStatus.cs",
-              "RelativeToolTip": "..\\Common\\Enums\\VerificationStatus.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
+              "DocumentIndex": 0,
+              "Title": "DrivingDataRepo.cs",
+              "DocumentMoniker": "C:\\Users\\Lazar\\Desktop\\WebProj\\ServiceFabric\\TaxiApp\\DrivingService\\Repository\\DrivingDataRepo.cs",
+              "RelativeDocumentMoniker": "DrivingService\\Repository\\DrivingDataRepo.cs",
+              "ToolTip": "C:\\Users\\Lazar\\Desktop\\WebProj\\ServiceFabric\\TaxiApp\\DrivingService\\Repository\\DrivingDataRepo.cs",
+              "RelativeToolTip": "DrivingService\\Repository\\DrivingDataRepo.cs",
+              "ViewState": "AQIAABoAAAAAAAAAAAAzwC0AAAAQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-19T20:19:55.689Z"
+              "WhenOpened": "2024-08-20T22:14:33.532Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "UserService.cs",
-              "DocumentMoniker": "C:\\Users\\Lazar\\Desktop\\WebProj\\ServiceFabric\\TaxiApp\\UserService\\UserService.cs",
-              "RelativeDocumentMoniker": "UserService\\UserService.cs",
-              "ToolTip": "C:\\Users\\Lazar\\Desktop\\WebProj\\ServiceFabric\\TaxiApp\\UserService\\UserService.cs",
-              "RelativeToolTip": "UserService\\UserService.cs",
-              "ViewState": "AQIAAIsAAAAAAAAAAAAcwJ4AAABQAAAA",
+              "DocumentIndex": 4,
+              "Title": "DriverViewDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Lazar\\Desktop\\WebProj\\ServiceFabric\\Common\\DTO\\DriverViewDTO.cs",
+              "RelativeDocumentMoniker": "..\\Common\\DTO\\DriverViewDTO.cs",
+              "ToolTip": "C:\\Users\\Lazar\\Desktop\\WebProj\\ServiceFabric\\Common\\DTO\\DriverViewDTO.cs",
+              "RelativeToolTip": "..\\Common\\DTO\\DriverViewDTO.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-19T19:45:10.252Z"
+              "WhenOpened": "2024-08-20T20:58:58.012Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "LoggedUserDTO.cs",
-              "DocumentMoniker": "C:\\Users\\Lazar\\Desktop\\WebProj\\ServiceFabric\\Common\\DTO\\LoggedUserDTO.cs",
-              "RelativeDocumentMoniker": "..\\Common\\DTO\\LoggedUserDTO.cs",
-              "ToolTip": "C:\\Users\\Lazar\\Desktop\\WebProj\\ServiceFabric\\Common\\DTO\\LoggedUserDTO.cs",
-              "RelativeToolTip": "..\\Common\\DTO\\LoggedUserDTO.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAzAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-19T19:44:57.252Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 3,
               "Title": "UserController.cs",
               "DocumentMoniker": "C:\\Users\\Lazar\\Desktop\\WebProj\\ServiceFabric\\WebApi\\Controllers\\UserController.cs",
               "RelativeDocumentMoniker": "..\\WebApi\\Controllers\\UserController.cs",
               "ToolTip": "C:\\Users\\Lazar\\Desktop\\WebProj\\ServiceFabric\\WebApi\\Controllers\\UserController.cs",
               "RelativeToolTip": "..\\WebApi\\Controllers\\UserController.cs",
-              "ViewState": "AQIAAFUAAAAAAAAAAAAMwF4AAAAIAAAA",
+              "ViewState": "AQIAAKkAAAAAAAAAAAAMwMQAAAApAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-19T19:12:03.571Z",
+              "WhenOpened": "2024-08-20T20:58:24.348Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ChatMessageDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Lazar\\Desktop\\WebProj\\ServiceFabric\\Common\\DTO\\ChatMessageDTO.cs",
+              "RelativeDocumentMoniker": "..\\Common\\DTO\\ChatMessageDTO.cs",
+              "ToolTip": "C:\\Users\\Lazar\\Desktop\\WebProj\\ServiceFabric\\Common\\DTO\\ChatMessageDTO.cs",
+              "RelativeToolTip": "..\\Common\\DTO\\ChatMessageDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-20T18:37:32.285Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "DrivingController.cs",
+              "DocumentMoniker": "C:\\Users\\Lazar\\Desktop\\WebProj\\ServiceFabric\\WebApi\\Controllers\\DrivingController.cs",
+              "RelativeDocumentMoniker": "..\\WebApi\\Controllers\\DrivingController.cs",
+              "ToolTip": "C:\\Users\\Lazar\\Desktop\\WebProj\\ServiceFabric\\WebApi\\Controllers\\DrivingController.cs",
+              "RelativeToolTip": "..\\WebApi\\Controllers\\DrivingController.cs",
+              "ViewState": "AQIAAIsBAAAAAAAAAAAewKIBAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-20T18:25:00.733Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Lazar\\Desktop\\WebProj\\ServiceFabric\\TaxiApp\\ChatService\\Program.cs",
+              "RelativeDocumentMoniker": "ChatService\\Program.cs",
+              "ToolTip": "C:\\Users\\Lazar\\Desktop\\WebProj\\ServiceFabric\\TaxiApp\\ChatService\\Program.cs",
+              "RelativeToolTip": "ChatService\\Program.cs",
+              "ViewState": "AQIAAAQAAAAAAAAAAAAwwBgAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-20T18:20:21.032Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "IChat.cs",
+              "DocumentMoniker": "C:\\Users\\Lazar\\Desktop\\WebProj\\ServiceFabric\\Common\\Interfaces\\IChat.cs",
+              "RelativeDocumentMoniker": "..\\Common\\Interfaces\\IChat.cs",
+              "ToolTip": "C:\\Users\\Lazar\\Desktop\\WebProj\\ServiceFabric\\Common\\Interfaces\\IChat.cs",
+              "RelativeToolTip": "..\\Common\\Interfaces\\IChat.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAABsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-20T18:19:06.726Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ChatController.cs",
+              "DocumentMoniker": "C:\\Users\\Lazar\\Desktop\\WebProj\\ServiceFabric\\WebApi\\Controllers\\ChatController.cs",
+              "RelativeDocumentMoniker": "..\\WebApi\\Controllers\\ChatController.cs",
+              "ToolTip": "C:\\Users\\Lazar\\Desktop\\WebProj\\ServiceFabric\\WebApi\\Controllers\\ChatController.cs",
+              "RelativeToolTip": "..\\WebApi\\Controllers\\ChatController.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAmwCMAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-20T18:18:32.781Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ChatService.cs",
+              "DocumentMoniker": "C:\\Users\\Lazar\\Desktop\\WebProj\\ServiceFabric\\TaxiApp\\ChatService\\ChatService.cs",
+              "RelativeDocumentMoniker": "ChatService\\ChatService.cs",
+              "ToolTip": "C:\\Users\\Lazar\\Desktop\\WebProj\\ServiceFabric\\TaxiApp\\ChatService\\ChatService.cs",
+              "RelativeToolTip": "ChatService\\ChatService.cs",
+              "ViewState": "AQIAACYAAAAAAAAAAAAmwDAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-20T18:18:26.407Z",
               "EditorCaption": ""
             }
           ]

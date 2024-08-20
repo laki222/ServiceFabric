@@ -6,12 +6,13 @@ import DashboardDriver from './DashboardDriver.jsx';
 export default function Dashboard() {
   const location = useLocation();
   const user = location.state?.user;
-  const userRole = user["role"];
+  const userRole = user?.role;
+
   return (
-   <div>
-     {userRole === 0 && <DashboardAdmin user={user}/>}
-     {userRole === 1 && <DashboardRider user={user}/>}
-     {userRole === 2 && <DashboardDriver user={user}/>}
-   </div>
+    <div style={{ background: "orange" }}>
+      {userRole === 0 && <DashboardAdmin user={user} />}
+      {userRole === 1 && <DashboardRider user={user} />}
+      {userRole === 2 && <DashboardDriver user={user} />}
+    </div>
   );
 }

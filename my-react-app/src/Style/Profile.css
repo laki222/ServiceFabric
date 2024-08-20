@@ -2,7 +2,7 @@
     padding: 24px;
     max-width: 600px;
     margin: 0 auto;
-    background-color: #ffffff;
+    background-color: black;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }
@@ -11,6 +11,7 @@
     font-size: 1.5rem;
     font-weight: 600;
     margin-bottom: 16px;
+    color: orange;
   }
   
   .profile-form .form-group {
@@ -22,6 +23,7 @@
     font-size: 1rem;
     font-weight: 500;
     margin-bottom: 8px;
+    color: orange;
   }
   
   .profile-form input[type="text"],
@@ -55,9 +57,11 @@
   .profile-form .buttons {
     display: flex;
     gap: 10px;
+    color: black;
   }
   
   .profile-form .buttons button {
+    color: black;
     padding: 10px 20px;
     border: none;
     border-radius: 4px;
@@ -65,20 +69,22 @@
     font-weight: 600;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    width: 100%;
   }
   
   .profile-form .buttons .save-button {
-    background-color: #007bff;
-    color: #ffffff;
+    background-color: orange;
+    color: black;
   }
   
   .profile-form .buttons .save-button:hover {
-    background-color: #0056b3;
+    background-color: #5a6268;
+    color: black;
   }
   
   .profile-form .buttons .cancel-button {
-    background-color: #6c757d;
-    color: #ffffff;
+    background-color: gray;
+    color: black;
   }
   
   .profile-form .buttons .cancel-button:hover {
@@ -86,11 +92,12 @@
   }
   
   .profile-form .buttons .edit-button {
-    background-color: #007bff;
-    color: #ffffff;
+    background-color: orange;
+    color: black;
   }
   
   .profile-form .buttons .edit-button:hover {
     background-color: #0056b3;
+    color: black;
   }
   

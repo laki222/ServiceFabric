@@ -28,7 +28,7 @@ export default function RidesRider() {
         <table className="styled-table">
             <thead>
                 <tr>
-                    <th>Start point</th>
+                    <th >Start point</th>
                     <th>Destination</th>
                     <th>Price</th>
                 </tr>
